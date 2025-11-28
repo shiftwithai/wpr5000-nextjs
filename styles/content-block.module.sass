@@ -1,0 +1,154 @@
+@use 'template'
+@use 'colors'
+@use 'variables' as vars
+
+.content_block
+  --section-color: var(--content-block-color, #{colors.$primary})
+
+.heading
+  color: inherit
+  font-size: 40px
+  font-weight: 500
+  line-height: 1.2
+  margin: 0 0 20px 0
+
+.subheading
+  color:  var(--section-color)
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.2
+  margin: 0 0 10px 0
+
+.media
+  align-items: center
+  // background: radial-gradient(circle at 45% 55%, #f9fafe 0%, var(--manufacturer-color) 2000%)
+  background: colors.$grey050
+  border-radius: 10px
+  // box-shadow: 0 20px 100px 0px rgba(255,255,255,1), 0 50px 500px -200px var(--manufacturer-color)
+  display: flex
+  height: 200px
+  justify-content: center
+  overflow: hidden
+  position: relative
+  width: 100%
+
+  &:hover
+    .thumbnail__img
+      opacity: 0.8
+
+    .youtube__icon
+      opacity: 1
+
+.youtube_block
+  .media
+    height: auto
+    
+.image_block
+  .media
+    height: 500px
+
+.thumbnail__img
+  transition: opacity 0.3s
+  
+.youtube__icon
+  color: red
+  font-size: 64px
+  left: 50%
+  opacity: 0.7
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  transition: opacity 0.3s
+
+.text
+  font-size: 16px
+  min-width: 0
+  padding: 20px
+
+  p
+    color: colors.$grey700
+    line-height: 1.5
+
+  ul
+    color:  var(--section-color)
+    list-style: disc inside
+    padding-inline-start: 0
+    text-indent: 0
+
+.video__link
+  align-items: center
+  border: 1px solid transparent
+  border-radius: 8px
+  display: inline-flex
+  gap: 8px
+  margin: 0 -12px
+  max-width: 100%
+  padding: 12px
+  text-align: left
+
+  &:hover
+    border-color: colors.$grey100
+
+.video__link__thumbnail
+  border-radius: 8px
+  height: 44px
+  width: 78px
+
+.video__link__details
+  flex: 1 1 0
+  min-width: 0
+
+.video__link__title
+  font-size: 16px
+  min-width: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.video__link__subtitle
+  color: colors.$grey500
+  font-size: 14px
+
+@media #{vars.$lg}
+  .content_block
+    align-items: center
+    display: flex
+    flex-flow: row nowrap
+    padding: 40px
+
+  .media
+    height: auto
+    flex: 1 1 0
+    width: auto
+    
+  .text
+    // background: white
+    border-radius: 10px
+    // box-shadow: 0 50px 100px -20px rgba(50,50,93,0.15), 0 30px 60px -30px rgba(0,0,0,0.3)
+    flex: 1.4 1 0
+    margin: 0 0 0 40px
+    padding: 0
+
+.style_flat
+  @media #{vars.$lg}
+    &.content_block
+      align-items: center
+
+.style_layered
+  &.content_block
+    border-radius: 20px
+
+  @media #{vars.$lg}
+    &.content_block
+      padding: 0 40px
+      
+    &.youtube_block
+      align-items: center
+
+    .media
+      padding: 40px
+
+    .text
+      flex: 1.2 1 0
+      padding: 0 0 0 40px
+      position: relative

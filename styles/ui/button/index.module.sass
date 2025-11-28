@@ -1,0 +1,218 @@
+@use "sass:color"
+@use '../../colors'
+
+.button
+  align-items: center
+  border: 1px solid transparent
+  border-radius: 4px
+  column-gap: 8px
+  display: inline-flex
+  flex: 0 0 auto
+  font-size: 13px
+  font-weight: 500
+  justify-content: center
+  min-width: fit-content
+  overflow: hidden
+  padding: 10px 16px
+  position: relative
+  transition-duration: 0.15s
+  transition-property: background, border-color, color, opacity
+  transition-timing-function: ease-in-out
+  vertical-align: middle
+
+  &[disabled]
+    cursor: not-allowed
+
+  &:active
+    outline: 2px solid lighten(colors.$primary, 15)
+
+.button__overlay
+  align-items: center
+  background: inherit
+  display: flex
+  inset: 0
+  justify-content: center
+  position: absolute
+
+// Colors
+.button_white
+  background: white
+  border-color: colors.$grey200
+  // box-shadow: 0 1px 2px rgb(0 0 0 / 0.15)
+  color: colors.$text
+
+  &:hover
+    background: color.adjust(white, $lightness: -3%, $space: oklch)
+
+.button_primary
+  background: colors.$blue450
+  border-color: colors.$blue450
+  color: white
+
+  &:hover
+    background: color.adjust(colors.$blue450, $lightness: -10%, $space: oklch)
+
+.button_secondary
+  background: white
+  border-color: colors.$blue200
+  color: colors.$blue450
+
+  &:hover
+    background: colors.$blue050
+
+.button_tertiary
+  background: #283654
+  border-color: #283654
+  color: white
+
+  &:hover
+    background: #304165
+
+.button_invalid
+  background: colors.$red700
+  border-color: colors.$red700
+  color: colors.$red100
+
+  &:hover
+    background: color.adjust(colors.$red700, $lightness: -10%, $space: oklch)
+
+// Styles
+.button_shadow
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2)
+
+// Status
+.button_disabled
+  background: colors.$grey100
+  border-color: colors.$grey200
+  color: colors.$text
+  opacity: 0.6
+
+  &:active
+    outline: 2px solid colors.$grey200
+
+  &:hover
+    background: color.adjust(colors.$grey100, $lightness: -5%, $space: oklch)
+
+.button_loading
+  opacity: 0.8
+
+.button_success
+  background: colors.$blue700
+  border-color: colors.$blue700
+  color: white
+  opacity: 1
+
+  &:hover
+    background: color.adjust(colors.$blue700, $lightness: -10%, $space: oklch)
+
+.button_error
+  background: colors.$red700
+  border-color: colors.$red700
+  color: colors.$red100
+  opacity: 1
+
+  &:hover
+    background: color.adjust(colors.$red700, $lightness: -10%, $space: oklch)
+
+// Color overrides
+.button_transparent
+  &.button_overlayed
+    background: transparent
+    border-color: transparent
+
+    .button__text
+      color: transparent
+    
+  &.button_loading
+    background: colors.$grey050
+    color: colors.$grey700
+    
+  &.button_success
+    background: colors.$blue050
+    color: colors.$blue700
+
+  &.button_error
+    background: colors.$red050
+    color: colors.$red700
+
+  &:hover
+    opacity: 0.7
+
+// Positioning
+.button_flex
+  display: flex
+  width: 100%
+
+.button_grow
+  flex: 1 0 0
+
+// Sizes
+.button_auto
+  font-size: 1em
+  padding: 0.5em 2.5em
+
+.button_small
+  padding: 7px 16px
+  
+.button_xs
+  column-gap: 5px
+  padding: 5px 11px
+  
+.button_icon
+  padding: 3px 5px
+
+.button_text
+  border-radius: 3px
+  padding: 2px 6px
+
+// Radius
+.button_radius_sm
+  border-radius: 4px
+
+.button_radius_md
+  border-radius: 6px
+
+.button_radius_lg
+  border-radius: 8px
+
+.button_radius_full
+  border-radius: 999px
+
+// Modifiers
+.button_wide
+  padding-left: 3em
+  padding-right: 3em
+
+// Group
+.group
+  align-items: center
+  display: flex
+  flex-flow: row wrap
+  gap: 10px
+
+.group_grow
+  & > *
+    flex: 1 0 0
+
+// Icon
+// .icon
+//   margin: 0 0.5em 0 0
+
+// Alignment
+.justify_center
+  justify-content: center
+
+.justify_end
+  justify-content: flex-end
+
+.justify_around
+  justify-content: space-around
+
+.justify_between
+  justify-content: space-between
+
+.justify_evenly
+  justify-content: space-evenly
+
+.justify_start
+  justify-content: flex-start
