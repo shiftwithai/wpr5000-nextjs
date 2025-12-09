@@ -695,23 +695,46 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.robot-icon-wrapper:hover {
-  transform: scale(1.05);
+
+.robot-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shine 3s ease-in-out infinite;
 }
-.robot-icon-wrapper:hover .robot-icon {
-  filter: grayscale(0%);
-  color: #376FE5;
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 150%;
+  }
 }
+
+.robot-icon-item:nth-child(1) .robot-icon-wrapper::before { animation-delay: 0s; }
+.robot-icon-item:nth-child(2) .robot-icon-wrapper::before { animation-delay: 0.3s; }
+.robot-icon-item:nth-child(3) .robot-icon-wrapper::before { animation-delay: 0.6s; }
+.robot-icon-item:nth-child(4) .robot-icon-wrapper::before { animation-delay: 0.9s; }
+.robot-icon-item:nth-child(5) .robot-icon-wrapper::before { animation-delay: 1.2s; }
 
 .robot-icon {
   width: 100%;
   height: 100%;
   color: #6B6B6B;
   filter: grayscale(100%);
-  transition: all 0.3s ease;
 }
 
 .robot-label {
@@ -1738,6 +1761,38 @@ button {
   }
 }
 
+/* Table Notes */
+.table-notes {
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 20px 24px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #376FE5;
+}
+.table-notes p {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.table-notes ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.table-notes li {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.table-notes li:last-child {
+  margin-bottom: 0;
+}
+.table-notes li strong {
+  color: #1a1a1a;
+}
+
 /* Table CTA Button */
 .table-cta-wrapper {
   display: flex;
@@ -1965,12 +2020,19 @@ button {
 }
 .why-proax-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 @media (min-width: 768px) {
   .why-proax-image img {
-    max-width: 360px;
+    max-width: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  .why-proax-image img {
+    max-width: 380px;
   }
 }
 
