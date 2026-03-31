@@ -4,7 +4,6 @@ import Script from "next/script";
 import { cookies } from "next/headers";
 import "./globals.css";
 import { LocaleProvider, type LocaleKey } from "../components/LocaleContext";
-import LocaleSwitcher from "../components/LocaleSwitcher";
 
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
@@ -30,7 +29,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${poppins.variable} antialiased`}>
         <LocaleProvider locale={locale}>
-          <LocaleSwitcher currentLocale={locale} />
           {children}
         </LocaleProvider>
         <Script src="/hotspots.js" strategy="afterInteractive" />
