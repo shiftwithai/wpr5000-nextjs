@@ -1,4 +1,7 @@
 import HubSpotForm from '../components/HubSpotForm'
+import ProductTableFilter from '../components/ProductTableFilter'
+import Tr from '../components/Tr'
+import YoutubeEmbed from '../components/YoutubeEmbed'
 
 export const metadata = {
   title: 'WPR5000 Industrial Tool Changer - Stop Production Line Delays',
@@ -10,11 +13,11 @@ export const metadata = {
     <div className="hero-grid">
       <div className="hero-content">
         <h1 className="hero-heading">
-          Stop Production Line Delays in Their Tracks
+          <Tr id="wpr5000:hero:heading" />
         </h1>
         
         <div className="hero-subheading">
-          WPR5000 delivers 3-second tool changes with fail-safe locking that protects your production line even during power failures.
+          <Tr id="wpr5000:hero:subheading" />
         </div>
 
         <div className="feature-badges">
@@ -24,7 +27,7 @@ export const metadata = {
                 <path d="M6 10L9 13L14 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Certified Performance Level D safety</span>
+            <span className="badge-text"><Tr id="wpr5000:hero:badge:safety" /></span>
           </div>
           <div className="badge">
             <div className="badge-icon">
@@ -32,7 +35,7 @@ export const metadata = {
                 <path d="M6 10L9 13L14 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Handles up to 500 kg tools with stability</span>
+            <span className="badge-text"><Tr id="wpr5000:hero:badge:payload" /></span>
           </div>
           <div className="badge">
             <div className="badge-icon">
@@ -40,41 +43,26 @@ export const metadata = {
                 <path d="M6 10L9 13L14 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Up to 5 million maintenance-free cycles</span>
+            <span className="badge-text"><Tr id="wpr5000:hero:badge:cycles" /></span>
           </div>
         </div>
 
         <div className="cta-wrapper">
           <a href="#request-quote" className="cta-button-inline">
-            Get Custom Quote
+            <Tr id="wpr5000:hero:cta" />
           </a>
           <div className="cta-subtext-green">
             <svg className="cta-check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span>Free technical consultation included</span>
+            <span><Tr id="wpr5000:hero:cta-subtext" /></span>
           </div>
         </div>
       </div>
 
       <div className="hero-visual">
         <div className="product-video-wrapper">
-          <video 
-            className="product-video" 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-          >
-            <source src="https://proax.ca/strapiv4/uploads/WPR_5000_Energy_Ani_Web_01_f493450832.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="image-badge">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            <span>ISO 9409-1</span>
-          </div>
+          <YoutubeEmbed />
         </div>
       </div>
     </div>
@@ -83,7 +71,7 @@ export const metadata = {
 
 <section className="compatible-section">
   <div className="container">
-    <h2 className="compatible-heading">Compatible with Leading Industrial Robots</h2>
+    <h2 className="compatible-heading"><Tr id="wpr5000:compatible:heading" /></h2>
     
     <div className="robot-icons-grid">
       <div className="robot-icon-item">
@@ -99,7 +87,7 @@ export const metadata = {
             <circle cx="110" cy="70" r="4" fill="currentColor"/>
           </svg>
         </div>
-        <p className="robot-label">Six-Axis Robots</p>
+        <p className="robot-label"><Tr id="wpr5000:compatible:robot:six-axis" /></p>
       </div>
 
       <div className="robot-icon-item">
@@ -113,7 +101,7 @@ export const metadata = {
             <rect x="85" y="63" width="10" height="8" rx="2" fill="currentColor"/>
           </svg>
         </div>
-        <p className="robot-label">Collaborative Robots</p>
+        <p className="robot-label"><Tr id="wpr5000:compatible:robot:collaborative" /></p>
       </div>
 
       <div className="robot-icon-item">
@@ -128,7 +116,7 @@ export const metadata = {
             <circle cx="80" cy="68" r="4" fill="currentColor"/>
           </svg>
         </div>
-        <p className="robot-label">SCARA Robots</p>
+        <p className="robot-label"><Tr id="wpr5000:compatible:robot:scara" /></p>
       </div>
 
       <div className="robot-icon-item">
@@ -142,7 +130,7 @@ export const metadata = {
             <rect x="75" y="53" width="10" height="10" rx="2" fill="currentColor"/>
           </svg>
         </div>
-        <p className="robot-label">Delta Robots</p>
+        <p className="robot-label"><Tr id="wpr5000:compatible:robot:delta" /></p>
       </div>
 
       <div className="robot-icon-item">
@@ -156,103 +144,224 @@ export const metadata = {
             <rect x="87" y="66" width="10" height="6" rx="1" fill="currentColor"/>
           </svg>
         </div>
-        <p className="robot-label">Heavy-Payload Robots</p>
+        <p className="robot-label"><Tr id="wpr5000:compatible:robot:heavy" /></p>
       </div>
     </div>
 
-    <p className="compatible-subtext">
-      Fully compliant with ISO 9409-1 interfaces. Works across all major industrial robot platforms.
-    </p>
+    <div className="compatible-subtext">
+      <Tr id="wpr5000:compatible:subtext" />
+    </div>
+  </div>
+</section>
+
+<section className="audience-section">
+  <div className="container">
+    <h2 className="audience-heading"><Tr id="wpr5000:audience:heading" /></h2>
+    <div className="audience-cards">
+      <div className="audience-card">
+        <div className="audience-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h3 className="audience-card-title"><Tr id="wpr5000:audience:card1:title" /></h3>
+        <p className="audience-card-subtitle"><Tr id="wpr5000:audience:card1:subtitle" /></p>
+        <ul className="audience-card-list">
+          <li><Tr id="wpr5000:audience:card1:li1" /></li>
+          <li><Tr id="wpr5000:audience:card1:li2" /></li>
+        </ul>
+      </div>
+      <div className="audience-card audience-card-featured">
+        <div className="audience-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="2"/>
+            <path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M16 3.13C17.7699 3.58317 19.0078 5.17799 19.0078 7.005C19.0078 8.83201 17.7699 10.4268 16 10.88" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h3 className="audience-card-title"><Tr id="wpr5000:audience:card2:title" /></h3>
+        <p className="audience-card-subtitle"><Tr id="wpr5000:audience:card2:subtitle" /></p>
+        <ul className="audience-card-list">
+          <li><Tr id="wpr5000:audience:card2:li1" /></li>
+          <li><Tr id="wpr5000:audience:card2:li2" /></li>
+        </ul>
+      </div>
+      <div className="audience-card">
+        <div className="audience-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h3 className="audience-card-title"><Tr id="wpr5000:audience:card3:title" /></h3>
+        <p className="audience-card-subtitle"><Tr id="wpr5000:audience:card3:subtitle" /></p>
+        <ul className="audience-card-list">
+          <li><Tr id="wpr5000:audience:card3:li1" /></li>
+          <li><Tr id="wpr5000:audience:card3:li2" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="industries-serve-section">
+  <div className="container">
+    <h2 className="industries-serve-heading"><Tr id="wpr5000:industries:heading" /></h2>
+    <div className="industries-serve-grid">
+      <div className="industries-serve-item">
+        <div className="industries-serve-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 17H5C3.89543 17 3 16.1046 3 15V9C3 7.89543 3.89543 7 5 7H19C20.1046 7 21 7.89543 21 9V15C21 16.1046 20.1046 17 19 17Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <circle cx="7" cy="12" r="2" stroke="currentColor" strokeWidth="2"/>
+            <circle cx="17" cy="12" r="2" stroke="currentColor" strokeWidth="2"/>
+          </svg>
+        </div>
+        <h3 className="industries-serve-name"><Tr id="wpr5000:industries:automotive:name" /></h3>
+        <p className="industries-serve-subtext"><Tr id="wpr5000:industries:automotive:sub" /></p>
+      </div>
+      <div className="industries-serve-item">
+        <div className="industries-serve-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h3 className="industries-serve-name"><Tr id="wpr5000:industries:aerospace:name" /></h3>
+        <p className="industries-serve-subtext"><Tr id="wpr5000:industries:aerospace:sub" /></p>
+      </div>
+      <div className="industries-serve-item">
+        <div className="industries-serve-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="2"/>
+            <path d="M9 9H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M9 12H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M9 15H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          </svg>
+        </div>
+        <h3 className="industries-serve-name"><Tr id="wpr5000:industries:electronics:name" /></h3>
+        <p className="industries-serve-subtext"><Tr id="wpr5000:industries:electronics:sub" /></p>
+      </div>
+      <div className="industries-serve-item">
+        <div className="industries-serve-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M22 2L12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M16 2H22V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h3 className="industries-serve-name"><Tr id="wpr5000:industries:plastics:name" /></h3>
+        <p className="industries-serve-subtext"><Tr id="wpr5000:industries:plastics:sub" /></p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section className="comparison-section">
   <div className="container">
-    <h2 className="comparison-heading">Is Your Current Tool Changer Costing You $2,000+ Per Day?</h2>
+    <h2 className="comparison-heading"><Tr id="wpr5000:comparison:heading" /></h2>
     
     <div className="comparison-table-wrapper">
       <table className="comparison-table">
         <thead>
           <tr>
-            <th>Feature</th>
-            <th className="old-header">Old Tool Changers</th>
-            <th className="new-header">WPR5000 Series</th>
+            <th><Tr id="wpr5000:comparison:col:feature" /></th>
+            <th className="old-header"><Tr id="wpr5000:comparison:col:old" /></th>
+            <th className="new-header"><Tr id="wpr5000:comparison:col:new" /></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td data-label="Feature"><strong>Tool Change Time</strong></td>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row1:feature" /></strong></td>
             <td data-label="Old Tool Changers" className="old-value">
               <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
-              <span>7-10 minute changeovers</span>
+              <span><Tr id="wpr5000:comparison:row1:old" /></span>
             </td>
             <td data-label="WPR5000 Series" className="new-value">
               <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>3-second changes</span>
+              <span><Tr id="wpr5000:comparison:row1:new" /></span>
             </td>
           </tr>
           <tr>
-            <td data-label="Feature"><strong>Power Failure Safety</strong></td>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row2:feature" /></strong></td>
             <td data-label="Old Tool Changers" className="old-value">
               <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
-              <span>Tools drop during power loss</span>
+              <span><Tr id="wpr5000:comparison:row2:old" /></span>
             </td>
             <td data-label="WPR5000 Series" className="new-value">
               <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>Spring-loaded safety lock</span>
+              <span><Tr id="wpr5000:comparison:row2:new" /></span>
             </td>
           </tr>
           <tr>
-            <td data-label="Feature"><strong>Workspace Efficiency</strong></td>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row3:feature" /></strong></td>
             <td data-label="Old Tool Changers" className="old-value">
               <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
-              <span>Bulky design limits workspace</span>
+              <span><Tr id="wpr5000:comparison:row3:old" /></span>
             </td>
             <td data-label="WPR5000 Series" className="new-value">
               <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>60% smaller footprint</span>
+              <span><Tr id="wpr5000:comparison:row3:new" /></span>
             </td>
           </tr>
           <tr>
-            <td data-label="Feature"><strong>Maintenance Requirements</strong></td>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row4:feature" /></strong></td>
             <td data-label="Old Tool Changers" className="old-value">
               <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
-              <span>Constant maintenance required</span>
+              <span><Tr id="wpr5000:comparison:row4:old" /></span>
             </td>
             <td data-label="WPR5000 Series" className="new-value">
               <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>Hardened steel durability</span>
+              <span><Tr id="wpr5000:comparison:row4:new" /></span>
             </td>
           </tr>
           <tr>
-            <td data-label="Feature"><strong>Payload Capacity</strong></td>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row5:feature" /></strong></td>
             <td data-label="Old Tool Changers" className="old-value">
               <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
-              <span>Limited payload capacity</span>
+              <span><Tr id="wpr5000:comparison:row5:old" /></span>
             </td>
             <td data-label="WPR5000 Series" className="new-value">
               <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>500kg+ capacity</span>
+              <span><Tr id="wpr5000:comparison:row5:new" /></span>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Feature"><strong><Tr id="wpr5000:comparison:row6:feature" /></strong></td>
+            <td data-label="Old Tool Changers" className="old-value">
+              <svg className="icon x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6L14 14M14 6L6 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+              <span><Tr id="wpr5000:comparison:row6:old" /></span>
+            </td>
+            <td data-label="WPR5000 Series" className="new-value">
+              <svg className="icon check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L9 13L14 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span><Tr id="wpr5000:comparison:row6:new" /></span>
             </td>
           </tr>
         </tbody>
@@ -260,15 +369,38 @@ export const metadata = {
     </div>
 
     <p className="comparison-footer">
-      Every minute spent on tool changes is money lost.
+      <Tr id="wpr5000:comparison:footer" />
     </p>
+  </div>
+</section>
+
+<section className="air-fails-section">
+  <div className="container">
+    <div className="air-fails-grid">
+      <div className="air-fails-content">
+        <h2 className="air-fails-heading"><Tr id="wpr5000:air-fails:heading" /></h2>
+        <p className="air-fails-text">
+          <Tr id="wpr5000:air-fails:text1" />
+        </p>
+        <p className="air-fails-text air-fails-highlight">
+          <Tr id="wpr5000:air-fails:text2" />
+        </p>
+      </div>
+      <div className="air-fails-image">
+        <img 
+          src="https://proax.ca/strapiv4/uploads/Air_Fails_Tool_Holds_cb5ac70050.jpg" 
+          alt="Air Fails Tool Holds - WPR5000 Mechanical Locking" 
+          loading="lazy"
+        />
+      </div>
+    </div>
   </div>
 </section>
 
 <section className="benefits-section">
   <div className="container">
     <div className="benefits-header">
-      <h2 className="benefits-heading">THE TECHNICAL FEATURES IN DETAIL</h2>
+      <h2 className="benefits-heading"><Tr id="wpr5000:benefits:heading" /></h2>
     </div>
     
     <div className="benefits-wrapper">
@@ -280,74 +412,74 @@ export const metadata = {
         />
         
         {/* Hotspot 1: Safety */}
-        <div className="hotspot-group" style={{top: '15%', left: '50%'}}>
+        <div className="hotspot-group" style={{top: '25%', left: '58%'}}>
           <button className="hotspot" aria-label="View Safety Feature">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Safety</span>
+          <span className="hotspot-label"><Tr id="wpr5000:benefits:hotspot1:label" /></span>
           <div className="hotspot-tooltip">
-            <h4>Performance Level D, Category 3 Safety</h4>
-            <p>The WPR5000 meets the highest safety standards with Performance Level D, Category 3 certification. This ensures maximum protection for operators and equipment, with redundant safety systems and continuous monitoring.</p>
+            <h4><Tr id="wpr5000:benefits:hotspot1:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot1:text" /></p>
           </div>
         </div>
 
         {/* Hotspot 2: Spring-Loaded Locking */}
-        <div className="hotspot-group" style={{top: '35%', right: '15%'}}>
+        <div className="hotspot-group" style={{top: '58%', right: '58%'}}>
           <button className="hotspot" aria-label="View Spring-Loaded Locking">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Spring-Loaded Locking</span>
+          <span className="hotspot-label label-top"><Tr id="wpr5000:benefits:hotspot2:label" /></span>
           <div className="hotspot-tooltip">
-            <h4>Spring-Loaded Fail-Safe Locking</h4>
-            <p>Even during power failures, the spring-loaded locking mechanism keeps tools securely attached. This passive safety feature requires no external power, protecting your investment 24/7.</p>
+            <h4><Tr id="wpr5000:benefits:hotspot2:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot2:text" /></p>
           </div>
         </div>
 
         {/* Hotspot 3: Pneumatic Pass-Through */}
-        <div className="hotspot-group" style={{top: '55%', left: '20%'}}>
+        <div className="hotspot-group" style={{top: '60%', left: '18%'}}>
           <button className="hotspot" aria-label="View Pneumatic Pass-Through">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Integrated Pneumatic Pass-Through</span>
+          <span className="hotspot-label label-right"><Tr id="wpr5000:benefits:hotspot3:label" /></span>
           <div className="hotspot-tooltip">
-            <h4>Integrated Pneumatic Pass-Through</h4>
-            <p>Built-in pneumatic channels eliminate external hoses, reducing clutter and potential failure points. Supports up to 10 pneumatic ports depending on model size.</p>
+            <h4><Tr id="wpr5000:benefits:hotspot3:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot3:text" /></p>
           </div>
         </div>
 
         {/* Hotspot 4: Locking Bolts */}
-        <div className="hotspot-group" style={{bottom: '25%', right: '25%'}}>
+        <div className="hotspot-group" style={{top: '80%', left: '40%'}}>
           <button className="hotspot" aria-label="View Locking Bolts">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Locking Bolts</span>
+          <span className="hotspot-label"><Tr id="wpr5000:benefits:hotspot4:label" /></span>
           <div className="hotspot-tooltip">
-            <h4>Precision Locking Bolts</h4>
-            <p>Hardened steel locking bolts ensure repeatable positioning with ±0.02mm accuracy. Corrosion-resistant coating extends service life in harsh industrial environments.</p>
+            <h4><Tr id="wpr5000:benefits:hotspot4:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot4:text" /></p>
           </div>
         </div>
 
         {/* Hotspot 5: Energy Elements */}
-        <div className="hotspot-group" style={{bottom: '15%', left: '35%'}}>
+        <div className="hotspot-group" style={{top: '65%', right: '10%'}}>
           <button className="hotspot" aria-label="View Energy Elements">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Energy Elements</span>
-          <div className="hotspot-tooltip">
-            <h4>Energy Storage Elements</h4>
-            <p>Integrated energy storage provides fail-safe operation during power loss. Spring elements maintain locking force without external power supply.</p>
+          <span className="hotspot-label label-right"><Tr id="wpr5000:benefits:hotspot5:label" /></span>
+          <div className="hotspot-tooltip tooltip-left">
+            <h4><Tr id="wpr5000:benefits:hotspot5:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot5:text" /></p>
           </div>
         </div>
 
         {/* Hotspot 6: Pre-Centering */}
-        <div className="hotspot-group" style={{top: '45%', left: '45%'}}>
+        <div className="hotspot-group" style={{top: '52%', right: '20%'}}>
           <button className="hotspot" aria-label="View Pre-Centering">
             <span className="plus-icon">+</span>
           </button>
-          <span className="hotspot-label">Pre-Centering</span>
-          <div className="hotspot-tooltip">
-            <h4>Conical Pin Pre-Centering</h4>
-            <p>Precision conical pins guide tools into perfect alignment before locking. This reduces wear, speeds up tool changes, and ensures consistent positioning.</p>
+          <span className="hotspot-label label-right"><Tr id="wpr5000:benefits:hotspot6:label" /></span>
+          <div className="hotspot-tooltip tooltip-left">
+            <h4><Tr id="wpr5000:benefits:hotspot6:title" /></h4>
+            <p><Tr id="wpr5000:benefits:hotspot6:text" /></p>
           </div>
         </div>
       </div>
@@ -357,150 +489,39 @@ export const metadata = {
 
 <section className="specifications-section">
   <div className="container">
-    <h2 className="specifications-heading">WPR5000 Series Specifications</h2>
+    <h2 className="specifications-heading"><Tr id="wpr5000:specs:heading" /></h2>
+    <p className="specifications-subheading"><Tr id="wpr5000:specs:subheading" /></p>
     
-    <div className="table-wrapper">
-      <table className="specifications-table">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Installation Size</th>
-            <th>Flange Size (EN ISO 9409-1)</th>
-            <th>Pneumatic Ports</th>
-            <th>Side Type (Pairing)</th>
-            <th>Payload (kg)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-label="Product"><strong>WPR5040F-00-A</strong></td>
-            <td data-label="Installation Size">WPR5040</td>
-            <td data-label="Flange Size">TK 40</td>
-            <td data-label="Pneumatic Ports">4</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">25</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5040L-00-A</strong></td>
-            <td data-label="Installation Size">WPR5040</td>
-            <td data-label="Flange Size">TK 40</td>
-            <td data-label="Pneumatic Ports">4</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">25</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2741760/zimwpr5050f00a" target="_blank" rel="noopener noreferrer">WPR5050F-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5050</td>
-            <td data-label="Flange Size">TK 50</td>
-            <td data-label="Pneumatic Ports">4</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">35</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2741764/zimwpr5050l00a" target="_blank" rel="noopener noreferrer">WPR5050L-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5050</td>
-            <td data-label="Flange Size">TK 50</td>
-            <td data-label="Pneumatic Ports">4</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">35</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5063F-00-A</strong></td>
-            <td data-label="Installation Size">WPR5063</td>
-            <td data-label="Flange Size">TK 63</td>
-            <td data-label="Pneumatic Ports">6</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">60</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5063L-00-A</strong></td>
-            <td data-label="Installation Size">WPR5063</td>
-            <td data-label="Flange Size">TK 63</td>
-            <td data-label="Pneumatic Ports">6</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">60</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5080F-00-A</strong></td>
-            <td data-label="Installation Size">WPR5080</td>
-            <td data-label="Flange Size">TK 80</td>
-            <td data-label="Pneumatic Ports">6</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">80</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5080L-00-A</strong></td>
-            <td data-label="Installation Size">WPR5080</td>
-            <td data-label="Flange Size">TK 80</td>
-            <td data-label="Pneumatic Ports">6</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">80</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2738858/zimwpr5100f00a" target="_blank" rel="noopener noreferrer">WPR5100F-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5100</td>
-            <td data-label="Flange Size">TK 100</td>
-            <td data-label="Pneumatic Ports">8</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">150</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2738859/zimwpr5100l00a" target="_blank" rel="noopener noreferrer">WPR5100L-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5100</td>
-            <td data-label="Flange Size">TK 100</td>
-            <td data-label="Pneumatic Ports">8</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">150</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2735266/zimwpr5125f00a" target="_blank" rel="noopener noreferrer">WPR5125F-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5125</td>
-            <td data-label="Flange Size">TK 125</td>
-            <td data-label="Pneumatic Ports">10</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">270</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong><a href="https://proax.ca/en/product/2735267/zimwpr5125l00a" target="_blank" rel="noopener noreferrer">WPR5125L-00-A</a></strong></td>
-            <td data-label="Installation Size">WPR5125</td>
-            <td data-label="Flange Size">TK 125</td>
-            <td data-label="Pneumatic Ports">10</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">270</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5160F-00-A</strong></td>
-            <td data-label="Installation Size">WPR5160</td>
-            <td data-label="Flange Size">TK 160</td>
-            <td data-label="Pneumatic Ports">10</td>
-            <td data-label="Side Type">Fixed Side (F)</td>
-            <td data-label="Payload">325</td>
-          </tr>
-          <tr>
-            <td data-label="Product"><strong>WPR5160L-00-A</strong></td>
-            <td data-label="Installation Size">WPR5160</td>
-            <td data-label="Flange Size">TK 160</td>
-            <td data-label="Pneumatic Ports">10</td>
-            <td data-label="Side Type">Tool Side (L)</td>
-            <td data-label="Payload">325</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <ProductTableFilter products={[
+      { name: 'WPR5040F-00-A', installationSize: 'WPR5040', flangeSize: 'TK 40', pneumaticPorts: 4, sideType: 'Fixed Side (F)', payload: 25 },
+      { name: 'WPR5040L-00-A', installationSize: 'WPR5040', flangeSize: 'TK 40', pneumaticPorts: 4, sideType: 'Tool Side (L)', payload: 25 },
+      { name: 'WPR5050F-00-A', installationSize: 'WPR5050', flangeSize: 'TK 50', pneumaticPorts: 4, sideType: 'Fixed Side (F)', payload: 35 },
+      { name: 'WPR5050L-00-A', installationSize: 'WPR5050', flangeSize: 'TK 50', pneumaticPorts: 4, sideType: 'Tool Side (L)', payload: 35 },
+      { name: 'WPR5063F-00-A', installationSize: 'WPR5063', flangeSize: 'TK 63', pneumaticPorts: 6, sideType: 'Fixed Side (F)', payload: 60 },
+      { name: 'WPR5063L-00-A', installationSize: 'WPR5063', flangeSize: 'TK 63', pneumaticPorts: 6, sideType: 'Tool Side (L)', payload: 60 },
+      { name: 'WPR5080F-00-A', installationSize: 'WPR5080', flangeSize: 'TK 80', pneumaticPorts: 6, sideType: 'Fixed Side (F)', payload: 80 },
+      { name: 'WPR5080L-00-A', installationSize: 'WPR5080', flangeSize: 'TK 80', pneumaticPorts: 6, sideType: 'Tool Side (L)', payload: 80 },
+      { name: 'WPR5100F-00-A', installationSize: 'WPR5100', flangeSize: 'TK 100', pneumaticPorts: 8, sideType: 'Fixed Side (F)', payload: 150 },
+      { name: 'WPR5100L-00-A', installationSize: 'WPR5100', flangeSize: 'TK 100', pneumaticPorts: 8, sideType: 'Tool Side (L)', payload: 150 },
+      { name: 'WPR5125F-00-A', installationSize: 'WPR5125', flangeSize: 'TK 125', pneumaticPorts: 10, sideType: 'Fixed Side (F)', payload: 270 },
+      { name: 'WPR5125L-00-A', installationSize: 'WPR5125', flangeSize: 'TK 125', pneumaticPorts: 10, sideType: 'Tool Side (L)', payload: 270 },
+      { name: 'WPR5160F-00-A', installationSize: 'WPR5160', flangeSize: 'TK 160', pneumaticPorts: 10, sideType: 'Fixed Side (F)', payload: 325 },
+      { name: 'WPR5160L-00-A', installationSize: 'WPR5160', flangeSize: 'TK 160', pneumaticPorts: 10, sideType: 'Tool Side (L)', payload: 325 },
+    ]} />
 
     <div className="table-notes">
-      <p><strong>Notes:</strong></p>
+      <p><strong><Tr id="wpr5000:specs:notes:title" /></strong></p>
       <ul>
-        <li><strong>Type of Drive:</strong> Pneumatic</li>
-        <li><strong>Electrical Ports:</strong> Optional on all models</li>
-        <li><strong>Payload Ratings:</strong> All payloads are rated at 10 m/s² acceleration and within the rated C.G. offset</li>
-        <li><strong>Pairing Rule:</strong> Each F (Fixed Side) model pairs with the corresponding L (Tool Side) model (e.g., WPR5040F ↔ WPR5040L)</li>
+        <li><strong><Tr id="wpr5000:specs:notes:drive-label" /></strong> <Tr id="wpr5000:specs:notes:drive" /></li>
+        <li><strong><Tr id="wpr5000:specs:notes:electrical-label" /></strong> <Tr id="wpr5000:specs:notes:electrical" /></li>
+        <li><strong><Tr id="wpr5000:specs:notes:payload-label" /></strong> <Tr id="wpr5000:specs:notes:payload" /></li>
+        <li><strong><Tr id="wpr5000:specs:notes:pairing-label" /></strong> <Tr id="wpr5000:specs:notes:pairing" /></li>
       </ul>
     </div>
 
     <div className="table-cta-wrapper">
       <a href="#request-quote" className="table-cta-button">
-        Request a Quote
+        <Tr id="wpr5000:specs:cta" />
       </a>
     </div>
 
@@ -511,13 +532,19 @@ export const metadata = {
   <div className="container">
     <div className="key-features-grid">
       <div className="key-features-image">
-        <img 
-          src="https://proax.ca/strapiv4/uploads/zimmer_wpr5000_tool_changers_7bb2979daa.png" 
-          alt="Zimmer WPR5000 Tool Changers" 
-        />
+        <video 
+          className="product-video" 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+        >
+          <source src="https://proax.ca/strapiv4/uploads/WPR_5000_Energy_Ani_Web_01_f493450832.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="key-features-content">
-        <h3 className="key-features-heading">Key Features</h3>
+        <h3 className="key-features-heading"><Tr id="wpr5000:key-features:heading" /></h3>
         <div className="feature-badges-vertical">
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -525,7 +552,7 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">ISO 9409-1 compliant connecting flanges</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f1" /></span>
           </div>
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -533,7 +560,7 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Spring-loaded locking mechanism</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f2" /></span>
           </div>
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -541,7 +568,7 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">5 million maintenance-free cycles (max.)</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f3" /></span>
           </div>
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -549,7 +576,7 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">IP54 protection rating</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f4" /></span>
           </div>
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -557,7 +584,7 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Integrated pneumatic pass-throughs</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f5" /></span>
           </div>
           <div className="feature-badge">
             <div className="checkmark-circle">
@@ -565,9 +592,71 @@ export const metadata = {
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className="badge-text">Optional electrical/communication pass-throughs</span>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f6" /></span>
+          </div>
+          <div className="feature-badge">
+            <div className="checkmark-circle">
+              <svg className="checkmark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <span className="badge-text"><Tr id="wpr5000:key-features:f7" /></span>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="testimonials-section">
+  <div className="container">
+    <h2 className="testimonials-heading"><Tr id="wpr5000:testimonials:heading" /></h2>
+    <div className="testimonials-carousel">
+      <div className="testimonials-track">
+        <div className="testimonial-card">
+          <div className="testimonial-quote-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 21C3 21 4 17 4 14C4 11 2 9 2 9C2 9 5 9 7 7C9 5 9 2 9 2C9 2 10 5 10 8C10 11 8 13 8 13C8 13 11 13 11 17C11 21 7 21 7 21H3Z" fill="currentColor"/>
+              <path d="M14 21C14 21 15 17 15 14C15 11 13 9 13 9C13 9 16 9 18 7C20 5 20 2 20 2C20 2 21 5 21 8C21 11 19 13 19 13C19 13 22 13 22 17C22 21 18 21 18 21H14Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p className="testimonial-text"><Tr id="wpr5000:testimonials:t1:text" /></p>
+          <div className="testimonial-author">
+            <span className="testimonial-role"><Tr id="wpr5000:testimonials:t1:role" /></span>
+            <span className="testimonial-company"><Tr id="wpr5000:testimonials:t1:company" /></span>
+          </div>
+        </div>
+        <div className="testimonial-card">
+          <div className="testimonial-quote-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 21C3 21 4 17 4 14C4 11 2 9 2 9C2 9 5 9 7 7C9 5 9 2 9 2C9 2 10 5 10 8C10 11 8 13 8 13C8 13 11 13 11 17C11 21 7 21 7 21H3Z" fill="currentColor"/>
+              <path d="M14 21C14 21 15 17 15 14C15 11 13 9 13 9C13 9 16 9 18 7C20 5 20 2 20 2C20 2 21 5 21 8C21 11 19 13 19 13C19 13 22 13 22 17C22 21 18 21 18 21H14Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p className="testimonial-text"><Tr id="wpr5000:testimonials:t2:text" /></p>
+          <div className="testimonial-author">
+            <span className="testimonial-role"><Tr id="wpr5000:testimonials:t2:role" /></span>
+            <span className="testimonial-company"><Tr id="wpr5000:testimonials:t2:company" /></span>
+          </div>
+        </div>
+        <div className="testimonial-card">
+          <div className="testimonial-quote-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 21C3 21 4 17 4 14C4 11 2 9 2 9C2 9 5 9 7 7C9 5 9 2 9 2C9 2 10 5 10 8C10 11 8 13 8 13C8 13 11 13 11 17C11 21 7 21 7 21H3Z" fill="currentColor"/>
+              <path d="M14 21C14 21 15 17 15 14C15 11 13 9 13 9C13 9 16 9 18 7C20 5 20 2 20 2C20 2 21 5 21 8C21 11 19 13 19 13C19 13 22 13 22 17C22 21 18 21 18 21H14Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p className="testimonial-text"><Tr id="wpr5000:testimonials:t3:text" /></p>
+          <div className="testimonial-author">
+            <span className="testimonial-role"><Tr id="wpr5000:testimonials:t3:role" /></span>
+            <span className="testimonial-company"><Tr id="wpr5000:testimonials:t3:company" /></span>
+          </div>
+        </div>
+      </div>
+      <div className="testimonials-dots">
+        <span className="testimonial-dot active"></span>
+        <span className="testimonial-dot"></span>
+        <span className="testimonial-dot"></span>
       </div>
     </div>
   </div>
@@ -585,22 +674,22 @@ export const metadata = {
         />
       </div>
       <div className="why-proax-content">
-        <h2 className="why-proax-heading">Why Proax</h2>
+        <h2 className="why-proax-heading"><Tr id="wpr5000:why-proax:heading" /></h2>
         <p className="why-proax-text">
-          We don't just sell tool changers. We support them. Our in-house engineers provide free technical consultation from selection to integration. Local stock, fast shipping, real expertise.
+          <Tr id="wpr5000:why-proax:text" />
         </p>
         <div className="why-proax-stats">
           <div className="why-proax-stat">
-            <span className="stat-number">60+</span>
-            <span className="stat-label">Years in Automation</span>
+            <span className="stat-number"><Tr id="wpr5000:why-proax:stat1:number" /></span>
+            <span className="stat-label"><Tr id="wpr5000:why-proax:stat1:label" /></span>
           </div>
           <div className="why-proax-stat">
-            <span className="stat-number">13</span>
-            <span className="stat-label">Locations in Canada</span>
+            <span className="stat-number"><Tr id="wpr5000:why-proax:stat2:number" /></span>
+            <span className="stat-label"><Tr id="wpr5000:why-proax:stat2:label" /></span>
           </div>
           <div className="why-proax-stat">
-            <span className="stat-number">48hrs</span>
-            <span className="stat-label">Average Lead Time</span>
+            <span className="stat-number"><Tr id="wpr5000:why-proax:stat3:number" /></span>
+            <span className="stat-label"><Tr id="wpr5000:why-proax:stat3:label" /></span>
           </div>
         </div>
       </div>
@@ -612,28 +701,28 @@ export const metadata = {
   <div className="container">
     <div className="quote-grid">
       <div className="quote-content">
-        <h2 className="quote-heading">Request a Quote</h2>
-        <p className="quote-subheading">Get personalized pricing for your WPR5000 tool changer requirements. Our team will respond within 24 hours.</p>
+        <h2 className="quote-heading"><Tr id="wpr5000:quote:heading" /></h2>
+        <p className="quote-subheading"><Tr id="wpr5000:quote:subheading" /></p>
         <div className="quote-benefits">
           <div className="quote-benefit">
             <svg className="quote-benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 8V12L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2"/>
             </svg>
-            <span>Quick response within 24 hours</span>
+            <span><Tr id="wpr5000:quote:benefit1" /></span>
           </div>
           <div className="quote-benefit">
             <svg className="quote-benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2"/>
             </svg>
-            <span>Expert technical consultation</span>
+            <span><Tr id="wpr5000:quote:benefit2" /></span>
           </div>
           <div className="quote-benefit">
             <svg className="quote-benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span>Competitive pricing guaranteed</span>
+            <span><Tr id="wpr5000:quote:benefit3" /></span>
           </div>
         </div>
       </div>
