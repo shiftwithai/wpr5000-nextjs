@@ -14,6 +14,28 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "WPR5000 Industrial Tool Changer - Stop Production Line Delays",
   description: "WPR5000 delivers 3-second tool changes with fail-safe locking. Trusted by automotive and aerospace leaders worldwide.",
+  openGraph: {
+    title: "WPR5000 Industrial Tool Changer - Stop Production Line Delays",
+    description: "WPR5000 delivers 3-second tool changes with fail-safe locking. Trusted by automotive and aerospace leaders worldwide.",
+    url: "https://wpr5000-nextjs-psi.vercel.app",
+    siteName: "WPR5000 Tool Changer",
+    images: [
+      {
+        url: "https://proax.ca/strapiv4/uploads/zimmer_tool_change_technical_624e0cde36.jpg",
+        width: 1200,
+        height: 630,
+        alt: "WPR5000 Technical Diagram showing tool changer features",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WPR5000 Industrial Tool Changer - Stop Production Line Delays",
+    description: "WPR5000 delivers 3-second tool changes with fail-safe locking. Trusted by automotive and aerospace leaders worldwide.",
+    images: ["https://proax.ca/strapiv4/uploads/zimmer_tool_change_technical_624e0cde36.jpg"],
+  },
 };
 
 export default async function RootLayout({

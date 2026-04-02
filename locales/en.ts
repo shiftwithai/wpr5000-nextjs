@@ -79,7 +79,7 @@ export default {
     // Air Fails
     'wpr5000:air-fails:heading': 'Air Fails. Tool Holds.',
     'wpr5000:air-fails:text1': 'Most tool changers need constant air pressure to stay locked. If pressure drops, your tool drops.',
-    'wpr5000:air-fails:text2': 'The WPR5000 uses spring-loaded cams that lock mechanically — air is only needed to release. Your tool stays secured no matter what.',
+    'wpr5000:air-fails:text2': 'The WPR5000 uses spring loaded cams that lock mechanically. Air is only needed to release, so your tool stays secure at all times.',
 
     // Benefits / Hotspots
     'wpr5000:benefits:heading': 'THE TECHNICAL FEATURES IN DETAIL',
