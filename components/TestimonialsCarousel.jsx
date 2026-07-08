@@ -1,43 +1,14 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Tr from './Tr';
 
 const testimonials = [
-  {
-    industry: 'Automotive',
-    quote: 'ABB robots helped us increase throughput while maintaining the quality standards required in automotive manufacturing.',
-    detail: 'By automating our welding and material handling processes, we reduced cycle times, improved repeatability, and gained the flexibility to adapt quickly to new vehicle models. The integration was smooth, and the system has been running reliably across multiple shifts.',
-    name: '— Manufacturing Engineering Manager',
-    company: 'Automotive OEM',
-  },
-  {
-    industry: 'Metal Fabrication',
-    quote: 'Implementing ABB robotic welding transformed our shop floor.',
-    detail: 'We struggled to find skilled welders and maintain consistent quality. With ABB robots, we stabilized production, reduced rework, and increased output without adding labor. The solution scaled easily as demand grew, making automation a clear long-term win for our operation.',
-    name: '— Operations Manager',
-    company: 'Metal Fabrication Company',
-  },
-  {
-    industry: 'Foundry & Forging',
-    quote: 'ABB robots delivered the durability and reliability we need in extreme conditions.',
-    detail: 'Operating in a high-heat, abrasive environment requires equipment we can trust. ABB\'s heavy-duty robots have consistently performed in our foundry, improving worker safety while keeping production running with minimal downtime.',
-    name: '— Plant Manager',
-    company: 'Foundry & Forging Facility',
-  },
-  {
-    industry: 'Food & Beverage',
-    quote: 'ABB robots helped us meet growing demand while maintaining strict hygiene standards.',
-    detail: 'By automating our packaging and palletizing operations, we improved consistency, reduced manual handling, and supported higher production volumes. The hygienic design and reliable performance made ABB robots a strong fit for our food processing environment.',
-    name: '— Engineering Lead',
-    company: 'Food & Beverage Manufacturer',
-  },
-  {
-    industry: 'Logistics',
-    quote: 'ABB robotic automation significantly improved efficiency in our warehouse operations.',
-    detail: 'Automating palletizing and material handling reduced labor strain and increased throughput during peak demand. The system integrates seamlessly with our existing controls and continues to deliver dependable performance day after day.',
-    name: '— Director of Operations',
-    company: 'Logistics & Distribution Center',
-  },
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 },
+  { id: 5 },
 ];
 
 export default function TestimonialsCarousel() {
@@ -85,9 +56,9 @@ export default function TestimonialsCarousel() {
   return (
     <section className="testimonials-section">
       <div className="container">
-        <h2 className="section-heading-center">What Our Customers Say</h2>
+        <h2 className="section-heading-center"><Tr id="testimonials:heading" /></h2>
         <p className="section-subheading-center">
-          Real results from manufacturers across industries
+          <Tr id="testimonials:subheading" />
         </p>
 
         <div className="testimonials-carousel-wrapper">
@@ -115,16 +86,16 @@ export default function TestimonialsCarousel() {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="testimonial-slide">
                   <div className="testimonial-card">
-                    <div className="testimonial-industry">{testimonial.industry}</div>
+                    <div className="testimonial-industry"><Tr id={`testimonials:${testimonial.id}:industry`} /></div>
                     <blockquote className="testimonial-quote">
-                      "{testimonial.quote}"
+                      "<Tr id={`testimonials:${testimonial.id}:quote`} />"
                     </blockquote>
                     <p className="testimonial-detail">
-                      {testimonial.detail}
+                      <Tr id={`testimonials:${testimonial.id}:detail`} />
                     </p>
                     <div className="testimonial-author">
-                      <span className="testimonial-name">{testimonial.name}</span>
-                      <span className="testimonial-company">{testimonial.company}</span>
+                      <span className="testimonial-name"><Tr id={`testimonials:${testimonial.id}:name`} /></span>
+                      <span className="testimonial-company"><Tr id={`testimonials:${testimonial.id}:company`} /></span>
                     </div>
                   </div>
                 </div>

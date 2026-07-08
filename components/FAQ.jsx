@@ -1,28 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Tr from './Tr';
 
 const faqData = [
-  {
-    question: 'What happens if we need service or support?',
-    answer: <>Proax provides <a href="https://proax.ca/en/services/robot-maintenance-services" target="_blank" rel="noopener noreferrer" className="faq-link">local support</a> backed by ABB's global network. Our service team responds within 24 hours, with most issues resolved remotely through digital diagnostics. We maintain local parts inventory and offer comprehensive service agreements for predictable maintenance costs.</>,
-  },
-  {
-    question: 'Can we start with one application and expand later?',
-    answer: 'Absolutely. This is the recommended approach. Start with your highest-value application, prove the concept, build internal expertise, then expand. Our modular approach and standardized platforms make scaling cost-effective. Many customers begin with one robot and deploy 5-10 within two years.',
-  },
-  {
-    question: 'Do our operators need extensive training?',
-    answer: 'Minimal training required. The Wizard programming interface is designed for production personnel, not programmers. Most operators become proficient in 2-3 days. ABB Robotics Academy provides online resources, and Proax offers hands-on training at your facility.',
-  },
-  {
-    question: 'What is an ABB Value Provider?',
-    answer: "An ABB Value Provider is an accredited partner in ABB's premium global channel program. Value Providers have met rigorous standards for technical expertise, service quality, and integrity, ensuring customers receive the highest level of support for ABB robotics and automation solutions.",
-  },
-  {
-    question: 'How do we get started?',
-    answer: 'Contact Proax for a free automation assessment. Our team evaluates your application, provides ROI analysis, and recommends the optimal approach. We can arrange installation demonstrations so you see the technology in action before making decisions.',
-  },
+  { questionKey: 'faq:q1', answerKey: 'faq:a1', hasLink: true },
+  { questionKey: 'faq:q2', answerKey: 'faq:a2' },
+  { questionKey: 'faq:q3', answerKey: 'faq:a3' },
+  { questionKey: 'faq:q4', answerKey: 'faq:a4' },
+  { questionKey: 'faq:q5', answerKey: 'faq:a5' },
 ];
 
 export default function FAQ() {
@@ -35,9 +21,9 @@ export default function FAQ() {
   return (
     <section className="faq-section">
       <div className="container">
-        <h2 className="faq-heading">Frequently Asked Questions</h2>
+        <h2 className="faq-heading"><Tr id="faq:heading" /></h2>
         <p className="faq-subheading">
-          Get answers to common questions about ABB robotics and working with Proax
+          <Tr id="faq:subheading" />
         </p>
 
         <div className="faq-list">
@@ -51,7 +37,7 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
               >
-                <span>{item.question}</span>
+                <span><Tr id={item.questionKey} /></span>
                 <svg 
                   className="faq-icon" 
                   viewBox="0 0 24 24" 
@@ -68,7 +54,17 @@ export default function FAQ() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{item.answer}</p>
+                {item.hasLink ? (
+                  <p>
+                    <Tr id="faq:a1-part1" />{' '}
+                    <a href="https://proax.ca/en/services/robot-maintenance-services" target="_blank" rel="noopener noreferrer" className="faq-link">
+                      <Tr id="faq:a1-link" />
+                    </a>{' '}
+                    <Tr id="faq:a1-part2" />
+                  </p>
+                ) : (
+                  <p><Tr id={item.answerKey} /></p>
+                )}
               </div>
             </div>
           ))}

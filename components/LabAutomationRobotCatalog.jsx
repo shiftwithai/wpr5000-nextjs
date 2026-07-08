@@ -1,16 +1,19 @@
 'use client';
 
+import { useLocale } from './LocaleContext';
+
 const labRobotsData = [
   {
     id: 'gofa-crb-15000',
     name: 'GoFa CRB 15000',
     type: 'Collaborative',
+    typeKey: 'catalog:type-collaborative',
     image: 'https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:16x9-L',
-    description: 'Ideal for lab automation, sample handling, instrument loading, and human-robot collaboration. Safe operation alongside lab technicians without safety fencing.',
+    descKey: 'lab:robot:gofa-crb-15000:desc',
     variants: ['GoFa CRB 15000-5', 'GoFa CRB 15000-10', 'GoFa CRB 15000-12'],
     maxPayload: 12,
     maxReach: 0.95,
-    applications: ['Sample Handling', 'Instrument Loading', 'Lab Automation', 'Human-Robot Collaboration'],
+    appKeys: ['lab:robot:gofa-crb-15000:app1', 'lab:robot:gofa-crb-15000:app2', 'lab:robot:gofa-crb-15000:app3', 'lab:robot:gofa-crb-15000:app4'],
     specs: {
       'Payload Options': '5 / 10 / 12 kg',
       'Reach': '950 mm',
@@ -24,12 +27,13 @@ const labRobotsData = [
     id: 'irb-1300',
     name: 'IRB 1300',
     type: 'Articulated',
+    typeKey: 'catalog:type-articulated',
     image: 'https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L',
-    description: 'Suitable for enclosed lab cells, diagnostics automation, and high-precision handling. Compact footprint ideal for space-constrained laboratory environments.',
+    descKey: 'lab:robot:irb-1300:desc',
     variants: ['IRB 1300-11/0.9', 'IRB 1300-10/1.15', 'IRB 1300-7/1.4'],
     maxPayload: 11,
     maxReach: 1.4,
-    applications: ['Diagnostics Automation', 'High-Precision Handling', 'Enclosed Lab Cells', 'Testing Automation'],
+    appKeys: ['lab:robot:irb-1300:app1', 'lab:robot:irb-1300:app2', 'lab:robot:irb-1300:app3', 'lab:robot:irb-1300:app4'],
     specs: {
       'Payload': '7 / 10 / 11 kg',
       'Reach': '900 / 1150 / 1400 mm',
@@ -42,12 +46,13 @@ const labRobotsData = [
 ];
 
 export default function LabAutomationRobotCatalog() {
+  const { t } = useLocale();
   return (
     <section className="robot-catalog-section" id="lab-robots">
       <div className="container">
-        <h2 className="robot-catalog-heading">ABB Robots for Laboratory Automation</h2>
+        <h2 className="robot-catalog-heading">{t('abb-lab:catalog:heading')}</h2>
         <p className="robot-catalog-subheading">
-          Purpose-built robots for precision lab environments
+          {t('abb-lab:catalog:subheading')}
         </p>
 
         <div className="robot-cards-grid lab-robots-grid">
@@ -61,32 +66,32 @@ export default function LabAutomationRobotCatalog() {
                 />
               </div>
               <div className="robot-grid-content">
-                <span className="robot-type-badge">{robot.type}</span>
+                <span className="robot-type-badge">{t(robot.typeKey)}</span>
                 <h3 className="robot-grid-name">{robot.name}</h3>
-                <p className="robot-grid-description">{robot.description}</p>
+                <p className="robot-grid-description">{t(robot.descKey)}</p>
                 
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Payload:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-payload')}</span>
                     <span className="grid-spec-value">{robot.maxPayload} kg</span>
                   </div>
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Reach:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-reach')}</span>
                     <span className="grid-spec-value">{robot.maxReach} m</span>
                   </div>
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.applications.slice(0, 3).map((app, index) => (
-                    <span key={index} className="application-tag">{app}</span>
+                  {robot.appKeys.slice(0, 3).map((appKey, index) => (
+                    <span key={index} className="application-tag">{t(appKey)}</span>
                   ))}
-                  {robot.applications.length > 3 && (
-                    <span className="application-tag more">+{robot.applications.length - 3}</span>
+                  {robot.appKeys.length > 3 && (
+                    <span className="application-tag more">+{robot.appKeys.length - 3}</span>
                   )}
                 </div>
 
                 <a href="#request-quote" className="robot-grid-cta">
-                  Request a Quote
+                  {t('catalog:cta')}
                 </a>
               </div>
             </div>

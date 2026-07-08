@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useMemo, useEffect, useRef } from 'react';
+import Tr from './Tr';
+import { useLocale } from './LocaleContext';
 
 // Placeholder data - will be replaced with actual robot data
 const robotsData = [
@@ -201,23 +203,25 @@ const robotsData = [
 
 // Payload category mapping (internal codes to display labels)
 const payloadOptions = [
-  { label: '-All-', code: null },
-  { label: 'up to 7 kg', code: 'A' },
-  { label: '7 - 16 kg', code: 'B' },
-  { label: '16 - 60 kg', code: 'C' },
-  { label: '60 - 225 kg', code: 'D' },
-  { label: 'over 225 kg', code: 'E' },
+  { label: '-All-', code: null, key: 'robot-catalog:filter-all' },
+  { label: 'up to 7 kg', code: 'A', key: 'rc:payload:up-to-7' },
+  { label: '7 - 16 kg', code: 'B', key: 'rc:payload:7-16' },
+  { label: '16 - 60 kg', code: 'C', key: 'rc:payload:16-60' },
+  { label: '60 - 225 kg', code: 'D', key: 'rc:payload:60-225' },
+  { label: 'over 225 kg', code: 'E', key: 'rc:payload:over-225' },
 ];
 
 // Reach category mapping (internal codes to display labels)
 const reachOptions = [
-  { label: '-All-', code: null },
-  { label: 'up to 1.8 m', code: 'A' },
-  { label: '1.8 - 2.55 m', code: 'B' },
-  { label: 'over 2.55 m', code: 'C' },
+  { label: '-All-', code: null, key: 'robot-catalog:filter-all' },
+  { label: 'up to 1.8 m', code: 'A', key: 'rc:reach:up-to-1.8' },
+  { label: '1.8 - 2.55 m', code: 'B', key: 'rc:reach:1.8-2.55' },
+  { label: 'over 2.55 m', code: 'C', key: 'rc:reach:over-2.55' },
 ];
 
 export default function RobotCatalog() {
+  const { t } = useLocale();
+  const tApp = (app) => t('rc:app:' + app) || app;
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
     application: '-All-',
@@ -382,14 +386,14 @@ export default function RobotCatalog() {
   return (
     <section className="robot-catalog-section" id="robot-catalog">
       <div className="container">
-        <h2 className="robot-catalog-heading">ABB Robot Catalog</h2>
+        <h2 className="robot-catalog-heading"><Tr id="robot-catalog:heading" /></h2>
         <p className="robot-catalog-subheading">
-          Find the perfect robot for your application
+          <Tr id="robot-catalog:subheading" />
         </p>
         
         <div style={{ marginBottom: '1.5rem', padding: '1rem', backgroundColor: '#f0f9ff', borderLeft: '4px solid #0284c7', borderRadius: '4px' }}>
           <p style={{ margin: 0, color: '#0c4a6e', fontSize: '0.95rem' }}>
-            <strong>Note:</strong> For applications requiring payloads over 100kg, please <a href="#request-quote" style={{ color: '#0284c7', textDecoration: 'underline' }}>contact us</a> for specialized robot recommendations tailored to your needs.
+            <strong>Note:</strong> <Tr id="robot-catalog:note" /> <a href="#request-quote" style={{ color: '#0284c7', textDecoration: 'underline' }}><Tr id="robot-catalog:note-contact" /></a> <Tr id="robot-catalog:note-suffix" />
           </p>
         </div>
 
@@ -399,26 +403,30 @@ export default function RobotCatalog() {
             <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
             <path d="M16 16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
           </svg>
-          <input
-            type="text"
-            className="catalog-search-input"
-            placeholder="Search Robot model"
-            value={searchQuery}
-            onChange={(e) => handleSearchChange(e.target.value)}
-          />
+          <Tr id="robot-catalog:search-placeholder">
+            {(text) => (
+              <input
+                type="text"
+                className="catalog-search-input"
+                placeholder={text}
+                value={searchQuery}
+                onChange={(e) => handleSearchChange(e.target.value)}
+              />
+            )}
+          </Tr>
         </div>
 
         {/* Filters Row */}
         <div className="catalog-filters">
           <div className="filter-group">
-            <label className="filter-label">Applications</label>
+            <label className="filter-label"><Tr id="robot-catalog:filter-applications" /></label>
             <div className="filter-dropdown-wrapper" ref={appDropdownRef}>
               <button
                 type="button"
                 className="filter-select filter-dropdown-trigger"
                 onClick={() => setAppDropdownOpen(!appDropdownOpen)}
               >
-                {filters.application}
+                {filters.application === '-All-' ? t('robot-catalog:filter-all') : tApp(filters.application)}
                 <svg className="dropdown-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -426,14 +434,18 @@ export default function RobotCatalog() {
               {appDropdownOpen && (
                 <div className="filter-dropdown-menu">
                   <div className="dropdown-search-wrapper">
-                    <input
-                      type="text"
-                      className="dropdown-search-input"
-                      placeholder="Search applications..."
-                      value={appSearchQuery}
-                      onChange={(e) => setAppSearchQuery(e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    />
+                    <Tr id="robot-catalog:search-apps-placeholder">
+                      {(text) => (
+                        <input
+                          type="text"
+                          className="dropdown-search-input"
+                          placeholder={text}
+                          value={appSearchQuery}
+                          onChange={(e) => setAppSearchQuery(e.target.value)}
+                          onClick={(e) => e.stopPropagation()}
+                        />
+                      )}
+                    </Tr>
                   </div>
                   <div className="dropdown-options">
                     {filteredApplications.map((option) => (
@@ -447,11 +459,11 @@ export default function RobotCatalog() {
                           setAppSearchQuery('');
                         }}
                       >
-                        {option}
+                        {option === '-All-' ? t('robot-catalog:filter-all') : tApp(option)}
                       </button>
                     ))}
                     {filteredApplications.length === 0 && (
-                      <div className="dropdown-no-results">No applications found</div>
+                      <div className="dropdown-no-results"><Tr id="robot-catalog:no-apps-found" /></div>
                     )}
                   </div>
                 </div>
@@ -460,33 +472,33 @@ export default function RobotCatalog() {
           </div>
 
           <div className="filter-group">
-            <label className="filter-label">Payload</label>
+            <label className="filter-label"><Tr id="robot-catalog:filter-payload" /></label>
             <select
               className="filter-select"
               value={filters.payload}
               onChange={(e) => handleFilterChange('payload', e.target.value)}
             >
               {payloadOptions.map((option) => (
-                <option key={option.label} value={option.label}>{option.label}</option>
+                <option key={option.label} value={option.label}>{t(option.key)}</option>
               ))}
             </select>
           </div>
 
           <div className="filter-group">
-            <label className="filter-label">Reach</label>
+            <label className="filter-label"><Tr id="robot-catalog:filter-reach" /></label>
             <select
               className="filter-select"
               value={filters.reach}
               onChange={(e) => handleFilterChange('reach', e.target.value)}
             >
               {reachOptions.map((option) => (
-                <option key={option.label} value={option.label}>{option.label}</option>
+                <option key={option.label} value={option.label}>{t(option.key)}</option>
               ))}
             </select>
           </div>
 
           <div className="filter-group">
-            <label className="filter-label">Controllers</label>
+            <label className="filter-label"><Tr id="robot-catalog:filter-controllers" /></label>
             <select
               className="filter-select"
               value={filters.controller}
@@ -502,13 +514,13 @@ export default function RobotCatalog() {
         {/* Reset Filters Link */}
         <div className="catalog-reset-row">
           <button className="reset-filters-link" onClick={resetFilters}>
-            Reset filters
+            <Tr id="robot-catalog:reset-filters" />
           </button>
         </div>
 
         {/* Results Count */}
         <div className="catalog-results-count">
-          Showing {displayedRobots.length} of {sortedRobots.length} robots
+          <Tr id="robot-catalog:showing" /> {displayedRobots.length} <Tr id="robot-catalog:of" /> {sortedRobots.length} <Tr id="robot-catalog:robots" />
         </div>
 
         {/* Robot Cards Table */}
@@ -516,23 +528,23 @@ export default function RobotCatalog() {
           {/* Table Header */}
           <div className="robot-table-header">
             <div className="header-cell sortable" onClick={() => handleSort('name')}>
-              Robot Model {getSortIndicator('name')}
+              <Tr id="robot-catalog:header-model" /> {getSortIndicator('name')}
             </div>
-            <div className="header-cell">Applications</div>
+            <div className="header-cell"><Tr id="robot-catalog:header-applications" /></div>
             <div className="header-cell sortable" onClick={() => handleSort('payload')}>
-              Payload {getSortIndicator('payload')}
+              <Tr id="robot-catalog:header-payload" /> {getSortIndicator('payload')}
             </div>
             <div className="header-cell sortable" onClick={() => handleSort('reach')}>
-              Reach {getSortIndicator('reach')}
+              <Tr id="robot-catalog:header-reach" /> {getSortIndicator('reach')}
             </div>
-            <div className="header-cell">Controllers</div>
+            <div className="header-cell"><Tr id="robot-catalog:header-controllers" /></div>
           </div>
 
           {/* Robot Card Rows */}
           <div className="robot-cards-list">
             {displayedRobots.length === 0 ? (
               <div className="no-results-card">
-                No robots match your current filters. Try adjusting your selection.
+                <Tr id="robot-catalog:no-results" />
               </div>
             ) : (
               displayedRobots.map((robot, index) => (
@@ -554,7 +566,7 @@ export default function RobotCatalog() {
                   <div className="card-cell card-cell-applications">
                     <div className="application-pills">
                       {(expandedApps[robot.id] ? robot.applications : robot.applications.slice(0, 3)).map((app, idx) => (
-                        <span key={idx} className="application-pill">{app}</span>
+                        <span key={idx} className="application-pill">{tApp(app)}</span>
                       ))}
                       {robot.applications.length > 3 && (
                         <button
@@ -562,7 +574,11 @@ export default function RobotCatalog() {
                           className="application-pill application-pill-more"
                           onClick={() => toggleExpandedApps(robot.id)}
                         >
-                          {expandedApps[robot.id] ? 'Show less' : `+${robot.applications.length - 3} more`}
+                          {expandedApps[robot.id] ? (
+                            <Tr id="robot-catalog:show-less" />
+                          ) : (
+                            <Tr id="robot-catalog:show-more" values={{ count: robot.applications.length - 3 }} />
+                          )}
                         </button>
                       )}
                     </div>
@@ -583,7 +599,11 @@ export default function RobotCatalog() {
               className="view-more-button"
               onClick={() => setShowAll(!showAll)}
             >
-              {showAll ? 'Show Less' : `View More Robots (${remainingCount} more)`}
+              {showAll ? (
+                <Tr id="robot-catalog:show-less-btn" />
+              ) : (
+                <Tr id="robot-catalog:view-more" values={{ count: remainingCount }} />
+              )}
             </button>
           </div>
         )}

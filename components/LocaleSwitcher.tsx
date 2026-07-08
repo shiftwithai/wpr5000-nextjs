@@ -1,13 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import { useLocale } from './LocaleContext';
 
-export default function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
+export default function LocaleSwitcher({ currentLocale: propLocale }: { currentLocale?: string }) {
+  const { locale: contextLocale } = useLocale();
+  const currentLocale = propLocale ?? contextLocale;
   const other = currentLocale === 'fr-CA' ? 'EN' : 'FR';
   const otherLocale = currentLocale === 'fr-CA' ? 'en' : 'fr-CA';
   const router = useRouter();
-  const pathname = usePathname();
 
   const switchLocale = () => {
     // Store in cookie so the server can read it on next request

@@ -1,49 +1,39 @@
 'use client';
 
+import { useLocale } from './LocaleContext';
+
 const foodBeverageRobotsData = [
   {
     id: 'irb-1200-hygienic',
     name: 'IRB 1200 Hygienic',
-    type: 'Hygienic',
+    typeKey: 'food:robot:irb-1200-hygienic:type',
     image: 'https://proax.ca/strapiv4/uploads/IRB_1200_Hygienic_3_1x1_L_ba6ab4dc3b.webp',
-    description: 'The IRB 1200 Hygienic is specifically designed for food and beverage applications. With food-grade materials and smooth surfaces, it is ideal for picking, packing, and handling in washdown environments.',
+    descKey: 'food:robot:irb-1200-hygienic:desc',
     maxPayload: 7,
     maxReach: 0.9,
-    applications: ['Food & Beverage', 'Packing', 'Picking', 'Washdown Environments'],
-    specs: {
-      'Payload': '5 / 7 kg',
-      'Reach': '700 / 900 mm',
-      'Design': 'Hygienic',
-      'Environment': 'Washdown capable',
-      'Application': 'Food-grade handling',
-    },
+    appKeys: ['food:robot:irb-1200-hygienic:app1', 'food:robot:irb-1200-hygienic:app2', 'food:robot:irb-1200-hygienic:app3', 'food:robot:irb-1200-hygienic:app4'],
   },
   {
     id: 'irb-365',
     name: 'IRB 365 FlexPicker',
-    type: 'Delta',
+    typeKey: 'food:robot:irb-365:type',
     image: 'https://media-d.global.abb/is/image/abbc/IRB%20365-2:16x9-L',
-    description: 'The IRB 365 FlexPicker® Delta robot offers a 1.5 kg payload and class-leading speed for reorienting lightweight packaged goods such as cookies, chocolates, candies, small bottles, and food products.',
+    descKey: 'food:robot:irb-365:desc',
     maxPayload: 1.5,
     maxReach: 1.1,
-    applications: ['Food & Beverage', 'Packing', 'High-Speed Picking', 'Reorientation'],
-    specs: {
-      'Payload': '1.5 kg',
-      'Reach': 'Ø1100 mm',
-      'Variants': '800 / 1100 / 1300 mm',
-      'Speed': 'Class-leading',
-      'Specialty': 'Lightweight food handling',
-    },
+    appKeys: ['food:robot:irb-365:app1', 'food:robot:irb-365:app2', 'food:robot:irb-365:app3', 'food:robot:irb-365:app4'],
   },
 ];
 
 export default function FoodBeverageRobotCatalog() {
+  const { t } = useLocale();
+
   return (
     <section className="robot-catalog-section" id="food-beverage-robots">
       <div className="container">
-        <h2 className="robot-catalog-heading">ABB Food & Beverage Robots</h2>
+        <h2 className="robot-catalog-heading">{t('abb-food:catalog:heading')}</h2>
         <p className="robot-catalog-subheading">
-          Hygienic robots designed for food-safe environments
+          {t('abb-food:catalog:subheading')}
         </p>
 
         <div className="robot-cards-grid lab-robots-grid">
@@ -55,35 +45,35 @@ export default function FoodBeverageRobotCatalog() {
                   alt={robot.name}
                   loading="lazy"
                 />
-                <span className="iso-badge">Food-Safe</span>
+                <span className="iso-badge">{t('abb-food:catalog:badge')}</span>
               </div>
               <div className="robot-grid-content">
-                <span className="robot-type-badge">{robot.type}</span>
+                <span className="robot-type-badge">{t(robot.typeKey)}</span>
                 <h3 className="robot-grid-name">{robot.name}</h3>
-                <p className="robot-grid-description">{robot.description}</p>
+                <p className="robot-grid-description">{t(robot.descKey)}</p>
                 
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Payload:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-payload')}</span>
                     <span className="grid-spec-value">{robot.maxPayload} kg</span>
                   </div>
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Reach:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-reach')}</span>
                     <span className="grid-spec-value">{robot.maxReach} m</span>
                   </div>
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.applications.slice(0, 3).map((app, index) => (
-                    <span key={index} className="application-tag">{app}</span>
+                  {robot.appKeys.slice(0, 3).map((appKey, index) => (
+                    <span key={index} className="application-tag">{t(appKey)}</span>
                   ))}
-                  {robot.applications.length > 3 && (
-                    <span className="application-tag more">+{robot.applications.length - 3}</span>
+                  {robot.appKeys.length > 3 && (
+                    <span className="application-tag more">+{robot.appKeys.length - 3}</span>
                   )}
                 </div>
 
                 <a href="#request-quote" className="robot-grid-cta">
-                  Request a Quote
+                  {t('catalog:cta')}
                 </a>
               </div>
             </div>

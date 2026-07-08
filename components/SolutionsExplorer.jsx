@@ -1,59 +1,60 @@
 'use client';
 
 import { useState } from 'react';
+import Tr from './Tr';
 
 const industriesData = [
   {
-    title: 'Automotive',
-    description: 'High-speed assembly, welding, and material handling for automotive manufacturing.',
+    titleKey: 'solutions-explorer:industry-automotive:title',
+    descKey: 'solutions-explorer:industry-automotive:desc',
     image: 'https://proax.ca/strapiv4/uploads/automotive_6cf6d32373.png',
   },
   {
-    title: 'Construction',
-    description: 'Robotic solutions for prefabrication, welding, and heavy material handling in construction.',
+    titleKey: 'solutions-explorer:industry-construction:title',
+    descKey: 'solutions-explorer:industry-construction:desc',
     image: 'https://proax.ca/strapiv4/uploads/construction_bb8218919c.png',
   },
   {
-    title: 'Education',
-    description: 'Training and educational robotics for schools, universities, and research institutions.',
+    titleKey: 'solutions-explorer:industry-education:title',
+    descKey: 'solutions-explorer:industry-education:desc',
     image: 'https://proax.ca/strapiv4/uploads/educational_a329d4fe22.png',
   },
   {
-    title: 'Electronics',
-    description: 'Precision assembly and handling for electronics manufacturing.',
+    titleKey: 'solutions-explorer:industry-electronics:title',
+    descKey: 'solutions-explorer:industry-electronics:desc',
     image: 'https://proax.ca/strapiv4/uploads/electronics_82045e6a85.png',
   },
   {
-    title: 'Food and Beverage',
-    description: 'Hygienic robots for packaging, palletizing, and processing applications.',
+    titleKey: 'solutions-explorer:industry-food-beverage:title',
+    descKey: 'solutions-explorer:industry-food-beverage:desc',
     image: 'https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png',
   },
   {
-    title: 'Foundry and Forging',
-    description: 'Heavy-duty robots for harsh foundry environments, die casting, and forging operations.',
+    titleKey: 'solutions-explorer:industry-foundry:title',
+    descKey: 'solutions-explorer:industry-foundry:desc',
     image: 'https://proax.ca/strapiv4/uploads/Foundry_and_Forging_6944e2115b.png',
   },
   {
-    title: 'Life Sciences and Healthcare',
-    description: 'Cleanroom-compatible robots for pharmaceutical, medical device, and laboratory applications.',
+    titleKey: 'solutions-explorer:industry-life-sciences:title',
+    descKey: 'solutions-explorer:industry-life-sciences:desc',
     image: 'https://proax.ca/strapiv4/uploads/Life_Sciences_and_Healthcare_bb40e8c9a8.png',
   },
   {
-    title: 'Logistics',
-    description: 'Automated picking, packing, and warehouse management solutions.',
+    titleKey: 'solutions-explorer:industry-logistics:title',
+    descKey: 'solutions-explorer:industry-logistics:desc',
     image: 'https://proax.ca/strapiv4/uploads/logistics_9ac4c96569.png',
   },
   {
-    title: 'Metal Fabrication',
-    description: 'Welding, cutting, and material handling for metal working industries.',
+    titleKey: 'solutions-explorer:industry-metal-fab:title',
+    descKey: 'solutions-explorer:industry-metal-fab:desc',
     image: 'https://proax.ca/strapiv4/uploads/metal_fabrication_c15f51fd98.png',
   },
 ];
 
 const applicationsData = [
   {
-    title: 'Food and Beverage',
-    description: 'Hygienic robotic automation for food processing, packaging, and beverage production.',
+    titleKey: 'solutions-explorer:app-food-beverage:title',
+    descKey: 'solutions-explorer:app-food-beverage:desc',
     link: '/abb-robotics-food-beverage',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -82,8 +83,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Cleanroom Applications',
-    description: 'ISO-certified cleanroom robots for semiconductor, pharmaceutical, and medical manufacturing.',
+    titleKey: 'solutions-explorer:app-cleanroom:title',
+    descKey: 'solutions-explorer:app-cleanroom:desc',
     link: '/abb-robotics-cleanroom-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -106,8 +107,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Lab Automation',
-    description: 'Precision robots for laboratory testing, sample handling, and research applications.',
+    titleKey: 'solutions-explorer:app-lab:title',
+    descKey: 'solutions-explorer:app-lab:desc',
     link: '/abb-robotics-lab-automation',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -128,8 +129,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Material Handling',
-    description: 'Pick and place, machine tending, and automated material transport.',
+    titleKey: 'solutions-explorer:app-material-handling:title',
+    descKey: 'solutions-explorer:app-material-handling:desc',
     link: '/abb-robotics-material-handling',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -150,8 +151,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Packaging',
-    description: 'High-speed picking, packing, and case handling for manufacturing and logistics.',
+    titleKey: 'solutions-explorer:app-packaging:title',
+    descKey: 'solutions-explorer:app-packaging:desc',
     link: '/abb-robotics-packaging',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -173,8 +174,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Palletizing and Depalletizing',
-    description: 'End-of-line palletizing and depalletizing solutions for bags, boxes, crates, and bottles.',
+    titleKey: 'solutions-explorer:app-palletizing:title',
+    descKey: 'solutions-explorer:app-palletizing:desc',
     link: '/abb-robotics-palletizing-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -200,8 +201,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Sanding & Polishing',
-    description: 'Precision surface finishing, deburring, and grinding for consistent quality.',
+    titleKey: 'solutions-explorer:app-sanding:title',
+    descKey: 'solutions-explorer:app-sanding:desc',
     link: '/abb-robotics-sanding-polishing',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -226,8 +227,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Paint',
-    description: 'Automated spray painting and surface finishing for automotive and industrial applications.',
+    titleKey: 'solutions-explorer:app-paint:title',
+    descKey: 'solutions-explorer:app-paint:desc',
     link: '/abb-robotics-paint-automation',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -252,8 +253,8 @@ const applicationsData = [
     ),
   },
   {
-    title: 'Welding',
-    description: 'Arc welding, MIG/TIG welding, and laser welding automation.',
+    titleKey: 'solutions-explorer:app-welding:title',
+    descKey: 'solutions-explorer:app-welding:desc',
     link: '/abb-robotics-welding-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -281,8 +282,8 @@ const applicationsData = [
 
 const robotTypesData = [
   {
-    title: 'Collaborative Robots (Cobots)',
-    description: 'Safe human-robot collaboration without safety fencing. Ideal for flexible, space-constrained applications.',
+    titleKey: 'solutions-explorer:robot-cobot:title',
+    descKey: 'solutions-explorer:robot-cobot:desc',
     link: '/abb-robotics-collaborative-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -298,8 +299,8 @@ const robotTypesData = [
     ),
   },
   {
-    title: 'Articulated Robots',
-    description: '6-axis industrial robots for maximum flexibility. Payloads from 3kg to 800kg.',
+    titleKey: 'solutions-explorer:robot-articulated:title',
+    descKey: 'solutions-explorer:robot-articulated:desc',
     link: '/abb-robotics-articulated-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -318,8 +319,8 @@ const robotTypesData = [
     ),
   },
   {
-    title: 'SCARA Robots',
-    description: 'High-speed, precise robots for assembly and pick-and-place operations.',
+    titleKey: 'solutions-explorer:robot-scara:title',
+    descKey: 'solutions-explorer:robot-scara:desc',
     link: '/abb-robotics-scara-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -338,8 +339,8 @@ const robotTypesData = [
     ),
   },
   {
-    title: 'Delta Robots',
-    description: 'Ultra-fast picking robots for packaging and sorting applications.',
+    titleKey: 'solutions-explorer:robot-delta:title',
+    descKey: 'solutions-explorer:robot-delta:desc',
     link: '/abb-robotics-delta-robots',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,8 +349,8 @@ const robotTypesData = [
     ),
   },
   {
-    title: 'Paint Robots',
-    description: 'Specialized robots for automotive and industrial painting applications.',
+    titleKey: 'solutions-explorer:robot-paint:title',
+    descKey: 'solutions-explorer:robot-paint:desc',
     link: '/abb-robotics-paint-automation',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -374,8 +375,8 @@ const robotTypesData = [
     ),
   },
   {
-    title: 'Palletizing Robots',
-    description: 'Heavy-duty robots designed for end-of-line palletizing operations.',
+    titleKey: 'solutions-explorer:robot-palletizing:title',
+    descKey: 'solutions-explorer:robot-palletizing:desc',
     link: '/palletizing-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -416,9 +417,9 @@ export default function SolutionsExplorer() {
   return (
     <section className="solutions-explorer-section" id="explore-robots">
       <div className="container">
-        <h2 className="solutions-explorer-heading">Explore ABB Robotics Solutions</h2>
+        <h2 className="solutions-explorer-heading"><Tr id="solutions-explorer:heading" /></h2>
         <p className="solutions-explorer-subheading">
-          Find the right automation solution for your needs
+          <Tr id="solutions-explorer:subheading" />
         </p>
 
         <div className="solutions-tabs">
@@ -428,7 +429,7 @@ export default function SolutionsExplorer() {
               className={`solutions-tab ${activeTab === tab.id ? 'active' : ''}`}
               onClick={() => setActiveTab(tab.id)}
             >
-              {tab.label}
+              <Tr id={`solutions-explorer:tab-${tab.id}`} />
             </button>
           ))}
         </div>
@@ -444,10 +445,10 @@ export default function SolutionsExplorer() {
                 ) : (
                   <div className="solution-card-icon">{item.icon}</div>
                 )}
-                <h3 className="solution-card-title">{item.title}</h3>
-                <p className="solution-card-description">{item.description}</p>
+                <h3 className="solution-card-title"><Tr id={item.titleKey} /></h3>
+                <p className="solution-card-description"><Tr id={item.descKey} /></p>
                 {item.link && (
-                  <span className="solution-card-link">Learn More →</span>
+                  <span className="solution-card-link"><Tr id="solutions-explorer:learn-more" /></span>
                 )}
               </>
             );

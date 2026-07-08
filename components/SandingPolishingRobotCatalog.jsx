@@ -1,15 +1,18 @@
 'use client';
 
+import { useLocale } from './LocaleContext';
+
 const sandingPolishingRobotsData = [
   {
     id: 'irb-1300',
     name: 'IRB 1300',
     type: 'Articulated',
+    typeKey: 'catalog:type-articulated',
     image: 'https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L',
-    description: 'The IRB 1300 is a versatile robot ideal for polishing applications. With payloads from 7-12 kg and reach up to 1.4m, it delivers precise motion control for consistent surface finishing.',
+    descKey: 'sanding:robot:irb-1300:desc',
     payload: '7-12 kg',
     reach: '0.9-1.4 m',
-    applications: ['Polishing', 'Sanding', 'Deburring', 'Surface Finishing'],
+    appKeys: ['sanding:robot:irb-1300:app1', 'sanding:robot:irb-1300:app2', 'sanding:robot:irb-1300:app3', 'sanding:robot:irb-1300:app4'],
     specs: {
       'Payload': '7 / 10 / 11 / 12 kg',
       'Reach': '900 / 1150 / 1400 mm',
@@ -22,11 +25,12 @@ const sandingPolishingRobotsData = [
     id: 'irb-4600',
     name: 'IRB 4600',
     type: 'Articulated',
+    typeKey: 'catalog:type-articulated',
     image: 'https://media-d.global.abb/is/image/abbc/IRB%204600-2:16x9-L',
-    description: 'The IRB 4600 is a medium-payload robot perfect for polishing and deburring applications. With payloads up to 60 kg and reach up to 2.55m, it handles larger parts with precision.',
+    descKey: 'sanding:robot:irb-4600:desc',
     payload: '20-60 kg',
     reach: '2.05-2.55 m',
-    applications: ['Polishing', 'Deburring', 'Sanding', 'Grinding'],
+    appKeys: ['sanding:robot:irb-4600:app1', 'sanding:robot:irb-4600:app2', 'sanding:robot:irb-4600:app3', 'sanding:robot:irb-4600:app4'],
     specs: {
       'Payload': '20 / 40 / 45 / 60 kg',
       'Reach': '2050 / 2050 / 2550 / 2050 mm',
@@ -38,12 +42,13 @@ const sandingPolishingRobotsData = [
 ];
 
 export default function SandingPolishingRobotCatalog() {
+  const { t } = useLocale();
   return (
     <section className="robot-catalog-section" id="sanding-polishing-robots">
       <div className="container">
-        <h2 className="robot-catalog-heading">ABB Robots for Sanding & Polishing</h2>
+        <h2 className="robot-catalog-heading">{t('abb-sanding:catalog:heading')}</h2>
         <p className="robot-catalog-subheading">
-          Precision robots for consistent surface finishing and quality control
+          {t('abb-sanding:catalog:subheading')}
         </p>
 
         <div className="robot-cards-grid">
@@ -55,34 +60,34 @@ export default function SandingPolishingRobotCatalog() {
                   alt={robot.name}
                   loading="lazy"
                 />
-                <span className="iso-badge">{robot.type}</span>
+                <span className="iso-badge">{t(robot.typeKey)}</span>
               </div>
               <div className="robot-grid-content">
                 <h3 className="robot-grid-name">{robot.name}</h3>
-                <p className="robot-grid-description">{robot.description}</p>
+                <p className="robot-grid-description">{t(robot.descKey)}</p>
                 
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Payload:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-payload')}</span>
                     <span className="grid-spec-value">{robot.payload}</span>
                   </div>
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Reach:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-reach')}</span>
                     <span className="grid-spec-value">{robot.reach}</span>
                   </div>
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.applications.slice(0, 3).map((app, index) => (
-                    <span key={index} className="application-tag">{app}</span>
+                  {robot.appKeys.slice(0, 3).map((appKey, index) => (
+                    <span key={index} className="application-tag">{t(appKey)}</span>
                   ))}
-                  {robot.applications.length > 3 && (
-                    <span className="application-tag more">+{robot.applications.length - 3}</span>
+                  {robot.appKeys.length > 3 && (
+                    <span className="application-tag more">+{robot.appKeys.length - 3}</span>
                   )}
                 </div>
 
                 <a href="#request-quote" className="robot-grid-cta">
-                  Request a Quote
+                  {t('catalog:cta')}
                 </a>
               </div>
             </div>

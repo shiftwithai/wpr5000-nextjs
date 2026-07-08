@@ -1,14 +1,16 @@
 'use client';
 
+import { useLocale } from './LocaleContext';
+
 const paintRobotsData = [
   {
     id: 'irb-5350',
     name: 'IRB 5350',
     type: 'Paint',
-    description: 'The IRB 5350 door opener robot is a compact and precise robot assistant for automotive interior painting, both for stop-and-go and moving-line solutions. A specially designed door opener tool with integrated sensors for search and force feedback makes this an efficient and important part of the interior paint zone.',
+    descKey: 'paint-robots:irb-5350:desc',
     payload: 'Door Opener',
     reach: 'Compact',
-    applications: ['Interior Painting', 'Door Opening', 'Automotive', 'Moving-Line'],
+    appKeys: ['paint-robots:irb-5350:app1', 'paint-robots:irb-5350:app2', 'paint-robots:irb-5350:app3', 'paint-robots:irb-5350:app4'],
     specs: {
       'Application': 'Door opener',
       'Design': 'Compact and precise',
@@ -21,10 +23,10 @@ const paintRobotsData = [
     id: 'irb-5500-22',
     name: 'IRB 5500-22 FlexPainter',
     type: 'Paint',
-    description: 'The IRB 5500 FlexPainter takes painting closer to perfection by integrating the paint application equipment. Combined with its large work area and high acceleration and painting speed, the result is the most efficient and flexible paint robot solution for basically any application.',
+    descKey: 'paint-robots:irb-5500-22:desc',
     payload: 'Integrated',
     reach: 'Large Work Area',
-    applications: ['Automotive Painting', 'Industrial Painting', 'Exterior Painting', 'Interior Painting'],
+    appKeys: ['paint-robots:irb-5500-22:app1', 'paint-robots:irb-5500-22:app2', 'paint-robots:irb-5500-22:app3', 'paint-robots:irb-5500-22:app4'],
     specs: {
       'Equipment': 'Integrated paint application',
       'Work Area': 'Large',
@@ -37,10 +39,10 @@ const paintRobotsData = [
     id: 'irb-5500-25',
     name: 'IRB 5500-25 Elevated Rail',
     type: 'Paint',
-    description: 'The Elevated Rail for the IRB 5500 system is one of the most advanced paint solutions available on the market. Ideally suited for both interior and exterior automotive painting as well as other paint applications.',
+    descKey: 'paint-robots:irb-5500-25:desc',
     payload: 'Elevated Rail',
     reach: 'Extended',
-    applications: ['Interior Painting', 'Exterior Painting', 'Automotive', 'Advanced Solutions'],
+    appKeys: ['paint-robots:irb-5500-25:app1', 'paint-robots:irb-5500-25:app2', 'paint-robots:irb-5500-25:app3', 'paint-robots:irb-5500-25:app4'],
     specs: {
       'System': 'Elevated Rail',
       'Technology': 'Most advanced',
@@ -53,10 +55,10 @@ const paintRobotsData = [
     id: 'irb-5500-27',
     name: 'IRB 5500-27',
     type: 'Paint',
-    description: 'IRB 5500-27 is a new variant of the innovative IRB 5500 robot family. Featuring integrated 7-axes that enable a wider working range and flexible installation positioning, IRB 5500-27 is capable of supporting both interior and exterior automotive painting, as well as other paint applications.',
+    descKey: 'paint-robots:irb-5500-27:desc',
     payload: '7-Axis',
     reach: 'Wide Range',
-    applications: ['Interior Painting', 'Exterior Painting', 'Flexible Positioning', 'Automotive'],
+    appKeys: ['paint-robots:irb-5500-27:app1', 'paint-robots:irb-5500-27:app2', 'paint-robots:irb-5500-27:app3', 'paint-robots:irb-5500-27:app4'],
     specs: {
       'Axes': '7 (integrated)',
       'Working Range': 'Wider',
@@ -69,10 +71,10 @@ const paintRobotsData = [
     id: 'irb-5510',
     name: 'IRB 5510 FlexPainter',
     type: 'Paint',
-    description: 'IRB 5510 FlexPainter is a highly flexible and accurate medium-sized paint robot for automotive small parts and general industrial painting. This robot provides a shorter cycle time, process optimization, and digital platform to ensure premium paint quality and uptime.',
+    descKey: 'paint-robots:irb-5510:desc',
     payload: 'Medium',
     reach: 'Medium',
-    applications: ['Small Parts', 'Industrial Painting', 'Automotive Parts', 'General Industry'],
+    appKeys: ['paint-robots:irb-5510:app1', 'paint-robots:irb-5510:app2', 'paint-robots:irb-5510:app3', 'paint-robots:irb-5510:app4'],
     specs: {
       'Size': 'Medium',
       'Accuracy': 'Highly accurate',
@@ -84,12 +86,13 @@ const paintRobotsData = [
 ];
 
 export default function PaintRobotsCatalog() {
+  const { t } = useLocale();
   return (
     <section className="robot-catalog-section" id="paint-robots">
       <div className="container">
-        <h2 className="robot-catalog-heading">ABB Paint Robots</h2>
+        <h2 className="robot-catalog-heading">{t('abb-paint:catalog:heading')}</h2>
         <p className="robot-catalog-subheading">
-          Precision painting solutions for automotive and industrial applications
+          {t('abb-paint:catalog:subheading')}
         </p>
 
         <div className="robot-cards-grid">
@@ -101,34 +104,34 @@ export default function PaintRobotsCatalog() {
                   alt={robot.name}
                   loading="lazy"
                 />
-                <span className="iso-badge">Paint</span>
+                <span className="iso-badge">{t('abb-paint:catalog:badge')}</span>
               </div>
               <div className="robot-grid-content">
                 <h3 className="robot-grid-name">{robot.name}</h3>
-                <p className="robot-grid-description">{robot.description}</p>
+                <p className="robot-grid-description">{t(robot.descKey)}</p>
                 
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Type:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-type')}</span>
                     <span className="grid-spec-value">{robot.payload}</span>
                   </div>
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">Reach:</span>
+                    <span className="grid-spec-label">{t('catalog:spec-reach')}</span>
                     <span className="grid-spec-value">{robot.reach}</span>
                   </div>
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.applications.slice(0, 3).map((app, index) => (
-                    <span key={index} className="application-tag">{app}</span>
+                  {robot.appKeys.slice(0, 3).map((appKey, index) => (
+                    <span key={index} className="application-tag">{t(appKey)}</span>
                   ))}
-                  {robot.applications.length > 3 && (
-                    <span className="application-tag more">+{robot.applications.length - 3}</span>
+                  {robot.appKeys.length > 3 && (
+                    <span className="application-tag more">+{robot.appKeys.length - 3}</span>
                   )}
                 </div>
 
                 <a href="#request-quote" className="robot-grid-cta">
-                  Request a Quote
+                  {t('catalog:cta')}
                 </a>
               </div>
             </div>

@@ -20,6 +20,7 @@ import RobotCatalog from "@/components/RobotCatalog";
 import SolutionsExplorer from "@/components/SolutionsExplorer";
 import FAQ from "@/components/FAQ";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import WhyProaxImage from "@/components/WhyProaxImage";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -43,6 +44,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     SolutionsExplorer,
     FAQ,
     TestimonialsCarousel,
+    WhyProaxImage,
     ...components,
   };
 }

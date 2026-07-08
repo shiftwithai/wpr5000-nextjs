@@ -21,12 +21,12 @@ const localeMap: Record<LocaleKey, LocaleData> = {
 
 interface LocaleContextValue {
   locale: LocaleKey;
-  t: (id: string) => string;
+  t: (id: string, values?: Record<string, string | number>) => string;
 }
 
 export const LocaleContext = createContext<LocaleContextValue>({
   locale: 'en',
-  t: (id) => id,
+  t: (id, values) => id,
 });
 
 export function LocaleProvider({
@@ -38,8 +38,17 @@ export function LocaleProvider({
 }) {
   const data = localeMap[locale] ?? enLocale;
 
-  const t = (id: string): string => {
-    return (data.terms as Record<string, string>)[id] ?? id;
+  const t = (id: string, values?: Record<string, string | number>): string => {
+    let text = (data.terms as Record<string, string>)[id] ?? id;
+    
+    // Replace placeholders like {count} with actual values
+    if (values) {
+      Object.keys(values).forEach((key) => {
+        text = text.replace(new RegExp(`\{${key}\}`, 'g'), String(values[key]));
+      });
+    }
+    
+    return text;
   };
 
   return (
