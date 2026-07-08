@@ -1457,5 +1457,7 @@ export default {
     'abb-amr:app:racking': 'Manutention de racks',
     'abb-amr:app:palletizing': 'Manutention de palettes',
     'abb-amr:app:logistics': 'Logistique d\'entrepôt',
+    'rc:app:Towing': 'Remorquage',
+    'rc:app:Warehouse logistics': 'Logistique d\'entrepôt',
   },
 }

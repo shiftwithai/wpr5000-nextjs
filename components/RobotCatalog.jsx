@@ -15,8 +15,40 @@ const robotsData = [
     reach: '1.34 - 1.96 m',
     payloadCategory: 'A,B,C',
     reachCategory: 'A,B',
-    controllers: ['OmniCore'],
-    productUrl: 'https://www.abb.com/global/en/areas/robotics/products/robots/collaborative-robots/powa'
+    controllers: ['OmniCore']
+  },
+  {
+    id: 'flexley-tug',
+    name: 'Flexley Tug (AMR T701 / T702 / T901)',
+    isNew: true,
+    applications: ['Material handling', 'Towing'],
+    payload: 'up to 10,000 kg',
+    reach: 'Visual SLAM',
+    payloadCategory: 'E',
+    reachCategory: '',
+    controllers: ['AMR Studio']
+  },
+  {
+    id: 'flexley-mover',
+    name: 'Flexley Mover (AMR P603 / P604)',
+    isNew: true,
+    applications: ['Material handling', 'Warehouse logistics'],
+    payload: 'up to 1,500 kg',
+    reach: 'Visual SLAM',
+    payloadCategory: 'E',
+    reachCategory: '',
+    controllers: ['AMR Studio']
+  },
+  {
+    id: 'flexley-stack',
+    name: 'Flexley Stack (AMR F712)',
+    isNew: true,
+    applications: ['Material handling', 'Palletizing'],
+    payload: 'up to 2,000 kg',
+    reach: 'Visual SLAM',
+    payloadCategory: 'E',
+    reachCategory: '',
+    controllers: ['AMR Studio']
   },
   {
     id: 'gofa-5',

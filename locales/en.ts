@@ -1457,5 +1457,7 @@ export default {
     'abb-amr:app:racking': 'Rack Handling',
     'abb-amr:app:palletizing': 'Pallet Handling',
     'abb-amr:app:logistics': 'Warehouse Logistics',
+    'rc:app:Towing': 'Towing',
+    'rc:app:Warehouse logistics': 'Warehouse logistics',
   },
 }
