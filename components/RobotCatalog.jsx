@@ -7,6 +7,18 @@ import { useLocale } from './LocaleContext';
 // Placeholder data - will be replaced with actual robot data
 const robotsData = [
   {
+    id: 'powa',
+    name: 'PoWa™ (CRB 1910 / 1920)',
+    isNew: true,
+    applications: ['Machine tending', 'Palletizing', 'Screwdriving', 'Arc welding', 'Material handling', 'Assembly'],
+    payload: '7 - 30 kg',
+    reach: '1.34 - 1.96 m',
+    payloadCategory: 'A,B,C',
+    reachCategory: 'A,B',
+    controllers: ['OmniCore'],
+    productUrl: 'https://www.abb.com/global/en/areas/robotics/products/robots/collaborative-robots/powa'
+  },
+  {
     id: 'gofa-5',
     name: 'GoFa 5 (CRB 15000)',
     applications: ['Material handling', 'Machine tending', 'Assembly', 'Screwdriving', 'Collaboration', 'Small parts assembly', 'Picking', 'Packaging'],
@@ -562,6 +574,7 @@ export default function RobotCatalog() {
                     >
                       {robot.name}
                     </a>
+                    {robot.isNew && <span className="new-badge">{t('abb:new-badge')}</span>}
                   </div>
                   <div className="card-cell card-cell-applications">
                     <div className="application-pills">

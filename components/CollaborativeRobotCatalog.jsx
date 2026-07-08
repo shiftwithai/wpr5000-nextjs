@@ -7,26 +7,33 @@ export default function CollaborativeRobotCatalog() {
 
   const collaborativeRobotsData = [
     {
+      id: 'powa',
+      name: 'PoWa™',
+      isNew: true,
+      image: 'https://media-d.global.abb/is/image/abbc/PoWa?wid=600',
+      description: t('abb-cobot:catalog:powa:description'),
+      spec1: { label: 'abb-cobot:catalog:spec-payload', value: '7 - 30 kg' },
+      spec2: { label: 'abb-cobot:catalog:spec-speed', value: 'up to 5.8 m/s' },
+      applications: [
+        t('abb-cobot:catalog:powa:app1'),
+        t('abb-cobot:catalog:powa:app2'),
+        t('abb-cobot:catalog:powa:app3'),
+        t('abb-cobot:catalog:powa:app4'),
+      ],
+    },
+    {
       id: 'gofa',
       name: 'GoFa™',
-      type: 'Collaborative',
       image: 'https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:16x9-L',
       description: t('abb-cobot:catalog:gofa:description'),
-      payload: '5 - 12 kg',
-      reach: '0.95 m',
+      spec1: { label: 'abb-cobot:catalog:spec-payload', value: '5 - 12 kg' },
+      spec2: { label: 'abb-cobot:catalog:spec-reach', value: '0.95 m' },
       applications: [
         t('abb-cobot:catalog:gofa:app1'),
         t('abb-cobot:catalog:gofa:app2'),
         t('abb-cobot:catalog:gofa:app3'),
         t('abb-cobot:catalog:gofa:app4'),
       ],
-      specs: {
-        'Payload': '5 / 10 / 12 kg',
-        'Reach': '950 mm',
-        'Speed': 'Class-leading',
-        'Safety': 'Collaborative',
-        'Ease of Use': 'Intuitive programming',
-      },
     },
   ];
 
@@ -42,6 +49,7 @@ export default function CollaborativeRobotCatalog() {
           {collaborativeRobotsData.map((robot) => (
             <div key={robot.id} className="robot-grid-card">
               <div className="robot-grid-image">
+                {robot.isNew && <span className="new-badge-corner">{t('abb:new-badge')}</span>}
                 <img
                   src={robot.image || `https://placehold.co/400x300/f5f5f5/666666?text=${encodeURIComponent(robot.name)}`}
                   alt={robot.name}
@@ -55,12 +63,12 @@ export default function CollaborativeRobotCatalog() {
 
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">{t('abb-cobot:catalog:spec-payload')}</span>
-                    <span className="grid-spec-value">{robot.payload}</span>
+                    <span className="grid-spec-label">{t(robot.spec1.label)}</span>
+                    <span className="grid-spec-value">{robot.spec1.value}</span>
                   </div>
                   <div className="grid-spec-item">
-                    <span className="grid-spec-label">{t('abb-cobot:catalog:spec-reach')}</span>
-                    <span className="grid-spec-value">{robot.reach}</span>
+                    <span className="grid-spec-label">{t(robot.spec2.label)}</span>
+                    <span className="grid-spec-value">{robot.spec2.value}</span>
                   </div>
                 </div>
 

@@ -282,6 +282,21 @@ const applicationsData = [
 
 const robotTypesData = [
   {
+    titleKey: 'solutions-explorer:robot-mobile:title',
+    descKey: 'solutions-explorer:robot-mobile:desc',
+    link: '/abb-robotics-mobile-robots',
+    isNew: true,
+    icon: (
+      <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <rect x="16" y="40" width="64" height="28" rx="5"/>
+        <rect x="26" y="30" width="30" height="12" rx="3"/>
+        <circle cx="34" cy="72" r="7"/>
+        <circle cx="64" cy="72" r="7"/>
+        <path d="M62 54 L82 54 M76 48 L84 54 L76 60" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
     titleKey: 'solutions-explorer:robot-cobot:title',
     descKey: 'solutions-explorer:robot-cobot:desc',
     link: '/abb-robotics-collaborative-robots',
@@ -445,7 +460,7 @@ export default function SolutionsExplorer() {
                 ) : (
                   <div className="solution-card-icon">{item.icon}</div>
                 )}
-                <h3 className="solution-card-title"><Tr id={item.titleKey} /></h3>
+                <h3 className="solution-card-title"><Tr id={item.titleKey} />{item.isNew && <span className="new-badge"><Tr id="abb:new-badge" /></span>}</h3>
                 <p className="solution-card-description"><Tr id={item.descKey} /></p>
                 {item.link && (
                   <span className="solution-card-link"><Tr id="solutions-explorer:learn-more" /></span>
@@ -453,7 +468,7 @@ export default function SolutionsExplorer() {
               </>
             );
             
-            const cardClass = `solution-card${item.image ? ' solution-card-with-image' : ''}${item.link ? ' solution-card-clickable' : ''}`;
+            const cardClass = `solution-card${item.image ? ' solution-card-with-image' : ''}${item.link ? ' solution-card-clickable' : ''}${item.isNew ? ' solution-card-new' : ''}`;
             
             return item.link ? (
               <a key={index} href={item.link} className={cardClass}>

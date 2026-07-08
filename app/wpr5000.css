@@ -944,6 +944,13 @@ button {
   line-height: 1.3;
 }
 
+.robot-grid-models {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: -2px 0 8px 0;
+}
+
 .robot-grid-description {
   font-size: 13px;
   color: #666;
@@ -5068,6 +5075,43 @@ button {
 
 .robot-grid-image {
   position: relative;
+}
+
+/* NEW product badges */
+.new-badge {
+  display: inline-block;
+  background-color: #FF000F;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.new-badge-corner {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  background-color: #FF000F;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.solution-card.solution-card-new {
+  border-color: #FF000F;
+  box-shadow: 0 4px 16px rgba(255, 0, 15, 0.10);
 }
 
 /* Solution Card Link Styles */
