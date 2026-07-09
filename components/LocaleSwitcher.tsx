@@ -1,29 +1,14 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { useLocale } from './LocaleContext';
-
-export default function LocaleSwitcher({ currentLocale: propLocale }: { currentLocale?: string }) {
-  const { locale: contextLocale } = useLocale();
-  const currentLocale = propLocale ?? contextLocale;
-  const other = currentLocale === 'fr-CA' ? 'EN' : 'FR';
-  const otherLocale = currentLocale === 'fr-CA' ? 'en' : 'fr-CA';
-  const router = useRouter();
-
-  const switchLocale = () => {
-    // Store in cookie so the server can read it on next request
-    document.cookie = `locale=${otherLocale}; path=/; max-age=31536000; SameSite=Lax`;
-    router.refresh();
-  };
-
-  return (
-    <button
-      onClick={switchLocale}
-      className="locale-switcher-btn"
-      aria-label={`Switch to ${other}`}
-      title={`Switch to ${other}`}
-    >
-      {other}
-    </button>
-  );
+// Built-in language-switcher UI is intentionally disabled.
+// The site is deployed behind a custom domain that provides its own language
+// switcher, so this button is hidden everywhere it's rendered (layout + pages).
+//
+// The locale system itself is unchanged. To switch language from a custom
+// control, set the `locale` cookie to 'en' or 'fr-CA' and refresh the route:
+//   document.cookie = `locale=fr-CA; path=/; max-age=31536000; SameSite=Lax`;
+//   router.refresh();
+// The server reads this cookie in app/layout.tsx and feeds it to LocaleProvider.
+export default function LocaleSwitcher(_props?: { currentLocale?: string }) {
+  return null;
 }
