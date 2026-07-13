@@ -19,10 +19,10 @@ const robotsData = [
   },
   {
     id: 'flexley-tug',
-    name: 'Flexley Tug (AMR T701 / T702 / T901)',
+    name: 'Flexley Tug (AMR T701 / T702)',
     isNew: true,
     applications: ['Material handling', 'Towing'],
-    payload: 'up to 10,000 kg',
+    payload: 'up to 2,000 kg',
     reach: 'Visual SLAM',
     payloadCategory: 'E',
     reachCategory: '',

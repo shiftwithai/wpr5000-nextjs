@@ -9,12 +9,12 @@ export default function MobileRobotCatalog() {
     {
       id: 'flexley-tug',
       name: 'Flexley Tug',
-      models: 'AMR T701 / T702 / T901',
+      models: 'AMR T701 / T702',
       isNew: true,
       image: 'https://media-d.global.abb/is/image/abbc/AMR-T701_front:4x3-L?wid=600&hei=450&fit=crop',
       description: t('abb-amr:tug:desc'),
       type: t('abb-amr:type-tug'),
-      payload: 'up to 10,000 kg',
+      payload: 'up to 2,000 kg',
       applications: [t('abb-amr:app:towing'), t('abb-amr:app:transport'), t('abb-amr:app:lineside')],
     },
     {
