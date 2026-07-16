@@ -1,0 +1,258 @@
+import HubSpotForm from '../../components/HubSpotForm'
+import ArticulatedRobotCatalog from './ArticulatedRobotCatalog'
+import Tr from '../../components/Tr'
+import LocaleSwitcher from '../../components/LocaleSwitcher'
+import WhyProaxImage from '../../components/WhyProaxImage'
+
+export const metadata = {
+  title: 'Articulated Robots - ABB Robotic Solutions | Proax',
+  description: 'ABB 6-axis articulated robots in small, medium, and large sizes. Industrial robots for manufacturing, welding, material handling, and assembly applications.',
+};
+
+export default function Page() {
+  return (
+    <>
+      <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 9999 }}>
+        <LocaleSwitcher />
+      </div>
+
+      <section className="hero-section">
+        <div className="container">
+          <div className="hero-grid">
+            <div className="hero-content">
+              <h1 className="hero-heading">
+                <Tr id="abb-articulated:hero:heading" />
+              </h1>
+
+              <div className="hero-subheading">
+                <Tr id="abb-articulated:hero:subheading" />
+              </div>
+
+              <p className="hero-supporting-text">
+                <Tr id="abb-articulated:hero:supporting-text" />
+              </p>
+
+              <div className="cta-wrapper">
+                <a href="#request-quote" className="cta-button-inline">
+                  <Tr id="abb-articulated:hero:cta-primary" />
+                </a>
+                <a href="#articulated-robots" className="cta-button-secondary">
+                  <Tr id="abb-articulated:hero:cta-secondary" />
+                </a>
+              </div>
+            </div>
+
+            <div className="hero-visual">
+              <div className="product-video-wrapper">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/IRB_6710_9be1a3a38f.jpeg"
+                  style={{ borderRadius: '16px' }}
+                  alt="ABB Articulated Robot"
+                  width="600"
+                  loading="eager"
+                />
+                <div className="image-badge">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-articulated:hero:badge" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ArticulatedRobotCatalog />
+
+      <section className="cleanroom-industries-section">
+        <div className="container">
+          <h2 className="section-heading-center"><Tr id="abb-articulated:app-robots:heading" /></h2>
+          <p className="section-subheading-center">
+            <Tr id="abb-articulated:app-robots:subheading" />
+          </p>
+
+          <div className="industries-grid">
+            <a href="/abb-robotics-paint-automation" className="industry-card industry-card-clickable">
+              <div className="industry-image">
+                <img 
+                  src="https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:1x1-L"
+                  alt="Paint Robots"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:app-paint:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:app-paint:description" />
+                </p>
+                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
+              </div>
+            </a>
+
+            <a href="/abb-robotics-packaging" className="industry-card industry-card-clickable">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/IRB_460_1_1x1_L_64daed3161.webp"
+                  alt="Palletizing Robots"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:app-palletizing:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:app-palletizing:description" />
+                </p>
+                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
+              </div>
+            </a>
+
+            <a href="/abb-robotics-cleanroom-robots" className="industry-card industry-card-clickable">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/IRB_930_ed0218f9a2.webp"
+                  alt="Cleanroom Robots"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:app-cleanroom:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:app-cleanroom:description" />
+                </p>
+                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="cleanroom-industries-section">
+        <div className="container">
+          <h2 className="section-heading-center"><Tr id="abb-articulated:industries:heading" /></h2>
+          <p className="section-subheading-center">
+            <Tr id="abb-articulated:industries:subheading" />
+          </p>
+
+          <div className="industries-grid">
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/automotive_6cf6d32373.png"
+                  alt="Automotive Manufacturing"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:industry-automotive:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:industry-automotive:description" />
+                </p>
+              </div>
+            </div>
+
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/electronics_82045e6a85.png"
+                  alt="Electronics Manufacturing"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:industry-electronics:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:industry-electronics:description" />
+                </p>
+              </div>
+            </div>
+
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/general_industry_9212827856.png"
+                  alt="General Industry"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-articulated:industry-general:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-articulated:industry-general:description" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="why-proax-section">
+        <div className="container">
+          <div className="why-proax-grid">
+            <div className="why-proax-image">
+              <WhyProaxImage />
+            </div>
+            <div className="why-proax-content">
+              <h2 className="why-proax-heading"><Tr id="abb-articulated:why-proax:heading" /></h2>
+              <p className="why-proax-text">
+                <Tr id="abb-articulated:why-proax:text" />
+              </p>
+              <div className="why-proax-stats">
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-articulated:why-proax:stat1-number" /></span>
+                  <span className="stat-label"><Tr id="abb-articulated:why-proax:stat1-label" /></span>
+                </div>
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-articulated:why-proax:stat2-number" /></span>
+                  <span className="stat-label"><Tr id="abb-articulated:why-proax:stat2-label" /></span>
+                </div>
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-articulated:why-proax:stat3-number" /></span>
+                  <span className="stat-label"><Tr id="abb-articulated:why-proax:stat3-label" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="quote-section" id="request-quote">
+        <div className="container">
+          <div className="quote-grid">
+            <div className="quote-content">
+              <h2 className="quote-heading"><Tr id="abb-articulated:quote:heading" /></h2>
+              <p className="quote-description">
+                <Tr id="abb-articulated:quote:description" />
+              </p>
+
+              <div className="quote-features">
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-articulated:quote:feature1" /></span>
+                </div>
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-articulated:quote:feature2" /></span>
+                </div>
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-articulated:quote:feature3" /></span>
+                </div>
+              </div>
+            </div>
+
+            <div className="quote-form-wrapper">
+              <HubSpotForm formType="abb" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

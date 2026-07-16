@@ -1,0 +1,253 @@
+import HubSpotForm from '../../components/HubSpotForm'
+import CleanroomRobotCatalog from './CleanroomRobotCatalog'
+import Tr from '../../components/Tr'
+import WhyProaxImage from '../../components/WhyProaxImage'
+
+export const metadata = {
+  title: 'Cleanroom Robots - ISO 14644-1 Certified ABB Robots | Proax',
+  description: 'ABB cleanroom robots certified to ISO 14644-1 for life sciences, healthcare, pharmaceuticals, semiconductors, and electronics manufacturing. Available through Proax Canada.',
+};
+
+export default function Page() {
+  return (
+    <>
+      <section className="hero-section">
+        <div className="container">
+          <div className="hero-grid">
+            <div className="hero-content">
+              <h1 className="hero-heading">
+                <Tr id="abb-cleanroom:hero:heading" />
+              </h1>
+
+              <div className="hero-subheading">
+                <Tr id="abb-cleanroom:hero:subheading" />
+              </div>
+
+              <p className="hero-supporting-text">
+                <Tr id="abb-cleanroom:hero:text" />
+              </p>
+
+              <div className="cta-wrapper">
+                <a href="#request-quote" className="cta-button-inline">
+                  <Tr id="abb-cleanroom:hero:cta1" />
+                </a>
+                <a href="#cleanroom-catalog" className="cta-button-secondary">
+                  <Tr id="abb-cleanroom:hero:cta2" />
+                </a>
+              </div>
+            </div>
+
+            <div className="hero-visual">
+              <div className="product-video-wrapper">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/IRB_930_ed0218f9a2.webp"
+                  style={{ borderRadius: '16px' }}
+                  alt="ABB Cleanroom Robot"
+                  width="600"
+                  loading="eager"
+                />
+                <div className="image-badge">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-cleanroom:hero:badge" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cleanroom-benefits-section">
+        <div className="container">
+          <h2 className="section-heading-center"><Tr id="abb-cleanroom:benefits:heading" /></h2>
+          <p className="section-subheading-center">
+            <Tr id="abb-cleanroom:benefits:subheading" />
+          </p>
+
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h3 className="benefit-title"><Tr id="abb-cleanroom:benefit1:title" /></h3>
+              <p className="benefit-description">
+                <Tr id="abb-cleanroom:benefit1:desc" />
+              </p>
+            </div>
+
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 className="benefit-title"><Tr id="abb-cleanroom:benefit2:title" /></h3>
+              <p className="benefit-description">
+                <Tr id="abb-cleanroom:benefit2:desc" />
+              </p>
+            </div>
+
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 6L6 7M6 7L3 8M6 7V4M6 7V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 10.2289 3.48 8.56775 4.32 7.13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  <path d="M12 8V12L15 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 className="benefit-title"><Tr id="abb-cleanroom:benefit3:title" /></h3>
+              <p className="benefit-description">
+                <Tr id="abb-cleanroom:benefit3:desc" />
+              </p>
+            </div>
+
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h3 className="benefit-title"><Tr id="abb-cleanroom:benefit4:title" /></h3>
+              <p className="benefit-description">
+                <Tr id="abb-cleanroom:benefit4:desc" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CleanroomRobotCatalog />
+
+      <section className="cleanroom-industries-section">
+        <div className="container">
+          <h2 className="section-heading-center"><Tr id="abb-cleanroom:industries:heading" /></h2>
+          <p className="section-subheading-center">
+            <Tr id="abb-cleanroom:industries:subheading" />
+          </p>
+
+          <div className="industries-grid">
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/Life_Sciences_and_Healthcare_bb40e8c9a8.png"
+                  alt="Life Sciences and Healthcare"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-cleanroom:industry1:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-cleanroom:industry1:desc" />
+                </p>
+              </div>
+            </div>
+
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/electronics_82045e6a85.png"
+                  alt="Electronics Manufacturing"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-cleanroom:industry2:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-cleanroom:industry2:desc" />
+                </p>
+              </div>
+            </div>
+
+            <div className="industry-card">
+              <div className="industry-image">
+                <img 
+                  src="https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png"
+                  alt="Food and Beverage"
+                  loading="lazy"
+                />
+              </div>
+              <div className="industry-content">
+                <h3 className="industry-title"><Tr id="abb-cleanroom:industry3:title" /></h3>
+                <p className="industry-description">
+                  <Tr id="abb-cleanroom:industry3:desc" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="why-proax-section">
+        <div className="container">
+          <div className="why-proax-grid">
+            <div className="why-proax-image">
+              <WhyProaxImage />
+            </div>
+            <div className="why-proax-content">
+              <h2 className="why-proax-heading"><Tr id="abb-cleanroom:why-proax:heading" /></h2>
+              <p className="why-proax-text">
+                <Tr id="abb-cleanroom:why-proax:text" />
+              </p>
+              <div className="why-proax-stats">
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-cleanroom:why-proax:stat1-number" /></span>
+                  <span className="stat-label"><Tr id="abb-cleanroom:why-proax:stat1-label" /></span>
+                </div>
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-cleanroom:why-proax:stat2-number" /></span>
+                  <span className="stat-label"><Tr id="abb-cleanroom:why-proax:stat2-label" /></span>
+                </div>
+                <div className="why-proax-stat">
+                  <span className="stat-number"><Tr id="abb-cleanroom:why-proax:stat3-number" /></span>
+                  <span className="stat-label"><Tr id="abb-cleanroom:why-proax:stat3-label" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="quote-section" id="request-quote">
+        <div className="container">
+          <div className="quote-grid">
+            <div className="quote-content">
+              <h2 className="quote-heading"><Tr id="abb-cleanroom:quote:heading" /></h2>
+              <p className="quote-description">
+                <Tr id="abb-cleanroom:quote:description" />
+              </p>
+
+              <div className="quote-features">
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-cleanroom:quote:feature1" /></span>
+                </div>
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-cleanroom:quote:feature2" /></span>
+                </div>
+                <div className="quote-feature">
+                  <svg className="quote-feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span><Tr id="abb-cleanroom:quote:feature3" /></span>
+                </div>
+              </div>
+            </div>
+
+            <div className="quote-form-wrapper">
+              <HubSpotForm formType="abb" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
