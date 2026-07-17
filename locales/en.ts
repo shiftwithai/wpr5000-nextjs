@@ -29,7 +29,7 @@ export default {
     'wpr5000:audience:heading': 'Built for Your Operation',
     'wpr5000:audience:card1:title': 'Growing Operations',
     'wpr5000:audience:card1:subtitle': '50-200 employees',
-    'wpr5000:audience:card1:li1': 'Simple integration with any robot brand',
+    'wpr5000:audience:card1:li1': 'Compatible with any robot brand',
     'wpr5000:audience:card1:li2': 'One tool changer system as you scale',
     'wpr5000:audience:card2:title': 'Multi-Robot Facilities',
     'wpr5000:audience:card2:subtitle': '3-20 robots',
@@ -140,7 +140,7 @@ export default {
 
     // Why Proax
     'wpr5000:why-proax:heading': 'Why Proax',
-    'wpr5000:why-proax:text': "We don't just sell tool changers. We support them. Our in-house engineers provide free technical consultation from selection to integration. Local stock, fast shipping, real expertise.",
+    'wpr5000:why-proax:text': "We don't just sell tool changers. We support them. Our in-house engineers provide free technical consultation from selection to support. Local stock, fast shipping, real expertise.",
     'wpr5000:why-proax:stat1:number': '60+',
     'wpr5000:why-proax:stat1:label': 'Years in Automation',
     'wpr5000:why-proax:stat2:number': '13',
@@ -184,7 +184,7 @@ export default {
     
     // Why Proax Section
     'abb:why-proax:heading': 'Why Proax',
-    'abb:why-proax:text': 'We don\'t just sell robots. We support them. Our ABB-certified engineers provide free technical consultation from selection to integration. Local stock, fast shipping, real expertise.',
+    'abb:why-proax:text': 'We don\'t just sell robots. We support them. Our ABB-certified engineers provide free technical consultation from selection to support. Local stock, fast shipping, real expertise.',
     'abb:why-proax:stat1-number': '60+',
     'abb:why-proax:stat1-label': 'Years in Automation',
     'abb:why-proax:stat2-number': '13',
@@ -195,7 +195,7 @@ export default {
     
     // ABB Value Provider Section
     'abb:value:heading': 'ABB Value Provider Proax',
-    'abb:value:text': 'Proax is certified by ABB to design, integrate, and support complete ABB automation solutions.',
+    'abb:value:text': 'Proax is certified by ABB to design, deliver, and support complete ABB automation solutions.',
     'abb:value:subheading': 'Key Benefits',
     'abb:value:benefit1': 'Certified ABB Expertise',
     'abb:value:benefit2': 'Reduced Project Risk',
@@ -219,7 +219,7 @@ export default {
     // Hero Section
     'abb-cobot:hero:heading': 'ABB Collaborative Robots',
     'abb-cobot:hero:subheading': 'Safe, flexible automation designed for human-robot collaboration.',
-    'abb-cobot:hero:supporting-text': 'ABB\'s GoFa collaborative robot series enables safe human-robot collaboration without the need for safety fencing. Fast, versatile, and designed for easy deployment, GoFa cobots seamlessly integrate into existing production environments.',
+    'abb-cobot:hero:supporting-text': 'ABB\'s GoFa collaborative robot series enables safe human-robot collaboration without the need for safety fencing. Fast, versatile, and designed for easy deployment, GoFa cobots fit seamlessly into existing production environments.',
     'abb-cobot:hero:cta-primary': 'Request a Quote',
     'abb-cobot:hero:cta-secondary': 'View Cobots',
     'abb-cobot:hero:image-alt': 'ABB Collaborative Robot',
@@ -231,11 +231,11 @@ export default {
     'abb-cobot:benefit1:title': 'Safe Collaboration',
     'abb-cobot:benefit1:description': 'Work safely alongside humans without the need for safety fencing or barriers.',
     'abb-cobot:benefit2:title': 'Easy Deployment',
-    'abb-cobot:benefit2:description': 'Quick setup and intuitive programming for fast integration into any environment.',
+    'abb-cobot:benefit2:description': 'Quick setup and intuitive programming for fast deployment in any environment.',
     'abb-cobot:benefit3:title': 'Flexible Automation',
     'abb-cobot:benefit3:description': 'Easily redeploy cobots to different tasks as production needs change.',
     'abb-cobot:benefit4:title': 'Space Efficient',
-    'abb-cobot:benefit4:description': 'Compact footprint allows integration into space-constrained production areas.',
+    'abb-cobot:benefit4:description': 'Compact footprint fits into space-constrained production areas.',
     
     // Industries Section
     'abb-cobot:industries:heading': 'Industries We Serve',
@@ -268,7 +268,7 @@ export default {
     
     // Why Proax Section
     'abb-cobot:why-proax:heading': 'Why Proax for Collaborative Robots',
-    'abb-cobot:why-proax:text': 'Proax is your trusted ABB collaborative robotics partner in Canada. Our ABB-certified engineers provide expert consultation, cobot selection, and turnkey integration for collaborative automation applications.',
+    'abb-cobot:why-proax:text': 'Proax is your trusted ABB collaborative robotics partner in Canada. Our ABB-certified engineers provide expert consultation, cobot selection, and end-to-end support for collaborative automation applications.',
     'abb-cobot:why-proax:stat1-number': '60+',
     'abb-cobot:why-proax:stat1-label': 'Years in Automation',
     'abb-cobot:why-proax:stat2-number': '13',
@@ -335,7 +335,7 @@ export default {
     'abb-articulated:app-paint:title': 'Paint Robots',
     'abb-articulated:app-paint:description': 'A complete range of paint robots to help you increase the productivity and quality of your paint shop operations. Designed for automotive interior & exterior painting, tiers, and general small & medium parts painting applications.',
     'abb-articulated:app-palletizing:title': 'Palletizing Robots',
-    'abb-articulated:app-palletizing:description': 'Our 4-axis palletizing robots are designed for high-speed, precise, and efficient material handling, optimizing automation in packaging and logistics. With a compact footprint, they ensure seamless integration into production lines.',
+    'abb-articulated:app-palletizing:description': 'Our 4-axis palletizing robots are designed for high-speed, precise, and efficient material handling, optimizing automation in packaging and logistics. With a compact footprint, they fit seamlessly into production lines.',
     'abb-articulated:app-cleanroom:title': 'Cleanroom Robots',
     'abb-articulated:app-cleanroom:description': 'Our cleanroom robots are designed for manufacturing environments that need the highest levels of cleanliness and the lowest levels of particle emission without sacrificing speed or performance.',
     'abb-articulated:app-link': 'Learn More →',
@@ -352,7 +352,7 @@ export default {
     
     // Why Proax Section
     'abb-articulated:why-proax:heading': 'Why Proax for Articulated Robots',
-    'abb-articulated:why-proax:text': 'Proax is your trusted ABB robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey automation integration for articulated robot applications across all industries.',
+    'abb-articulated:why-proax:text': 'Proax is your trusted ABB robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for articulated robot applications across all industries.',
     'abb-articulated:why-proax:stat1-number': '60+',
     'abb-articulated:why-proax:stat1-label': 'Years in Automation',
     'abb-articulated:why-proax:stat2-number': '13',
@@ -404,7 +404,7 @@ export default {
     
     // Why Proax Section
     'abb-welding:why-proax:heading': 'Why Proax for Welding Automation',
-    'abb-welding:why-proax:text': 'Proax specializes in ABB robotic welding automation for manufacturing environments. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey welding cell integration across Canada.',
+    'abb-welding:why-proax:text': 'Proax specializes in ABB robotic welding automation for manufacturing environments. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for welding cells across Canada.',
     'abb-welding:why-proax:stat1-number': '60+',
     'abb-welding:why-proax:stat1-label': 'Years in Automation',
     'abb-welding:why-proax:stat2-number': '13',
@@ -460,7 +460,7 @@ export default {
     
     // Why Proax Section
     'abb-packaging:why-proax:heading': 'Why Proax for Packaging Automation',
-    'abb-packaging:why-proax:text': 'Proax specializes in ABB robotic automation for packaging applications. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey packaging automation integration across Canada.',
+    'abb-packaging:why-proax:text': 'Proax specializes in ABB robotic automation for packaging applications. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for packaging automation across Canada.',
     'abb-packaging:why-proax:stat1-number': '60+',
     'abb-packaging:why-proax:stat1-label': 'Years in Automation',
     'abb-packaging:why-proax:stat2-number': '13',
@@ -495,7 +495,7 @@ export default {
     'abb-material:benefit1:description': 'Automate line operations, kitting, and auxiliary flows with precision robotic handling.',
     'abb-material:benefit2:title': 'Efficiency',
     'abb-material:benefit2:description': 'Efficient delivery and pickup of raw materials, finished products, and in-process items on conveyor belts.',
-    'abb-material:benefit3:title': 'AMR Integration',
+    'abb-material:benefit3:title': 'AMR Compatibility',
     'abb-material:benefit3:description': 'Ideal for various material handling tasks, including machine tending, spot welding, cutting, and assembling.',
     
     // Industries Section
@@ -510,7 +510,7 @@ export default {
     
     // Why Proax Section
     'abb-material:why-proax:heading': 'Why Proax for Material Handling',
-    'abb-material:why-proax:text': 'Proax specializes in ABB robotic material handling automation for manufacturing environments. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey material handling integration across Canada.',
+    'abb-material:why-proax:text': 'Proax specializes in ABB robotic material handling automation for manufacturing environments. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for material handling across Canada.',
     'abb-material:why-proax:stat1-number': '60+',
     'abb-material:why-proax:stat1-label': 'Years in Automation',
     'abb-material:why-proax:stat2-number': '13',
@@ -685,7 +685,7 @@ export default {
     // Testimonial 1 - Automotive
     'testimonials:1:industry': 'Automotive',
     'testimonials:1:quote': 'ABB robots helped us increase throughput while maintaining the quality standards required in automotive manufacturing.',
-    'testimonials:1:detail': 'By automating our welding and material handling processes, we reduced cycle times, improved repeatability, and gained the flexibility to adapt quickly to new vehicle models. The integration was smooth, and the system has been running reliably across multiple shifts.',
+    'testimonials:1:detail': 'By automating our welding and material handling processes, we reduced cycle times, improved repeatability, and gained the flexibility to adapt quickly to new vehicle models. The rollout was smooth, and the system has been running reliably across multiple shifts.',
     'testimonials:1:name': '— Manufacturing Engineering Manager',
     'testimonials:1:company': 'Automotive OEM',
     
@@ -713,7 +713,7 @@ export default {
     // Testimonial 5 - Logistics
     'testimonials:5:industry': 'Logistics',
     'testimonials:5:quote': 'ABB robotic automation significantly improved efficiency in our warehouse operations.',
-    'testimonials:5:detail': 'Automating palletizing and material handling reduced labor strain and increased throughput during peak demand. The system integrates seamlessly with our existing controls and continues to deliver dependable performance day after day.',
+    'testimonials:5:detail': 'Automating palletizing and material handling reduced labor strain and increased throughput during peak demand. The system works seamlessly with our existing controls and continues to deliver dependable performance day after day.',
     'testimonials:5:name': '— Director of Operations',
     'testimonials:5:company': 'Logistics & Distribution Center',
 
@@ -748,7 +748,7 @@ export default {
     'abb-food:app3:desc': 'Primary, secondary, and end-of-line packaging for food and beverage products.',
     
     'abb-food:why-proax:heading': 'Why Proax for Food & Beverage',
-    'abb-food:why-proax:text': 'Proax specializes in ABB robotic automation for food and beverage environments. Our ABB-certified engineers provide expert consultation, hygienic robot selection, and turnkey food-safe automation integration across Canada.',
+    'abb-food:why-proax:text': 'Proax specializes in ABB robotic automation for food and beverage environments. Our ABB-certified engineers provide expert consultation, hygienic robot selection, and end-to-end support for food-safe automation across Canada.',
     'abb-food:why-proax:stat1-number': '60+',
     'abb-food:why-proax:stat1-label': 'Years in Automation',
     'abb-food:why-proax:stat2-number': '13',
@@ -906,7 +906,7 @@ export default {
     'palletizing:robot:irb-760:app1': 'Heavy Payload',
     'palletizing:robot:irb-760:app2': 'Large Products',
     'palletizing:robot:irb-760:app3': 'High-Speed Handling',
-    'palletizing:robot:irb-760:app4': 'Existing Line Integration',
+    'palletizing:robot:irb-760:app4': 'Existing Line Compatibility',
 
     // Sanding & Polishing Robot Descriptions & Applications
     'sanding:robot:irb-1300:desc': 'The IRB 1300 is a versatile robot ideal for polishing applications. With payloads from 7-12 kg and reach up to 1.4m, it delivers precise motion control for consistent surface finishing.',
@@ -984,7 +984,7 @@ export default {
     'packaging:robot:irb-760:app1': 'Heavy Payload Palletizing',
     'packaging:robot:irb-760:app2': 'Large Product Handling',
     'packaging:robot:irb-760:app3': 'High-Speed Operations',
-    'packaging:robot:irb-760:app4': 'Existing Line Integration',
+    'packaging:robot:irb-760:app4': 'Existing Line Compatibility',
     'packaging:robot:irb-360:desc': 'For more than 20 years, ABB\'s FlexPicker has been the leader in state-of-the-art high-speed robotic picking and packing technology. IRB 360 is the fastest industrial delta robot in the world while offering high reliability and accuracy.',
     'packaging:robot:irb-360:type': 'Delta',
     'packaging:robot:irb-360:app1': 'High-Speed Picking',
@@ -1163,7 +1163,7 @@ export default {
     'abb-cleanroom:industry3:title': 'Food & Beverage',
     'abb-cleanroom:industry3:desc': 'Cleanroom robots are ideal for the food and beverage industry, offering hygienic, high-precision automation that meets strict cleanliness standards while enhancing production efficiency.',
     'abb-cleanroom:why-proax:heading': 'Why Proax for Cleanroom Robots',
-    'abb-cleanroom:why-proax:text': 'We specialize in cleanroom automation. Our ABB-certified engineers provide expert consultation for ISO-compliant robot selection and integration. Local Canadian stock, fast shipping, and dedicated technical support.',
+    'abb-cleanroom:why-proax:text': 'We specialize in cleanroom automation. Our ABB-certified engineers provide expert consultation for ISO-compliant robot selection and support. Local Canadian stock, fast shipping, and dedicated technical support.',
     'abb-cleanroom:why-proax:stat1-number': '60+',
     'abb-cleanroom:why-proax:stat1-label': 'Years in Automation',
     'abb-cleanroom:why-proax:stat2-number': '13',
@@ -1190,7 +1190,7 @@ export default {
     'abb-delta:benefit2:title': 'Precision Accuracy',
     'abb-delta:benefit2:desc': 'Outstanding motion performance with exceptional repeatability for delicate products.',
     'abb-delta:benefit3:title': 'Compact Footprint',
-    'abb-delta:benefit3:desc': 'Maximum flexibility in minimal space for seamless production line integration.',
+    'abb-delta:benefit3:desc': 'Maximum flexibility in minimal space to fit seamlessly into production lines.',
     'abb-delta:benefit4:title': 'Rapid Changeover',
     'abb-delta:benefit4:desc': 'Quick changeover times for low volume, high mix production environments.',
     'abb-delta:industries:heading': 'Industries We Serve',
@@ -1198,7 +1198,7 @@ export default {
     'abb-delta:applications:heading': 'Applications',
     'abb-delta:applications:subheading': 'Explore our application-specific robotic solutions',
     'abb-delta:why-proax:heading': 'Why Proax for Delta Robots',
-    'abb-delta:why-proax:text': 'Proax is your trusted ABB Delta robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey integration for high-speed picking and packing applications.',
+    'abb-delta:why-proax:text': 'Proax is your trusted ABB Delta robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for high-speed picking and packing applications.',
     'abb-delta:why-proax:stat1-number': '60+',
     'abb-delta:why-proax:stat1-label': 'Years in Automation',
     'abb-delta:why-proax:stat2-number': '13',
@@ -1226,8 +1226,8 @@ export default {
     'abb-lab:benefit2:desc': 'Robots designed to work safely alongside lab technicians without safety fencing.',
     'abb-lab:benefit3:title': 'Clean & Controlled Operation',
     'abb-lab:benefit3:desc': 'Suitable for laboratory and cleanroom-adjacent environments with minimal particle emission.',
-    'abb-lab:benefit4:title': 'Workflow Integration Ready',
-    'abb-lab:benefit4:desc': 'Easily integrates with lab equipment, analyzers, and automation cells for seamless workflows.',
+    'abb-lab:benefit4:title': 'Workflow Ready',
+    'abb-lab:benefit4:desc': 'Easily connects with lab equipment, analyzers, and automation cells for seamless workflows.',
     'abb-lab:note:text': 'Other ABB robot models may be deployed in laboratory automation contexts for handling, sorting, assembly, or testing applications.',
     'abb-lab:note:subtext': 'For optimal robot selection based on your lab workflow, request a free technical assessment with Proax.',
     'abb-lab:note:cta': 'Talk to a Lab Automation Expert',
@@ -1242,7 +1242,7 @@ export default {
     'abb-lab:industry4:title': 'Analytical Service Labs',
     'abb-lab:industry4:desc': 'Chemical analysis, materials testing, and biotech analytics laboratories requiring automated sample processing.',
     'abb-lab:why-proax:heading': 'Why Proax for Lab Automation',
-    'abb-lab:why-proax:text': 'Proax specializes in ABB robotic automation for regulated and precision-driven environments. Our ABB-certified engineers provide expert consultation, compliant robot selection, and turnkey lab automation integration across Canada.',
+    'abb-lab:why-proax:text': 'Proax specializes in ABB robotic automation for regulated and precision-driven environments. Our ABB-certified engineers provide expert consultation, compliant robot selection, and end-to-end support for lab automation across Canada.',
     'abb-lab:why-proax:stat1-number': '60+',
     'abb-lab:why-proax:stat1-label': 'Years in Automation',
     'abb-lab:why-proax:stat2-number': '13',
@@ -1277,7 +1277,7 @@ export default {
     'abb-scara:applications:heading': 'Applications',
     'abb-scara:applications:subheading': 'Explore our application-specific robotic solutions',
     'abb-scara:why-proax:heading': 'Why Proax for SCARA Robots',
-    'abb-scara:why-proax:text': 'Proax is your trusted ABB SCARA robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey integration for high-speed assembly and pick-and-place applications.',
+    'abb-scara:why-proax:text': 'Proax is your trusted ABB SCARA robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for high-speed assembly and pick-and-place applications.',
     'abb-scara:why-proax:stat1-number': '60+',
     'abb-scara:why-proax:stat1-label': 'Years in Automation',
     'abb-scara:why-proax:stat2-number': '13',
@@ -1317,10 +1317,10 @@ export default {
     'abb-paint:benefit2:desc': 'Robotic automation reduces human exposure in paint and coating environments.',
     'abb-paint:benefit3:title': 'High Throughput & Repeatability',
     'abb-paint:benefit3:desc': 'Optimized robot motion improves cycle times and paint consistency.',
-    'abb-paint:benefit4:title': 'Flexible Integration',
-    'abb-paint:benefit4:desc': 'ABB robots integrate with paint booths, conveyors, fixtures, and handling systems.',
+    'abb-paint:benefit4:title': 'Flexible Compatibility',
+    'abb-paint:benefit4:desc': 'ABB robots work with paint booths, conveyors, fixtures, and handling systems.',
     'abb-paint:note:text': 'Dedicated ABB paint robots, including models such as the IRB 5500 series, IRB 5350, and IRB 5510 FlexPainter, are designed specifically for primary paint booth automation.',
-    'abb-paint:note:subtext1': 'Proax can support the selection and integration of these systems as part of a complete paint automation solution.',
+    'abb-paint:note:subtext1': 'Proax can support the selection of these systems as part of a complete paint automation solution.',
     'abb-paint:note:subtext2': 'Contact us for a free technical assessment to determine the right robot for your paint application.',
     'abb-paint:note:cta': 'Request a Free Assessment',
     'abb-paint:industries:heading': 'Industries We Serve',
@@ -1332,7 +1332,7 @@ export default {
     'abb-paint:industry3:title': 'Aerospace',
     'abb-paint:industry3:desc': 'Aircraft component painting, protective coatings, and precision surface finishing.',
     'abb-paint:why-proax:heading': 'Why Proax for Paint Automation',
-    'abb-paint:why-proax:text': 'Proax specializes in ABB robotic automation for paint and coating applications. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey paint automation integration across Canada.',
+    'abb-paint:why-proax:text': 'Proax specializes in ABB robotic automation for paint and coating applications. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for paint automation across Canada.',
     'abb-paint:why-proax:stat1-number': '60+',
     'abb-paint:why-proax:stat1-label': 'Years in Automation',
     'abb-paint:why-proax:stat2-number': '13',
@@ -1367,7 +1367,7 @@ export default {
     'abb-palletizing:applications:heading': 'Other Applications',
     'abb-palletizing:applications:subheading': 'Explore our application-specific robotic solutions',
     'abb-palletizing:why-proax:heading': 'Why Proax for Palletizing Robots',
-    'abb-palletizing:why-proax:text': 'Proax is your trusted ABB palletizing robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey integration for end-of-line palletizing applications.',
+    'abb-palletizing:why-proax:text': 'Proax is your trusted ABB palletizing robotics partner in Canada. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for end-of-line palletizing applications.',
     'abb-palletizing:why-proax:stat1-number': '60+',
     'abb-palletizing:why-proax:stat1-label': 'Years in Automation',
     'abb-palletizing:why-proax:stat2-number': '13',
@@ -1408,7 +1408,7 @@ export default {
     'abb-sanding:applications:heading': 'Other Applications',
     'abb-sanding:applications:subheading': 'Explore our application-specific robotic solutions',
     'abb-sanding:why-proax:heading': 'Why Proax for Surface Finishing Automation',
-    'abb-sanding:why-proax:text': 'Proax specializes in ABB robotic automation for sanding and polishing applications. Our ABB-certified engineers provide expert consultation, robot selection, and turnkey surface finishing automation integration across Canada.',
+    'abb-sanding:why-proax:text': 'Proax specializes in ABB robotic automation for sanding and polishing applications. Our ABB-certified engineers provide expert consultation, robot selection, and end-to-end support for surface finishing automation across Canada.',
     'abb-sanding:why-proax:stat1-number': '60+',
     'abb-sanding:why-proax:stat1-label': 'Years in Automation',
     'abb-sanding:why-proax:stat2-number': '13',
