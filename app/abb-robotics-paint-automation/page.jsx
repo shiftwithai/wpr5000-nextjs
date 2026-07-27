@@ -258,65 +258,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="cleanroom-industries-section">
-        <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-paint:industries:heading" /></h2>
-          <p className="section-subheading-center">
-            <Tr id="abb-paint:industries:subheading" />
-          </p>
-
-          <div className="industries-grid">
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/automotive_6cf6d32373.png"
-                  alt="Automotive Paint Automation"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-paint:industry1:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-paint:industry1:desc" />
-                </p>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/general_industry_9212827856.png"
-                  alt="General Industry Paint Automation"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-paint:industry2:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-paint:industry2:desc" />
-                </p>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/aerospace_b82f1add2b.png"
-                  alt="Aerospace Paint Automation"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-paint:industry3:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-paint:industry3:desc" />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="why-proax-section">
         <div className="container">
           <div className="why-proax-grid">

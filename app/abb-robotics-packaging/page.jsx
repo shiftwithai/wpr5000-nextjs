@@ -233,65 +233,6 @@ export default function Page() {
 
       <section className="cleanroom-industries-section">
         <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-packaging:industries:heading" /></h2>
-          <div className="section-subheading-center">
-            <Tr id="abb-packaging:industries:subheading" />
-          </div>
-
-          <div className="industries-grid">
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png"
-                  alt="Food and Beverage Packaging"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-packaging:industry-food:title" /></h3>
-                <div className="industry-description">
-                  <Tr id="abb-packaging:industry-food:description" />
-                </div>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/consumer_goods_d833f245ca.jpeg"
-                  alt="Consumer Goods Packaging"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-packaging:industry-consumer:title" /></h3>
-                <div className="industry-description">
-                  <Tr id="abb-packaging:industry-consumer:description" />
-                </div>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/logistics_9ac4c96569.png"
-                  alt="Logistics and Distribution"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-packaging:industry-logistics:title" /></h3>
-                <div className="industry-description">
-                  <Tr id="abb-packaging:industry-logistics:description" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="cleanroom-industries-section">
-        <div className="container">
           <h2 className="section-heading-center"><Tr id="abb-packaging:applications:heading" /></h2>
           <div className="section-subheading-center">
             <Tr id="abb-packaging:applications:subheading" />

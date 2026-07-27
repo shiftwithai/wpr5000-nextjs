@@ -7,54 +7,6 @@ import LocaleSwitcher from '../../components/LocaleSwitcher'
 import WhyProaxImage from '../../components/WhyProaxImage'
 import { useLocale } from '../../components/LocaleContext'
 
-const industriesData = [
-  {
-    titleKey: 'solutions-explorer:industry-automotive:title',
-    descKey: 'solutions-explorer:industry-automotive:desc',
-    image: 'https://proax.ca/strapiv4/uploads/automotive_6cf6d32373.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-construction:title',
-    descKey: 'solutions-explorer:industry-construction:desc',
-    image: 'https://proax.ca/strapiv4/uploads/construction_bb8218919c.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-education:title',
-    descKey: 'solutions-explorer:industry-education:desc',
-    image: 'https://proax.ca/strapiv4/uploads/educational_a329d4fe22.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-electronics:title',
-    descKey: 'solutions-explorer:industry-electronics:desc',
-    image: 'https://proax.ca/strapiv4/uploads/electronics_82045e6a85.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-food-beverage:title',
-    descKey: 'solutions-explorer:industry-food-beverage:desc',
-    image: 'https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-foundry:title',
-    descKey: 'solutions-explorer:industry-foundry:desc',
-    image: 'https://proax.ca/strapiv4/uploads/Foundry_and_Forging_6944e2115b.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-life-sciences:title',
-    descKey: 'solutions-explorer:industry-life-sciences:desc',
-    image: 'https://proax.ca/strapiv4/uploads/Life_Sciences_and_Healthcare_bb40e8c9a8.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-logistics:title',
-    descKey: 'solutions-explorer:industry-logistics:desc',
-    image: 'https://proax.ca/strapiv4/uploads/logistics_9ac4c96569.png',
-  },
-  {
-    titleKey: 'solutions-explorer:industry-metal-fab:title',
-    descKey: 'solutions-explorer:industry-metal-fab:desc',
-    image: 'https://proax.ca/strapiv4/uploads/metal_fabrication_c15f51fd98.png',
-  },
-];
-
 const applicationsData = [
   {
     titleKey: 'solutions-explorer:app-food-beverage:title',
@@ -425,7 +377,6 @@ const robotTypesData = [
 const tabs = [
   { id: 'applications', label: 'Applications', data: applicationsData },
   { id: 'robot-types', label: 'Robot Types', data: robotTypesData },
-  { id: 'industries', label: 'Industries', data: industriesData },
 ];
 
 function SolutionsExplorer() {

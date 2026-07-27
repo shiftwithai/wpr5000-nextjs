@@ -238,8 +238,6 @@ export default {
     'abb-cobot:benefit4:description': 'Empreinte compacte adaptée aux zones de production à espace restreint.',
     
     // Industries Section
-    'abb-cobot:industries:heading': 'Industries que nous servons',
-    'abb-cobot:industries:subheading': 'Les robots collaboratifs ABB offrent de la flexibilité dans tous les secteurs manufacturiers',
     
     // Applications Section
     'abb-cobot:applications:heading': 'Applications',
@@ -284,24 +282,6 @@ export default {
     'abb-cobot:quote:feature3': 'Sélection de robot spécifique à l\'application',
 
     // Industry Cards Section
-    'abb-cobot:industry-automotive:title': 'Automobile',
-    'abb-cobot:industry-automotive:description': 'Soudage, peinture, manutention, emballage',
-    'abb-cobot:industry-construction:title': 'Construction',
-    'abb-cobot:industry-construction:description': 'Soudage, manutention, peinture',
-    'abb-cobot:industry-education:title': 'Éducation',
-    'abb-cobot:industry-education:description': 'Automatisation de laboratoire, manutention, salle blanche',
-    'abb-cobot:industry-electronics:title': 'Électronique',
-    'abb-cobot:industry-electronics:description': 'Salle blanche, manutention, emballage',
-    'abb-cobot:industry-food:title': 'Aliments et boissons',
-    'abb-cobot:industry-food:description': 'Aliments et boissons, emballage, manutention',
-    'abb-cobot:industry-foundry:title': 'Fonderie et forgeage',
-    'abb-cobot:industry-foundry:description': 'Manutention, soudage, peinture',
-    'abb-cobot:industry-life-sciences:title': 'Sciences de la vie',
-    'abb-cobot:industry-life-sciences:description': 'Salle blanche, automatisation de laboratoire, emballage',
-    'abb-cobot:industry-logistics:title': 'Logistique',
-    'abb-cobot:industry-logistics:description': 'Manutention, emballage',
-    'abb-cobot:industry-metal-fab:title': 'Fabrication métallique',
-    'abb-cobot:industry-metal-fab:description': 'Soudage, manutention, peinture',
 
     // Collaborative Robot Catalog Section
     'abb-cobot:catalog:heading': 'Notre gamme de robots collaboratifs',
@@ -341,14 +321,6 @@ export default {
     'abb-articulated:app-link': 'En savoir plus →',
     
     // Industries Section
-    'abb-articulated:industries:heading': 'Industries que nous servons',
-    'abb-articulated:industries:subheading': 'Les robots articulés ABB offrent précision et productivité dans tous les secteurs manufacturiers',
-    'abb-articulated:industry-automotive:title': 'Automobile',
-    'abb-articulated:industry-automotive:description': 'Assemblage de carrosserie, soudage, peinture et manutention pour les équipementiers automobiles et les fournisseurs.',
-    'abb-articulated:industry-electronics:title': 'Électronique',
-    'abb-articulated:industry-electronics:description': 'Assemblage de précision, tests et manutention pour l\'électronique grand public et la fabrication de semi-conducteurs.',
-    'abb-articulated:industry-general:title': 'Industrie générale',
-    'abb-articulated:industry-general:description': 'Service de machines, manutention et assemblage pour diverses applications de fabrication.',
     
     // Why Proax Section
     'abb-articulated:why-proax:heading': 'Pourquoi Proax pour les robots articulés',
@@ -393,14 +365,6 @@ export default {
     'abb-welding:benefit4:description': 'Protégez les travailleurs des fumées de soudage dangereuses, de la chaleur et des tensions répétitives.',
     
     // Industries Section
-    'abb-welding:industries:heading': 'Industries que nous servons',
-    'abb-welding:industries:subheading': 'Les robots de soudage ABB offrent précision et productivité dans tous les secteurs manufacturiers',
-    'abb-welding:industry-automotive:title': 'Automobile',
-    'abb-welding:industry-automotive:description': 'Soudage de carrosserie, fabrication de châssis et assemblage de composants pour les équipementiers automobiles et les fournisseurs.',
-    'abb-welding:industry-metal:title': 'Fabrication métallique',
-    'abb-welding:industry-metal:description': 'Acier de construction, tôlerie et fabrication sur mesure pour la construction et l\'équipement industriel.',
-    'abb-welding:industry-heavy:title': 'Équipement lourd',
-    'abb-welding:industry-heavy:description': 'Machinerie agricole, équipement de construction et fabrication de véhicules miniers.',
     
     // Why Proax Section
     'abb-welding:why-proax:heading': 'Pourquoi Proax pour l\'automatisation du soudage',
@@ -445,14 +409,6 @@ export default {
     'abb-packaging:benefit4:description': 'Solutions qui évoluent d\'une automatisation à station unique à des systèmes complets de fin de ligne.',
     
     // Industries Section
-    'abb-packaging:industries:heading': 'Industries que nous servons',
-    'abb-packaging:industries:subheading': 'Les robots d\'emballage ABB offrent vitesse et fiabilité dans toutes les industries',
-    'abb-packaging:industry-food:title': 'Alimentation et boissons',
-    'abb-packaging:industry-food:description': 'Prélèvement haute vitesse et mise en caisse pour les lignes de production alimentaire et de boissons.',
-    'abb-packaging:industry-consumer:title': 'Biens de consommation',
-    'abb-packaging:industry-consumer:description': 'Automatisation d\'emballage flexible pour cosmétiques, produits ménagers et articles de détail.',
-    'abb-packaging:industry-logistics:title': 'Logistique et distribution',
-    'abb-packaging:industry-logistics:description': 'Prélèvement, tri et emballage haute vitesse pour entrepôts et centres de distribution.',
     
     // Applications Section
     'abb-packaging:applications:heading': 'Autres applications',
@@ -499,14 +455,6 @@ export default {
     'abb-material:benefit3:description': 'Idéal pour diverses tâches de manutention, notamment le service de machines, le soudage par points, la découpe et l\'assemblage.',
     
     // Industries Section
-    'abb-material:industries:heading': 'Industries que nous servons',
-    'abb-material:industries:subheading': 'Les robots de manutention ABB offrent flexibilité et productivité dans tous les secteurs manufacturiers',
-    'abb-material:industry-automotive:title': 'Automobile',
-    'abb-material:industry-automotive:description': 'Transfert de pièces, chargement de machines et flux de matériaux sur la ligne d\'assemblage pour la fabrication automobile.',
-    'abb-material:industry-electronics:title': 'Électronique',
-    'abb-material:industry-electronics:description': 'Manutention de précision des composants, chargement de PCB et opérations d\'assemblage automatisées.',
-    'abb-material:industry-logistics:title': 'Logistique',
-    'abb-material:industry-logistics:description': 'Automatisation d\'entrepôt, exécution de commandes et flux de matériaux dans les centres de distribution.',
     
     // Why Proax Section
     'abb-material:why-proax:heading': 'Pourquoi Proax pour la manutention',
@@ -530,28 +478,9 @@ export default {
     'solutions-explorer:subheading': 'Trouvez la solution d\'automatisation adaptée à vos besoins',
     'solutions-explorer:tab-applications': 'Applications',
     'solutions-explorer:tab-robot-types': 'Types de robots',
-    'solutions-explorer:tab-industries': 'Industries',
     'solutions-explorer:learn-more': 'En savoir plus →',
     
     // Industries Tab
-    'solutions-explorer:industry-automotive:title': 'Automobile',
-    'solutions-explorer:industry-automotive:desc': 'Assemblage haute vitesse, soudage et manutention pour la fabrication automobile.',
-    'solutions-explorer:industry-construction:title': 'Construction',
-    'solutions-explorer:industry-construction:desc': 'Solutions robotiques pour la préfabrication, le soudage et la manutention lourde en construction.',
-    'solutions-explorer:industry-education:title': 'Éducation',
-    'solutions-explorer:industry-education:desc': 'Robotique de formation et éducative pour les écoles, universités et institutions de recherche.',
-    'solutions-explorer:industry-electronics:title': 'Électronique',
-    'solutions-explorer:industry-electronics:desc': 'Assemblage de précision et manutention pour la fabrication électronique.',
-    'solutions-explorer:industry-food-beverage:title': 'Aliments et boissons',
-    'solutions-explorer:industry-food-beverage:desc': 'Robots hygiéniques pour l\'emballage, la palettisation et les applications de traitement.',
-    'solutions-explorer:industry-foundry:title': 'Fonderie et forgeage',
-    'solutions-explorer:industry-foundry:desc': 'Robots robustes pour environnements de fonderie difficiles, moulage sous pression et opérations de forgeage.',
-    'solutions-explorer:industry-life-sciences:title': 'Sciences de la vie et santé',
-    'solutions-explorer:industry-life-sciences:desc': 'Robots compatibles salle blanche pour applications pharmaceutiques, dispositifs médicaux et laboratoires.',
-    'solutions-explorer:industry-logistics:title': 'Logistique',
-    'solutions-explorer:industry-logistics:desc': 'Solutions automatisées de prélèvement, emballage et gestion d\'entrepôt.',
-    'solutions-explorer:industry-metal-fab:title': 'Fabrication métallique',
-    'solutions-explorer:industry-metal-fab:desc': 'Soudage, découpe et manutention pour les industries de travail des métaux.',
     
     // Applications Tab
     'solutions-explorer:app-food-beverage:title': 'Aliments et boissons',
@@ -1160,14 +1089,6 @@ export default {
     'abb-cleanroom:benefit3:desc': 'Assure la propreté et la désinfection pour éliminer le risque de contamination, répondant aux exigences de désinfection avec des détergents de pointe.',
     'abb-cleanroom:benefit4:title': 'Conforme aux normes ISO',
     'abb-cleanroom:benefit4:desc': 'Conçu selon les normes de qualité les plus élevées et conforme aux normes ISO appropriées pour les environnements propres.',
-    'abb-cleanroom:industries:heading': 'Industries servies',
-    'abb-cleanroom:industries:subheading': 'Les robots ABB pour salle blanche offrent une productivité et une qualité de fabrication élevées dans les industries critiques',
-    'abb-cleanroom:industry1:title': 'Sciences de la vie et santé',
-    'abb-cleanroom:industry1:desc': 'Les robots de salle blanche sont idéaux pour les sciences de la vie et la santé, y compris les laboratoires, les produits pharmaceutiques, les pharmacies, les hôpitaux, les cosmétiques et les dispositifs médicaux.',
-    'abb-cleanroom:industry2:title': 'Électronique',
-    'abb-cleanroom:industry2:desc': 'L\'industrie électronique, comme la fabrication de semi-conducteurs, téléphones mobiles, PCBA et écrans, nécessite un environnement de production propre.',
-    'abb-cleanroom:industry3:title': 'Aliments et boissons',
-    'abb-cleanroom:industry3:desc': 'Les robots de salle blanche sont idéaux pour l\'industrie alimentaire et des boissons, offrant une automatisation hygiénique et de haute précision qui respecte des normes strictes de propreté tout en améliorant l\'efficacité de production.',
     'abb-cleanroom:why-proax:heading': 'Pourquoi Proax pour les robots de salle blanche',
     'abb-cleanroom:why-proax:text': 'Nous nous spécialisons dans l\'automatisation en salle blanche. Nos ingénieurs certifiés ABB offrent des consultations expertes pour la sélection et le soutien de robots conformes aux normes ISO. Stock local au Canada, expédition rapide et support technique dédié.',
     'abb-cleanroom:why-proax:stat1-number': '60+',
@@ -1199,8 +1120,6 @@ export default {
     'abb-delta:benefit3:desc': 'Flexibilité maximale dans un espace minimal pour s\'adapter parfaitement aux lignes de production.',
     'abb-delta:benefit4:title': 'Changement rapide',
     'abb-delta:benefit4:desc': 'Temps de changement rapides pour les environnements de production à faible volume et grande variété.',
-    'abb-delta:industries:heading': 'Industries que nous servons',
-    'abb-delta:industries:subheading': 'Les robots delta ABB offrent vitesse et précision dans tous les secteurs manufacturiers',
     'abb-delta:applications:heading': 'Applications',
     'abb-delta:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-delta:why-proax:heading': 'Pourquoi Proax pour les robots delta',
@@ -1237,16 +1156,6 @@ export default {
     'abb-lab:note:text': 'D\'autres modèles de robots ABB peuvent être déployés dans des contextes d\'automatisation de laboratoire pour la manipulation, le tri, l\'assemblage ou les tests.',
     'abb-lab:note:subtext': 'Pour une sélection optimale de robot basée sur votre flux de travail de laboratoire, demandez une évaluation technique gratuite avec Proax.',
     'abb-lab:note:cta': 'Parler à un expert en automatisation de laboratoire',
-    'abb-lab:industries:heading': 'Laboratoires que nous automatisons',
-    'abb-lab:industries:subheading': 'Les robots ABB d\'automatisation de laboratoire offrent précision et fiabilité dans les environnements de laboratoire critiques',
-    'abb-lab:industry1:title': 'Sciences de la vie et santé',
-    'abb-lab:industry1:desc': 'Diagnostics cliniques, produits pharmaceutiques, biotechnologie et laboratoires de recherche médicale nécessitant une manipulation d\'échantillons de précision et une automatisation des tests.',
-    'abb-lab:industry2:title': 'Laboratoires de R&D',
-    'abb-lab:industry2:desc': 'Laboratoires de R&D pharmaceutiques, chimiques, cosmétiques, alimentaires et de boissons avec des exigences de tests à haut débit.',
-    'abb-lab:industry3:title': 'Laboratoires de contrôle qualité',
-    'abb-lab:industry3:desc': 'Laboratoires CQ pharmaceutiques, chimiques, cosmétiques, biotechnologiques et de fabrication de batteries avec des protocoles de tests rigoureux.',
-    'abb-lab:industry4:title': 'Laboratoires de services analytiques',
-    'abb-lab:industry4:desc': 'Laboratoires d\'analyse chimique, de tests de matériaux et d\'analytique biotechnologique nécessitant un traitement automatisé des échantillons.',
     'abb-lab:why-proax:heading': 'Pourquoi Proax pour l\'automatisation de laboratoire',
     'abb-lab:why-proax:text': 'Proax se spécialise dans l\'automatisation robotique ABB pour les environnements réglementés et de précision. Nos ingénieurs certifiés ABB offrent des consultations expertes, une sélection de robots conformes et un soutien complet pour l\'automatisation de laboratoire partout au Canada.',
     'abb-lab:why-proax:stat1-number': '60+',
@@ -1278,8 +1187,6 @@ export default {
     'abb-scara:benefit3:desc': 'Options de montage au sol ou au plafond pour économiser l\'espace et accroître la flexibilité d\'assemblage.',
     'abb-scara:benefit4:title': 'Rentable',
     'abb-scara:benefit4:desc': 'Conception optimisée offrant des performances élevées à un coût de possession compétitif.',
-    'abb-scara:industries:heading': 'Industries que nous servons',
-    'abb-scara:industries:subheading': 'Les robots SCARA ABB offrent vitesse et précision dans tous les secteurs manufacturiers',
     'abb-scara:applications:heading': 'Applications',
     'abb-scara:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-scara:why-proax:heading': 'Pourquoi Proax pour les robots SCARA',
@@ -1329,14 +1236,6 @@ export default {
     'abb-paint:note:subtext1': 'Proax peut soutenir la sélection de ces systèmes dans le cadre d\'une solution complète d\'automatisation de peinture.',
     'abb-paint:note:subtext2': 'Contactez-nous pour une évaluation technique gratuite afin de déterminer le bon robot pour votre application de peinture.',
     'abb-paint:note:cta': 'Demander une évaluation gratuite',
-    'abb-paint:industries:heading': 'Industries que nous servons',
-    'abb-paint:industries:subheading': 'Les robots ABB d\'automatisation de peinture offrent une qualité constante dans tous les secteurs manufacturiers',
-    'abb-paint:industry1:title': 'Automobile',
-    'abb-paint:industry1:desc': 'Peinture de carrosserie, revêtement de garnitures et finition de composants pour les équipementiers automobiles et les fournisseurs.',
-    'abb-paint:industry2:title': 'Industrie générale',
-    'abb-paint:industry2:desc': 'Équipements industriels, appareils électroménagers, meubles et biens de consommation — peinture et revêtement.',
-    'abb-paint:industry3:title': 'Aérospatiale',
-    'abb-paint:industry3:desc': 'Peinture de composants d\'aéronefs, revêtements protecteurs et finition de surface de précision.',
     'abb-paint:why-proax:heading': 'Pourquoi Proax pour l\'automatisation de la peinture',
     'abb-paint:why-proax:text': 'Proax se spécialise dans l\'automatisation robotique ABB pour les applications de peinture et de revêtement. Nos ingénieurs certifiés ABB offrent des consultations expertes, la sélection de robots et un soutien complet pour l\'automatisation de peinture partout au Canada.',
     'abb-paint:why-proax:stat1-number': '60+',
@@ -1368,8 +1267,6 @@ export default {
     'abb-palletizing:benefit3:desc': 'Manipulation de charges utiles jusqu\'à 450 kg pour les produits volumineux et lourds à haute vitesse.',
     'abb-palletizing:benefit4:title': 'Applications polyvalentes',
     'abb-palletizing:benefit4:desc': 'Parfait pour les sacs, boîtes, caisses, bouteilles et plus encore dans toute application de palettisation.',
-    'abb-palletizing:industries:heading': 'Industries que nous servons',
-    'abb-palletizing:industries:subheading': 'Les robots de palettisation ABB offrent vitesse et fiabilité dans tous les secteurs manufacturiers',
     'abb-palletizing:applications:heading': 'Autres applications',
     'abb-palletizing:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-palletizing:why-proax:heading': 'Pourquoi Proax pour les robots de palettisation',
@@ -1403,14 +1300,6 @@ export default {
     'abb-sanding:benefit3:desc': 'Fonctionnement continu avec des temps de cycle constants qui améliorent le débit.',
     'abb-sanding:benefit4:title': 'Applications flexibles',
     'abb-sanding:benefit4:desc': 'Reprogrammation facile pour différentes géométries de pièces et exigences de finition.',
-    'abb-sanding:industries:heading': 'Industries que nous servons',
-    'abb-sanding:industries:subheading': 'Les robots ABB de sablage et polissage offrent la précision dans tous les secteurs manufacturiers',
-    'abb-sanding:industry1:title': 'Automobile',
-    'abb-sanding:industry1:desc': 'Finition de surface, ébavurage et polissage pour les panneaux de carrosserie, garnitures et composants.',
-    'abb-sanding:industry2:title': 'Fabrication métallique',
-    'abb-sanding:industry2:desc': 'Meulage, sablage et polissage pour l\'acier de construction et la fabrication sur mesure.',
-    'abb-sanding:industry3:title': 'Aérospatiale',
-    'abb-sanding:industry3:desc': 'Finition de surface de précision et ébavurage pour les composants et assemblages d\'aéronefs.',
     'abb-sanding:applications:heading': 'Autres applications',
     'abb-sanding:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-sanding:why-proax:heading': 'Pourquoi Proax pour l\'automatisation de la finition de surface',
