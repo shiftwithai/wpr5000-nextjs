@@ -441,7 +441,6 @@ function SolutionsExplorer() {
   );
 }
 
-// Placeholder data - will be replaced with actual robot data
 const robotsData = [
   {
     id: 'powa',
@@ -1111,10 +1110,10 @@ function RobotCatalog() {
                   </div>
                   <div className="card-cell card-cell-applications">
                     <div className="application-pills">
-                      {(expandedApps[robot.id] ? robot.applications : robot.applications.slice(0, 3)).map((app, idx) => (
+                      {(expandedApps[robot.id] ? robot.applications : robot.applications.slice(0, robot.applications.length > 4 ? 3 : 4)).map((app, idx) => (
                         <span key={idx} className="application-pill">{tApp(app)}</span>
                       ))}
-                      {robot.applications.length > 3 && (
+                      {robot.applications.length > 4 && (
                         <button
                           type="button"
                           className="application-pill application-pill-more"

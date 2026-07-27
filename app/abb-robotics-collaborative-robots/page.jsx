@@ -77,10 +77,10 @@ function CollaborativeRobotCatalog() {
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.applications.slice(0, 3).map((app, index) => (
+                  {robot.applications.slice(0, robot.applications.length > 4 ? 3 : 4).map((app, index) => (
                     <span key={index} className="application-tag">{app}</span>
                   ))}
-                  {robot.applications.length > 3 && (
+                  {robot.applications.length > 4 && (
                     <span className="application-tag more">+{robot.applications.length - 3}</span>
                   )}
                 </div>

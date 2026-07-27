@@ -97,10 +97,10 @@ function PackagingRobotCatalog() {
                 </div>
 
                 <div className="robot-grid-applications">
-                  {robot.appKeys.slice(0, 3).map((appKey, index) => (
+                  {robot.appKeys.slice(0, robot.appKeys.length > 4 ? 3 : 4).map((appKey, index) => (
                     <span key={index} className="application-tag">{t(appKey)}</span>
                   ))}
-                  {robot.appKeys.length > 3 && (
+                  {robot.appKeys.length > 4 && (
                     <span className="application-tag more">+{robot.appKeys.length - 3}</span>
                   )}
                 </div>
