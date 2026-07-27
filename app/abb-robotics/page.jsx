@@ -1092,12 +1092,7 @@ function RobotCatalog() {
                 >
                   <div className="card-cell card-cell-model">
                     <div className="model-name-row">
-                      <a
-                        href={robot.productUrl || `#${robot.id}`}
-                        className="robot-model-link"
-                        target={robot.productUrl ? "_blank" : undefined}
-                        rel={robot.productUrl ? "noopener noreferrer" : undefined}
-                      >
+                      <a href="#request-quote" className="robot-model-link">
                         {robot.name}
                       </a>
                       {robot.isNew && <span className="new-badge">{t('abb:new-badge')}</span>}
