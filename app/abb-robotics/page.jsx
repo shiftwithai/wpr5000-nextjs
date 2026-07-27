@@ -396,7 +396,7 @@ const robotTypesData = [
   {
     titleKey: 'solutions-explorer:robot-palletizing:title',
     descKey: 'solutions-explorer:robot-palletizing:desc',
-    link: '/palletizing-robots',
+    link: '/abb-robotics-palletizing-robots',
     icon: (
       <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <rect x="8" y="78" width="24" height="8" rx="2"/>
@@ -494,6 +494,7 @@ function SolutionsExplorer() {
 const robotsData = [
   {
     id: 'powa',
+    type: 'cobot',
     name: 'PoWa™ (CRB 1910 / 1920)',
     isNew: true,
     applications: ['Machine tending', 'Palletizing', 'Screwdriving', 'Arc welding', 'Material handling', 'Assembly'],
@@ -505,6 +506,7 @@ const robotsData = [
   },
   {
     id: 'flexley-tug',
+    type: 'amr',
     name: 'Flexley Tug (AMR T701 / T702)',
     isNew: true,
     applications: ['Material handling', 'Towing'],
@@ -516,6 +518,7 @@ const robotsData = [
   },
   {
     id: 'flexley-mover',
+    type: 'amr',
     name: 'Flexley Mover (AMR P603 / P604)',
     isNew: true,
     applications: ['Material handling', 'Warehouse logistics'],
@@ -527,6 +530,7 @@ const robotsData = [
   },
   {
     id: 'flexley-stack',
+    type: 'amr',
     name: 'Flexley Stack (AMR F712)',
     isNew: true,
     applications: ['Material handling', 'Palletizing'],
@@ -538,6 +542,7 @@ const robotsData = [
   },
   {
     id: 'gofa-5',
+    type: 'cobot',
     name: 'GoFa 5 (CRB 15000)',
     applications: ['Material handling', 'Machine tending', 'Assembly', 'Screwdriving', 'Collaboration', 'Small parts assembly', 'Picking', 'Packaging'],
     payload: '5 kg',
@@ -549,6 +554,7 @@ const robotsData = [
   },
   {
     id: 'gofa-10',
+    type: 'cobot',
     name: 'GoFa 10 (CRB 15000)',
     applications: ['Material handling', 'Machine tending', 'Assembly', 'Screwdriving', 'Collaboration', 'Small parts assembly', 'Picking', 'Packaging'],
     payload: '10 kg',
@@ -560,6 +566,7 @@ const robotsData = [
   },
   {
     id: 'gofa-12',
+    type: 'cobot',
     name: 'GoFa 12 (CRB 15000)',
     applications: ['Material handling', 'Machine tending', 'Assembly', 'Screwdriving', 'Collaboration', 'Small parts assembly', 'Picking', 'Packaging'],
     payload: '12 kg',
@@ -571,6 +578,7 @@ const robotsData = [
   },
   {
     id: 'irb-1010',
+    type: 'articulated',
     name: 'IRB 1010',
     applications: ['Education', 'Electronics'],
     payload: '1.5 kg',
@@ -581,6 +589,7 @@ const robotsData = [
   },
   {
     id: 'irb-1090',
+    type: 'articulated',
     name: 'IRB 1090',
     applications: ['Education'],
     payload: '3.5 kg',
@@ -591,6 +600,7 @@ const robotsData = [
   },
   {
     id: 'irb-1100',
+    type: 'articulated',
     name: 'IRB 1100',
     applications: ['Assembly', 'Testing', 'Loading and unloading', 'Screwdriving', 'Rubber insertion'],
     payload: '4 kg',
@@ -601,6 +611,7 @@ const robotsData = [
   },
   {
     id: 'irb-1200',
+    type: 'articulated',
     name: 'IRB 1200',
     applications: ['Assembly', 'Material handling', 'Machine tending'],
     payload: '5-7 kg',
@@ -611,6 +622,7 @@ const robotsData = [
   },
   {
     id: 'irb-1200-hygienic',
+    type: 'articulated',
     name: 'IRB 1200 Hygienic',
     applications: ['Food & Beverage', 'Packaging', 'Picking'],
     payload: '5-7 kg',
@@ -621,6 +633,7 @@ const robotsData = [
   },
   {
     id: 'irb-1300',
+    type: 'articulated',
     name: 'IRB 1300',
     applications: ['Assembly', 'Material handling', 'Machine tending', 'Polishing', 'Loading and unloading', 'Welding', 'Item picking'],
     payload: '7-12 kg',
@@ -631,6 +644,7 @@ const robotsData = [
   },
   {
     id: 'irb-14050-single-arm-yumi',
+    type: 'cobot',
     name: 'IRB 14050 Single-arm YuMi',
     applications: ['Small parts assembly', 'Assembly', 'Collaboration'],
     payload: '0.5 kg',
@@ -641,6 +655,7 @@ const robotsData = [
   },
   {
     id: 'irb-1600',
+    type: 'articulated',
     name: 'IRB 1600',
     applications: ['Cleaning', 'Spraying', 'Arc welding', 'Assembly', 'Die casting', 'Injection moulding', 'Machine tending', 'Material handling', 'Packaging'],
     payload: '6-10 kg',
@@ -651,6 +666,7 @@ const robotsData = [
   },
   {
     id: 'irb-2600',
+    type: 'articulated',
     name: 'IRB 2600',
     applications: ['Machine tending', 'Material handling', 'Arc welding', 'Cutting', 'Dispensing', 'Assembly', 'Palletizing', 'Packaging', 'Measuring'],
     payload: '12-20 kg',
@@ -661,6 +677,7 @@ const robotsData = [
   },
   {
     id: 'irb-360',
+    type: 'delta',
     name: 'IRB 360',
     applications: ['Assembly', 'Material handling', 'Packaging', 'Picking'],
     payload: '1-8 kg',
@@ -671,6 +688,7 @@ const robotsData = [
   },
   {
     id: 'irb-365',
+    type: 'delta',
     name: 'IRB 365',
     applications: ['Food & Beverage', 'Packaging', 'Picking', 'Consumer Packaged Goods', 'E-commerce', 'Pharmaceutical'],
     payload: '1.5 kg',
@@ -681,6 +699,7 @@ const robotsData = [
   },
   {
     id: 'irb-390',
+    type: 'delta',
     name: 'IRB 390',
     applications: ['Assembly', 'Material handling', 'Packaging', 'Picking'],
     payload: '8-15 kg',
@@ -691,6 +710,7 @@ const robotsData = [
   },
   {
     id: 'irb-4600',
+    type: 'articulated',
     name: 'IRB 4600',
     applications: ['Machine tending', 'Material handling', 'Arc welding', 'Cutting', 'Dispensing', 'Assembly', 'Palletizing', 'Packaging', 'Measuring', 'Deburring', 'Polishing'],
     payload: '20-60 kg',
@@ -701,6 +721,7 @@ const robotsData = [
   },
   {
     id: 'irb-910inv',
+    type: 'scara',
     name: 'IRB 910INV',
     applications: ['Small parts assembly', 'Material handling', 'Parts inspection'],
     payload: '3-6 kg',
@@ -711,6 +732,7 @@ const robotsData = [
   },
   {
     id: 'irb-920t',
+    type: 'scara',
     name: 'IRB 920T',
     applications: ['Small parts assembly', 'Material handling', 'Parts inspection'],
     payload: '6 kg',
@@ -721,6 +743,7 @@ const robotsData = [
   },
   {
     id: 'irb-930',
+    type: 'scara',
     name: 'IRB 930',
     applications: ['Assembly', 'Picking', 'Placing', 'Material handling', 'Screwdriving', 'Packaging', 'Testing'],
     payload: '12, 22 kg',
@@ -749,11 +772,23 @@ const reachOptions = [
   { label: 'over 2.55 m', code: 'C', key: 'rc:reach:over-2.55' },
 ];
 
+// Robot types, each linking to its dedicated landing page
+const robotTypeOptions = [
+  { code: 'articulated', key: 'rc:type:articulated', link: '/abb-robotics-articulated-robots' },
+  { code: 'cobot', key: 'rc:type:cobot', link: '/abb-robotics-collaborative-robots' },
+  { code: 'scara', key: 'rc:type:scara', link: '/abb-robotics-scara-robots' },
+  { code: 'delta', key: 'rc:type:delta', link: '/abb-robotics-delta-robots' },
+  { code: 'amr', key: 'rc:type:amr', link: '/abb-robotics-mobile-robots' },
+];
+
+const robotTypeByCode = Object.fromEntries(robotTypeOptions.map((rt) => [rt.code, rt]));
+
 function RobotCatalog() {
   const { t } = useLocale();
   const tApp = (app) => t('rc:app:' + app) || app;
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
+    type: '-All-',
     application: '-All-',
     payload: '-All-',
     reach: '-All-',
@@ -803,6 +838,11 @@ function RobotCatalog() {
     return robotsData.filter((robot) => {
       // Search filter
       if (searchQuery && !robot.name.toLowerCase().includes(searchQuery.toLowerCase())) {
+        return false;
+      }
+
+      // Robot type filter
+      if (filters.type !== '-All-' && robot.type !== filters.type) {
         return false;
       }
 
@@ -875,6 +915,7 @@ function RobotCatalog() {
   const resetFilters = () => {
     setSearchQuery('');
     setFilters({
+      type: '-All-',
       application: '-All-',
       payload: '-All-',
       reach: '-All-',
@@ -948,6 +989,20 @@ function RobotCatalog() {
 
         {/* Filters Row */}
         <div className="catalog-filters">
+          <div className="filter-group">
+            <label className="filter-label"><Tr id="robot-catalog:filter-type" /></label>
+            <select
+              className="filter-select"
+              value={filters.type}
+              onChange={(e) => handleFilterChange('type', e.target.value)}
+            >
+              <option value="-All-">{t('robot-catalog:filter-all')}</option>
+              {robotTypeOptions.map((option) => (
+                <option key={option.code} value={option.code}>{t(option.key)}</option>
+              ))}
+            </select>
+          </div>
+
           <div className="filter-group">
             <label className="filter-label"><Tr id="robot-catalog:filter-applications" /></label>
             <div className="filter-dropdown-wrapper" ref={appDropdownRef}>
@@ -1077,22 +1132,31 @@ function RobotCatalog() {
                 <Tr id="robot-catalog:no-results" />
               </div>
             ) : (
-              displayedRobots.map((robot, index) => (
+              displayedRobots.map((robot, index) => {
+                const robotType = robotTypeByCode[robot.type];
+                return (
                 <div
                   key={robot.id}
                   className="robot-card-row"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="card-cell card-cell-model">
-                    <a
-                      href={robot.productUrl || `#${robot.id}`}
-                      className="robot-model-link"
-                      target={robot.productUrl ? "_blank" : undefined}
-                      rel={robot.productUrl ? "noopener noreferrer" : undefined}
-                    >
-                      {robot.name}
-                    </a>
-                    {robot.isNew && <span className="new-badge">{t('abb:new-badge')}</span>}
+                    <div className="model-name-row">
+                      <a
+                        href={robot.productUrl || `#${robot.id}`}
+                        className="robot-model-link"
+                        target={robot.productUrl ? "_blank" : undefined}
+                        rel={robot.productUrl ? "noopener noreferrer" : undefined}
+                      >
+                        {robot.name}
+                      </a>
+                      {robot.isNew && <span className="new-badge">{t('abb:new-badge')}</span>}
+                    </div>
+                    {robotType && (
+                      <a href={robotType.link} className="robot-type-pill">
+                        {t(robotType.key)}
+                      </a>
+                    )}
                   </div>
                   <div className="card-cell card-cell-applications">
                     <div className="application-pills">
@@ -1118,7 +1182,8 @@ function RobotCatalog() {
                   <div className="card-cell card-cell-reach">{robot.reach}</div>
                   <div className="card-cell card-cell-controllers">{robot.controllers.join(', ')}</div>
                 </div>
-              ))
+                );
+              })
             )}
           </div>
         </div>
