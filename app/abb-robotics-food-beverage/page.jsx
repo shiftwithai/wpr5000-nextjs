@@ -4,6 +4,7 @@ import HubSpotForm from '../../components/HubSpotForm'
 import Tr from '../../components/Tr'
 import LocaleSwitcher from '../../components/LocaleSwitcher'
 import WhyProaxImage from '../../components/WhyProaxImage'
+import OtherApplications from '../../components/OtherApplications'
 import { useLocale } from '../../components/LocaleContext'
 
 const foodBeverageRobotsData = [
@@ -202,64 +203,8 @@ export default function Page() {
 
       <FoodBeverageRobotCatalog />
 
-      <section className="cleanroom-industries-section">
-        <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-food:applications:heading" /></h2>
-          <div className="section-subheading-center">
-            <Tr id="abb-food:applications:subheading" />
-          </div>
+      <OtherApplications current="/abb-robotics-food-beverage" />
 
-          <div className="industries-grid">
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png"
-                  alt="Food Processing"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-food:app1:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-food:app1:desc" />
-                </p>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Beverage_Production_353741c82a.png"
-                  alt="Beverage Production"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-food:app2:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-food:app2:desc" />
-                </p>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Packaging_and_Palletizing_4cb93fd80f.png"
-                  alt="Food Packaging"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-food:app3:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-food:app3:desc" />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="why-proax-section">
         <div className="container">

@@ -4,6 +4,7 @@ import HubSpotForm from '../../components/HubSpotForm'
 import Tr from '../../components/Tr'
 import LocaleSwitcher from '../../components/LocaleSwitcher'
 import WhyProaxImage from '../../components/WhyProaxImage'
+import OtherApplications from '../../components/OtherApplications'
 import { useLocale } from '../../components/LocaleContext'
 
 const packagingRobotsData = [
@@ -231,152 +232,8 @@ export default function Page() {
 
       <PackagingRobotCatalog />
 
-      <section className="cleanroom-industries-section">
-        <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-packaging:applications:heading" /></h2>
-          <div className="section-subheading-center">
-            <Tr id="abb-packaging:applications:subheading" />
-          </div>
+      <OtherApplications current="/abb-robotics-packaging" />
 
-          <div className="industries-grid">
-            <a href="/abb-robotics-welding-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/welding_2cb503997a.png"
-                  alt="Welding"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Welding</h3>
-                <p className="industry-description">
-                  Arc welding, MIG/TIG welding, and laser welding automation.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-paint-automation" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/paint_6e13a8ccb9.png"
-                  alt="Paint"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Paint</h3>
-                <p className="industry-description">
-                  Automated spray painting and surface finishing for industrial applications.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-material-handling" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Material_Handling_a1a81f10c5.png"
-                  alt="Material Handling"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Material Handling</h3>
-                <p className="industry-description">
-                  Pick and place, machine tending, and automated material transport.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-palletizing-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/IRB_460_123a6dc579.avif"
-                  alt="Palletizing"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Palletizing</h3>
-                <p className="industry-description">
-                  End-of-line palletizing solutions for bags, boxes, crates, and bottles.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-sanding-polishing" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L"
-                  alt="Sanding & Polishing"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Sanding & Polishing</h3>
-                <p className="industry-description">
-                  Precision surface finishing, deburring, and grinding for consistent quality.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-cleanroom-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Cleanroom_cc5704fa5f.png"
-                  alt="Cleanroom"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Cleanroom</h3>
-                <p className="industry-description">
-                  ISO-certified cleanroom robots for semiconductor and pharmaceutical manufacturing.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-lab-automation" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Lab_Automation_c28ff07576.png"
-                  alt="Lab Automation"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Lab Automation</h3>
-                <p className="industry-description">
-                  Precision robots for laboratory testing, sample handling, and research.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-food-beverage" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png"
-                  alt="Food & Beverage"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title">Food & Beverage</h3>
-                <p className="industry-description">
-                  Hygienic robotic automation for food processing and beverage production.
-                </p>
-                <span className="solution-card-link">Learn More →</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
 
       <section className="why-proax-section">
         <div className="container">

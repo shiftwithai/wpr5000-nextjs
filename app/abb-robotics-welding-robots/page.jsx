@@ -4,6 +4,7 @@ import HubSpotForm from '../../components/HubSpotForm'
 import Tr from '../../components/Tr'
 import LocaleSwitcher from '../../components/LocaleSwitcher'
 import WhyProaxImage from '../../components/WhyProaxImage'
+import OtherApplications from '../../components/OtherApplications'
 import { useLocale } from '../../components/LocaleContext'
 
 const weldingRobotsData = [
@@ -242,6 +243,9 @@ export default function Page() {
       </section>
 
       <WeldingRobotCatalog />
+
+      <OtherApplications current="/abb-robotics-welding-robots" />
+
 
       <section className="why-proax-section">
         <div className="container">

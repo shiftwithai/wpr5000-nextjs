@@ -3,6 +3,7 @@
 import HubSpotForm from '../../components/HubSpotForm'
 import Tr from '../../components/Tr'
 import WhyProaxImage from '../../components/WhyProaxImage'
+import OtherApplications from '../../components/OtherApplications'
 import { useLocale } from '../../components/LocaleContext'
 
 const palletizingRobotsData = [
@@ -207,152 +208,8 @@ export default function Page() {
 
       <PalletizingRobotsCatalog />
 
-      <section className="cleanroom-industries-section">
-        <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-palletizing:applications:heading" /></h2>
-          <p className="section-subheading-center">
-            <Tr id="abb-palletizing:applications:subheading" />
-          </p>
+      <OtherApplications current="/abb-robotics-palletizing-robots" />
 
-          <div className="industries-grid">
-            <a href="/abb-robotics-welding-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/welding_2cb503997a.png"
-                  alt="Welding"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-welding:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-welding:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-paint-automation" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/paint_6e13a8ccb9.png"
-                  alt="Paint"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-paint:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-paint:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-material-handling" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Material_Handling_a1a81f10c5.png"
-                  alt="Material Handling"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-material:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-material:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-packaging" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Packaging_023d75eb6e.png"
-                  alt="Packaging"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-packaging-standalone:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-packaging-standalone:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-sanding-polishing" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L"
-                  alt="Sanding & Polishing"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-sanding:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-sanding:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-cleanroom-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Cleanroom_cc5704fa5f.png"
-                  alt="Cleanroom"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-cleanroom:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-cleanroom:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-lab-automation" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/Lab_Automation_c28ff07576.png"
-                  alt="Lab Automation"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-lab:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-lab:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-food-beverage" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/food_and_bev_032e9192ff.png"
-                  alt="Food & Beverage"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-cobot:app-food:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-cobot:app-food:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-cobot:app-link" /></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
 
       <section className="why-proax-section">
         <div className="container">

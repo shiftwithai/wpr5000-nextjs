@@ -259,10 +259,6 @@ export default {
     'abb-cobot:app-link': 'En savoir plus →',
     'abb-cobot:app-packaging-standalone:title': 'Emballage',
     'abb-cobot:app-packaging-standalone:description': 'Cueillette, emballage et manipulation de caisses à haute vitesse pour la fabrication et la logistique.',
-    'abb-cobot:app-palletizing:title': 'Palettisation',
-    'abb-cobot:app-palletizing:description': 'Solutions de palettisation en fin de ligne pour sacs, boîtes, caisses et bouteilles.',
-    'abb-cobot:app-sanding:title': 'Sablage et polissage',
-    'abb-cobot:app-sanding:description': 'Finition de surface de précision, ébavurage et meulage pour une qualité constante.',
     
     // Why Proax Section
     'abb-cobot:why-proax:heading': 'Pourquoi Proax pour les robots collaboratifs',
@@ -411,8 +407,6 @@ export default {
     // Industries Section
     
     // Applications Section
-    'abb-packaging:applications:heading': 'Autres applications',
-    'abb-packaging:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     
     // Why Proax Section
     'abb-packaging:why-proax:heading': 'Pourquoi Proax pour l\'automatisation de l\'emballage',
@@ -479,6 +473,8 @@ export default {
     'solutions-explorer:tab-applications': 'Applications',
     'solutions-explorer:tab-robot-types': 'Types de robots',
     'solutions-explorer:learn-more': 'En savoir plus →',
+    'other-applications:heading': 'Autres applications',
+    'other-applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     
     // Industries Tab
     
@@ -673,14 +669,6 @@ export default {
     'abb-food:benefit4:title': 'Manutention flexible des produits',
     'abb-food:benefit4:desc': 'Manipulez une variété de produits alimentaires, de formats d\'emballage et de types de contenants avec précision.',
     
-    'abb-food:applications:heading': 'Applications que nous servons',
-    'abb-food:applications:subheading': 'Les robots ABB pour aliments et boissons offrent hygiène et productivité dans toute la chaîne d\'approvisionnement',
-    'abb-food:app1:title': 'Traitement alimentaire',
-    'abb-food:app1:desc': 'Traitement de viande, volaille, produits laitiers, boulangerie et aliments préparés avec automatisation hygiénique.',
-    'abb-food:app2:title': 'Production de boissons',
-    'abb-food:app2:desc': 'Automatisation de l\'embouteillage, de la mise en conserve et de l\'emballage pour boissons gazeuses, eau et boissons alcoolisées.',
-    'abb-food:app3:title': 'Emballage et palettisation',
-    'abb-food:app3:desc': 'Emballage primaire, secondaire et de fin de ligne pour produits alimentaires et boissons.',
     
     'abb-food:why-proax:heading': 'Pourquoi Proax pour aliments et boissons',
     'abb-food:why-proax:text': 'Proax se spécialise dans l\'automatisation robotique ABB pour les environnements alimentaires et de boissons. Nos ingénieurs certifiés ABB fournissent des consultations expertes, une sélection de robots hygiéniques et un soutien complet pour l\'automatisation de qualité alimentaire partout au Canada.',
@@ -1267,8 +1255,6 @@ export default {
     'abb-palletizing:benefit3:desc': 'Manipulation de charges utiles jusqu\'à 450 kg pour les produits volumineux et lourds à haute vitesse.',
     'abb-palletizing:benefit4:title': 'Applications polyvalentes',
     'abb-palletizing:benefit4:desc': 'Parfait pour les sacs, boîtes, caisses, bouteilles et plus encore dans toute application de palettisation.',
-    'abb-palletizing:applications:heading': 'Autres applications',
-    'abb-palletizing:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-palletizing:why-proax:heading': 'Pourquoi Proax pour les robots de palettisation',
     'abb-palletizing:why-proax:text': 'Proax est votre partenaire de confiance en robotique de palettisation ABB au Canada. Nos ingénieurs certifiés ABB offrent des consultations expertes, la sélection de robots et un soutien complet pour les applications de palettisation en fin de ligne.',
     'abb-palletizing:why-proax:stat1-number': '60+',
@@ -1300,8 +1286,6 @@ export default {
     'abb-sanding:benefit3:desc': 'Fonctionnement continu avec des temps de cycle constants qui améliorent le débit.',
     'abb-sanding:benefit4:title': 'Applications flexibles',
     'abb-sanding:benefit4:desc': 'Reprogrammation facile pour différentes géométries de pièces et exigences de finition.',
-    'abb-sanding:applications:heading': 'Autres applications',
-    'abb-sanding:applications:subheading': 'Explorez nos solutions robotiques spécifiques aux applications',
     'abb-sanding:why-proax:heading': 'Pourquoi Proax pour l\'automatisation de la finition de surface',
     'abb-sanding:why-proax:text': 'Proax se spécialise dans l\'automatisation robotique ABB pour les applications de sablage et de polissage. Nos ingénieurs certifiés ABB offrent des consultations expertes, la sélection de robots et un soutien complet pour l\'automatisation de finition de surface partout au Canada.',
     'abb-sanding:why-proax:stat1-number': '60+',

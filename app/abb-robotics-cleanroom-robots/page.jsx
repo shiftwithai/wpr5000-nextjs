@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import HubSpotForm from '../../components/HubSpotForm'
 import Tr from '../../components/Tr'
 import WhyProaxImage from '../../components/WhyProaxImage'
+import OtherApplications from '../../components/OtherApplications'
 import { useLocale } from '../../components/LocaleContext'
 
 const cleanroomRobotsData = [
@@ -477,6 +478,9 @@ export default function Page() {
       </section>
 
       <CleanroomRobotCatalog />
+
+      <OtherApplications current="/abb-robotics-cleanroom-robots" />
+
 
       <section className="why-proax-section">
         <div className="container">
