@@ -170,68 +170,6 @@ export default function Page() {
 
       <ArticulatedRobotCatalog />
 
-      <section className="cleanroom-industries-section">
-        <div className="container">
-          <h2 className="section-heading-center"><Tr id="abb-articulated:app-robots:heading" /></h2>
-          <p className="section-subheading-center">
-            <Tr id="abb-articulated:app-robots:subheading" />
-          </p>
-
-          <div className="industries-grid">
-            <a href="/abb-robotics-paint-automation" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:1x1-L"
-                  alt="Paint Robots"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-articulated:app-paint:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-articulated:app-paint:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-packaging" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/IRB_460_1_1x1_L_64daed3161.webp"
-                  alt="Palletizing Robots"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-articulated:app-palletizing:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-articulated:app-palletizing:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
-              </div>
-            </a>
-
-            <a href="/abb-robotics-cleanroom-robots" className="industry-card industry-card-clickable">
-              <div className="industry-image">
-                <img 
-                  src="https://proax.ca/strapiv4/uploads/IRB_930_ed0218f9a2.webp"
-                  alt="Cleanroom Robots"
-                  loading="lazy"
-                />
-              </div>
-              <div className="industry-content">
-                <h3 className="industry-title"><Tr id="abb-articulated:app-cleanroom:title" /></h3>
-                <p className="industry-description">
-                  <Tr id="abb-articulated:app-cleanroom:description" />
-                </p>
-                <span className="solution-card-link"><Tr id="abb-articulated:app-link" /></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="why-proax-section">
         <div className="container">
           <div className="why-proax-grid">

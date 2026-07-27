@@ -306,14 +306,6 @@ export default {
     'abb-articulated:hero:badge': 'Charge utile de 1,5 kg à 800 kg',
     
     // Application-Specific Robots Section
-    'abb-articulated:app-robots:heading': 'Robots spécifiques aux applications',
-    'abb-articulated:app-robots:subheading': 'Robots spécialisés conçus pour des applications de fabrication spécifiques',
-    'abb-articulated:app-paint:title': 'Robots de peinture',
-    'abb-articulated:app-paint:description': 'Une gamme complète de robots de peinture pour vous aider à augmenter la productivité et la qualité de vos opérations d\'atelier de peinture. Conçus pour la peinture intérieure et extérieure automobile, les pneus et les applications de peinture de pièces petites et moyennes.',
-    'abb-articulated:app-palletizing:title': 'Robots de palettisation',
-    'abb-articulated:app-palletizing:description': 'Nos robots de palettisation à 4 axes sont conçus pour une manutention haute vitesse, précise et efficace, optimisant l\'automatisation dans l\'emballage et la logistique. Avec une empreinte compacte, ils s\'adaptent parfaitement aux lignes de production.',
-    'abb-articulated:app-cleanroom:title': 'Robots de salle blanche',
-    'abb-articulated:app-cleanroom:description': 'Nos robots de salle blanche sont conçus pour les environnements de fabrication nécessitant les plus hauts niveaux de propreté et les plus faibles niveaux d\'émission de particules sans sacrifier la vitesse ou les performances.',
     'abb-articulated:app-link': 'En savoir plus →',
     
     // Industries Section

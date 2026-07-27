@@ -306,14 +306,6 @@ export default {
     'abb-articulated:hero:badge': '1.5 kg - 800 kg Payload',
     
     // Application-Specific Robots Section
-    'abb-articulated:app-robots:heading': 'Application-Specific Robots',
-    'abb-articulated:app-robots:subheading': 'Specialized robots designed for specific manufacturing applications',
-    'abb-articulated:app-paint:title': 'Paint Robots',
-    'abb-articulated:app-paint:description': 'A complete range of paint robots to help you increase the productivity and quality of your paint shop operations. Designed for automotive interior & exterior painting, tiers, and general small & medium parts painting applications.',
-    'abb-articulated:app-palletizing:title': 'Palletizing Robots',
-    'abb-articulated:app-palletizing:description': 'Our 4-axis palletizing robots are designed for high-speed, precise, and efficient material handling, optimizing automation in packaging and logistics. With a compact footprint, they fit seamlessly into production lines.',
-    'abb-articulated:app-cleanroom:title': 'Cleanroom Robots',
-    'abb-articulated:app-cleanroom:description': 'Our cleanroom robots are designed for manufacturing environments that need the highest levels of cleanliness and the lowest levels of particle emission without sacrificing speed or performance.',
     'abb-articulated:app-link': 'Learn More →',
     
     // Industries Section
