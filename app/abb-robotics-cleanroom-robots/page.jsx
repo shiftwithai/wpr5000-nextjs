@@ -78,52 +78,6 @@ const cleanroomRobotsData = [
     },
   },
   {
-    id: 'irb-1200-gen2',
-    name: 'IRB 1200 (Gen 2)',
-    type: 'Articulated',
-    typeKey: 'catalog:type-articulated',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%201200%20next%20gen%20(1):16x9-L',
-    descKey: 'cleanroom:robot:irb-1200-gen2:desc',
-    variants: ['IRB 1200-5/0.9', 'IRB 1200-7/0.7'],
-    maxPayload: 7,
-    payloadRange: '6-15',
-    maxReach: 0.9,
-    reachRange: '0-1.0',
-    isoClass: 'ISO 5',
-    appKeys: ['cleanroom:robot:irb-1200-gen2:app1', 'cleanroom:robot:irb-1200-gen2:app2', 'cleanroom:robot:irb-1200-gen2:app3', 'cleanroom:robot:irb-1200-gen2:app4'],
-    specs: {
-      'Payload': '5 / 7 kg',
-      'Reach': '700 / 900 mm',
-      'ISO Class': 'ISO 5 (Class 100)',
-      'Protection': 'IP40',
-      'Repeatability': '±0.025 mm',
-      'Controller': 'IRC5',
-    },
-  },
-  {
-    id: 'irb-1200-omnicore',
-    name: 'IRB 1200 OmniCore',
-    type: 'Articulated',
-    typeKey: 'catalog:type-articulated',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%201200%20next%20gen%20(1):16x9-L',
-    descKey: 'cleanroom:robot:irb-1200-omnicore:desc',
-    variants: ['IRB 1200-5/0.9 OmniCore', 'IRB 1200-7/0.7 OmniCore'],
-    maxPayload: 7,
-    payloadRange: '6-15',
-    maxReach: 0.9,
-    reachRange: '0-1.0',
-    isoClass: 'ISO 5',
-    appKeys: ['cleanroom:robot:irb-1200-omnicore:app1', 'cleanroom:robot:irb-1200-omnicore:app2', 'cleanroom:robot:irb-1200-omnicore:app3', 'cleanroom:robot:irb-1200-omnicore:app4'],
-    specs: {
-      'Payload': '5 / 7 kg',
-      'Reach': '700 / 900 mm',
-      'ISO Class': 'ISO 5 (Class 100)',
-      'Protection': 'IP40',
-      'Repeatability': '±0.02 mm',
-      'Controller': 'OmniCore',
-    },
-  },
-  {
     id: 'irb-1300',
     name: 'IRB 1300',
     type: 'Articulated',
@@ -186,29 +140,6 @@ const cleanroomRobotsData = [
     specs: {
       'Payload': '6 / 12 kg',
       'Reach': '450 / 500 / 550 mm',
-      'ISO Class': 'ISO 5 (Class 100)',
-      'Protection': 'IP40',
-      'Repeatability': '±0.01 mm',
-      'Controller': 'OmniCore',
-    },
-  },
-  {
-    id: 'irb-930',
-    name: 'IRB 930',
-    type: 'SCARA',
-    typeKey: 'catalog:type-scara',
-    image: 'https://proax.ca/strapiv4/uploads/IRB_930_ed0218f9a2.webp',
-    descKey: 'cleanroom:robot:irb-930:desc',
-    variants: ['IRB 930-6/0.65', 'IRB 930-12/0.65'],
-    maxPayload: 12,
-    payloadRange: '6-15',
-    maxReach: 0.65,
-    reachRange: '0-1.0',
-    isoClass: 'ISO 5',
-    appKeys: ['cleanroom:robot:irb-930:app1', 'cleanroom:robot:irb-930:app2', 'cleanroom:robot:irb-930:app3', 'cleanroom:robot:irb-930:app4'],
-    specs: {
-      'Payload': '6 / 12 kg',
-      'Reach': '650 mm',
       'ISO Class': 'ISO 5 (Class 100)',
       'Protection': 'IP40',
       'Repeatability': '±0.01 mm',
@@ -397,7 +328,7 @@ export default function Page() {
             <div className="hero-visual">
               <div className="product-video-wrapper">
                 <img 
-                  src="https://proax.ca/strapiv4/uploads/IRB_930_ed0218f9a2.webp"
+                  src="https://media-d.global.abb/is/image/abbc/IRB%201100-2:1x1-L"
                   style={{ borderRadius: '16px' }}
                   alt="ABB Cleanroom Robot"
                   width="600"

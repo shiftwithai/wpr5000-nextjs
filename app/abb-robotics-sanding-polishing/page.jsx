@@ -8,39 +8,57 @@ import { useLocale } from '../../components/LocaleContext'
 
 const sandingPolishingRobotsData = [
   {
-    id: 'irb-1300',
-    name: 'IRB 1300',
+    id: 'irb-1100',
+    name: 'IRB 1100',
     type: 'Articulated',
     typeKey: 'catalog:type-articulated',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L',
-    descKey: 'sanding:robot:irb-1300:desc',
-    payload: '7-12 kg',
-    reach: '0.9-1.4 m',
-    appKeys: ['sanding:robot:irb-1300:app1', 'sanding:robot:irb-1300:app2', 'sanding:robot:irb-1300:app3', 'sanding:robot:irb-1300:app4'],
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%201100-2:16x9-L',
+    descKey: 'sanding:robot:irb-1100:desc',
+    payload: '4 kg',
+    reach: '0.475-0.58 m',
+    appKeys: ['sanding:robot:irb-1100:app1', 'sanding:robot:irb-1100:app2', 'sanding:robot:irb-1100:app3', 'sanding:robot:irb-1100:app4'],
     specs: {
-      'Payload': '7 / 10 / 11 / 12 kg',
-      'Reach': '900 / 1150 / 1400 mm',
-      'Controllers': 'OmniCore E10, C30, C90XT, V250XT, V400XT',
-      'Applications': 'Polishing, Assembly, Material handling',
-      'Precision': 'High accuracy motion control',
+      'Payload': '4 kg',
+      'Reach': '475 / 580 mm',
+      'Controllers': 'OmniCore E10, C30, C90XT',
+      'Applications': 'Polishing, Deburring, Small parts finishing',
+      'Precision': '±0.01 mm repeatability',
     },
   },
   {
-    id: 'irb-4600',
-    name: 'IRB 4600',
+    id: 'irb-2600id',
+    name: 'IRB 2600ID',
     type: 'Articulated',
     typeKey: 'catalog:type-articulated',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%204600-2:16x9-L',
-    descKey: 'sanding:robot:irb-4600:desc',
-    payload: '20-60 kg',
-    reach: '2.05-2.55 m',
-    appKeys: ['sanding:robot:irb-4600:app1', 'sanding:robot:irb-4600:app2', 'sanding:robot:irb-4600:app3', 'sanding:robot:irb-4600:app4'],
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%202600ID-1:16x9-L',
+    descKey: 'sanding:robot:irb-2600id:desc',
+    payload: '8-15 kg',
+    reach: '1.85-2.0 m',
+    appKeys: ['sanding:robot:irb-2600id:app1', 'sanding:robot:irb-2600id:app2', 'sanding:robot:irb-2600id:app3', 'sanding:robot:irb-2600id:app4'],
     specs: {
-      'Payload': '20 / 40 / 45 / 60 kg',
-      'Reach': '2050 / 2050 / 2550 / 2050 mm',
-      'Controllers': 'OmniCore C30, C90XT, V250XT',
-      'Applications': 'Polishing, Deburring, Material handling',
-      'Versatility': 'Medium to large parts',
+      'Payload': '8 / 15 kg',
+      'Reach': '1850 / 2000 mm',
+      'Design': 'Integrated Dressing (internal cabling)',
+      'Applications': 'Grinding, Polishing, Deburring',
+      'Benefit': 'Dress pack kept clear of the workpiece',
+    },
+  },
+  {
+    id: 'irb-4400',
+    name: 'IRB 4400',
+    type: 'Articulated',
+    typeKey: 'catalog:type-articulated',
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%204400-1:16x9-L',
+    descKey: 'sanding:robot:irb-4400:desc',
+    payload: '60 kg',
+    reach: '1.95 m',
+    appKeys: ['sanding:robot:irb-4400:app1', 'sanding:robot:irb-4400:app2', 'sanding:robot:irb-4400:app3', 'sanding:robot:irb-4400:app4'],
+    specs: {
+      'Payload': '60 kg',
+      'Reach': '1950 mm',
+      'Design': 'Compact, rigid, fast',
+      'Applications': 'Heavy grinding, Deburring, Polishing',
+      'Versatility': 'Large and heavy parts',
     },
   },
 ];
@@ -134,7 +152,7 @@ export default function Page() {
             <div className="hero-visual">
               <div className="product-video-wrapper">
                 <img 
-                  src="https://media-d.global.abb/is/image/abbc/IRB%201300-2:1x1-L"
+                  src="https://media-d.global.abb/is/image/abbc/IRB%202600ID-1:1x1-L"
                   style={{ borderRadius: '16px' }}
                   alt="ABB Sanding and Polishing Robot"
                   width="600"

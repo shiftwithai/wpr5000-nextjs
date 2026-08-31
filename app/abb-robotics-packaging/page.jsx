@@ -9,36 +9,6 @@ import { useLocale } from '../../components/LocaleContext'
 
 const packagingRobotsData = [
   {
-    id: 'irb-460',
-    name: 'IRB 460',
-    typeKey: 'packaging:robot:irb-460:type',
-    image: 'https://proax.ca/strapiv4/uploads/IRB_460_1_1x1_L_64daed3161.webp',
-    descKey: 'packaging:robot:irb-460:desc',
-    maxPayload: 110,
-    maxReach: 2.4,
-    appKeys: ['packaging:robot:irb-460:app1', 'packaging:robot:irb-460:app2', 'packaging:robot:irb-460:app3', 'packaging:robot:irb-460:app4'],
-  },
-  {
-    id: 'irb-660',
-    name: 'IRB 660',
-    typeKey: 'packaging:robot:irb-660:type',
-    image: 'https://proax.ca/strapiv4/uploads/IRB_660_1_1x1_L_ee6abbfe76.webp',
-    descKey: 'packaging:robot:irb-660:desc',
-    maxPayload: 250,
-    maxReach: 3.15,
-    appKeys: ['packaging:robot:irb-660:app1', 'packaging:robot:irb-660:app2', 'packaging:robot:irb-660:app3', 'packaging:robot:irb-660:app4'],
-  },
-  {
-    id: 'irb-760',
-    name: 'IRB 760',
-    typeKey: 'packaging:robot:irb-760:type',
-    image: 'https://proax.ca/strapiv4/uploads/IRB_760_1_1x1_L_643e1229b4.webp',
-    descKey: 'packaging:robot:irb-760:desc',
-    maxPayload: 450,
-    maxReach: 3.2,
-    appKeys: ['packaging:robot:irb-760:app1', 'packaging:robot:irb-760:app2', 'packaging:robot:irb-760:app3', 'packaging:robot:irb-760:app4'],
-  },
-  {
     id: 'irb-360',
     name: 'IRB 360 FlexPicker',
     typeKey: 'packaging:robot:irb-360:type',
@@ -57,6 +27,26 @@ const packagingRobotsData = [
     maxPayload: 1.5,
     maxReach: 1.3,
     appKeys: ['packaging:robot:irb-365:app1', 'packaging:robot:irb-365:app2', 'packaging:robot:irb-365:app3', 'packaging:robot:irb-365:app4'],
+  },
+  {
+    id: 'irb-390',
+    name: 'IRB 390 FlexPacker',
+    typeKey: 'packaging:robot:irb-390:type',
+    image: 'https://proax.ca/strapiv4/uploads/IRB_390_2_1x1_L_0996fedc16.webp',
+    descKey: 'delta:robot:irb-390:desc',
+    maxPayload: 15,
+    maxReach: 1.3,
+    appKeys: ['delta:robot:irb-390:app1', 'delta:robot:irb-390:app2', 'delta:robot:irb-390:app3', 'delta:robot:irb-390:app4'],
+  },
+  {
+    id: 'irb-930',
+    name: 'IRB 930',
+    typeKey: 'packaging:robot:irb-930:type',
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%20930-2:16x9-L',
+    descKey: 'scara:robot:irb-930:desc',
+    maxPayload: 22,
+    maxReach: 0.8,
+    appKeys: ['scara:robot:irb-930:app1', 'scara:robot:irb-930:app2', 'scara:robot:irb-930:app3', 'scara:robot:irb-930:app4'],
   },
 ];
 

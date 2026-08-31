@@ -19,16 +19,6 @@ const materialHandlingRobotsData = [
     appKeys: ['material:robot:irb-1600:app1', 'material:robot:irb-1600:app2', 'material:robot:irb-1600:app3', 'material:robot:irb-1600:app4'],
   },
   {
-    id: 'irb-4400',
-    name: 'IRB 4400',
-    typeKey: 'material:robot:irb-4400:type',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%204400-1:16x9-L',
-    descKey: 'material:robot:irb-4400:desc',
-    maxPayload: 60,
-    maxReach: 1.96,
-    appKeys: ['material:robot:irb-4400:app1', 'material:robot:irb-4400:app2', 'material:robot:irb-4400:app3', 'material:robot:irb-4400:app4'],
-  },
-  {
     id: 'irb-660',
     name: 'IRB 660',
     typeKey: 'material:robot:irb-660:type',
@@ -47,6 +37,16 @@ const materialHandlingRobotsData = [
     maxPayload: 200,
     maxReach: 3.0,
     appKeys: ['material:robot:irb-6650s:app1', 'material:robot:irb-6650s:app2', 'material:robot:irb-6650s:app3', 'material:robot:irb-6650s:app4'],
+  },
+  {
+    id: 'irb-4600',
+    name: 'IRB 4600',
+    typeKey: 'material:robot:irb-4600:type',
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%204600-1:16x9-L',
+    descKey: 'material:robot:irb-4600:desc',
+    maxPayload: 60,
+    maxReach: 2.55,
+    appKeys: ['material:robot:irb-4600:app1', 'material:robot:irb-4600:app2', 'material:robot:irb-4600:app3', 'material:robot:irb-4600:app4'],
   },
 ];
 
