@@ -73,7 +73,7 @@ function MobileRobotCatalog() {
                 <div className="robot-grid-specs">
                   <div className="grid-spec-item">
                     <span className="grid-spec-label">{t('abb-amr:spec-payload')}</span>
-                    <span className="grid-spec-value">{robot.payload}</span>
+                    <span className="grid-spec-value">{robot.payload.replace(/^up to\b/i, t('rc:up-to'))}</span>
                   </div>
                   <div className="grid-spec-item">
                     <span className="grid-spec-label">{t('abb-amr:spec-nav')}</span>

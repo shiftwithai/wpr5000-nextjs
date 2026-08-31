@@ -1123,7 +1123,7 @@ function RobotCatalog() {
                       )}
                     </div>
                   </div>
-                  <div className="card-cell card-cell-payload">{robot.payload}</div>
+                  <div className="card-cell card-cell-payload">{robot.payload.replace(/^up to\b/i, t('rc:up-to'))}</div>
                   <div className="card-cell card-cell-reach">{robot.reach}</div>
                   <div className="card-cell card-cell-controllers">{robot.controllers.join(', ')}</div>
                 </div>

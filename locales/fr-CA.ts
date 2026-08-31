@@ -471,7 +471,7 @@ export default {
     // Industries Tab
     
     // Applications Tab
-    'solutions-explorer:app-food-beverage:title': 'Aliments et boissons',
+    'solutions-explorer:app-food-beverage:title': 'Agroalimentaire',
     'solutions-explorer:app-food-beverage:desc': 'Automatisation robotique hygiénique pour le traitement alimentaire, l\'emballage et la production de boissons.',
     'solutions-explorer:app-cleanroom:title': 'Applications en salle blanche',
     'solutions-explorer:app-cleanroom:desc': 'Robots certifiés ISO pour salle blanche pour la fabrication de semi-conducteurs, pharmaceutique et médicale.',
@@ -562,12 +562,13 @@ export default {
     'rc:app:Testing': 'Essais',
     'rc:app:Loading and unloading': 'Chargement et déchargement',
     'rc:app:Rubber insertion': 'Insertion de caoutchouc',
-    'rc:app:Food & Beverage': 'Aliments et boissons',
+    'rc:app:Food & Beverage': 'Agroalimentaire',
     'rc:app:Polishing': 'Polissage',
     'rc:app:Welding': 'Soudage',
     'rc:app:Item picking': 'Cueillette d\'articles',
     'rc:app:Cleaning': 'Nettoyage',
     'rc:app:Spraying': 'Pulvérisation',
+    'rc:up-to': 'jusqu\'à',
     'rc:app:Arc welding': 'Soudage à l\'arc',
     'rc:app:Die casting': 'Moulage sous pression',
     'rc:app:Injection moulding': 'Moulage par injection',
@@ -627,7 +628,7 @@ export default {
     'testimonials:3:company': 'Installation de fonderie et forgeage',
     
     // Testimonial 4 - Food & Beverage
-    'testimonials:4:industry': 'Aliments et boissons',
+    'testimonials:4:industry': 'Agroalimentaire',
     'testimonials:4:quote': 'Les robots ABB nous ont aidés à répondre à la demande croissante tout en maintenant des normes d\'hygiène strictes.',
     'testimonials:4:detail': 'En automatisant nos opérations d\'emballage et de palettisation, nous avons amélioré la cohérence, réduit la manutention manuelle et soutenu des volumes de production plus élevés. La conception hygiénique et les performances fiables ont fait des robots ABB un choix solide pour notre environnement de transformation alimentaire.',
     'testimonials:4:name': '— Responsable de l\'ingénierie',
@@ -863,18 +864,18 @@ export default {
     'paint-robots:irb-5510:app4': 'Industrie générale',
 
     // Food & Beverage Catalog
-    'abb-food:catalog:heading': 'Robots ABB Aliments et boissons',
+    'abb-food:catalog:heading': 'Robots ABB pour l\'agroalimentaire',
     'abb-food:catalog:subheading': 'Robots hygiéniques conçus pour les environnements alimentaires sécuritaires',
     'abb-food:catalog:badge': 'Sécurité alimentaire',
     'food:robot:irb-1200-hygienic:desc': 'L\'IRB 1200 Hygienic est spécialement conçu pour les applications alimentaires et de boissons. Avec des matériaux de qualité alimentaire et des surfaces lisses, il est idéal pour la cueillette, l\'emballage et la manutention dans les environnements de lavage.',
     'food:robot:irb-1200-hygienic:type': 'Hygiénique',
-    'food:robot:irb-1200-hygienic:app1': 'Aliments et boissons',
+    'food:robot:irb-1200-hygienic:app1': 'Agroalimentaire',
     'food:robot:irb-1200-hygienic:app2': 'Emballage',
     'food:robot:irb-1200-hygienic:app3': 'Cueillette',
     'food:robot:irb-1200-hygienic:app4': 'Environnements de lavage',
     'food:robot:irb-365:desc': 'Le robot delta IRB 365 FlexPicker® offre une charge utile de 1,5 kg et une vitesse de pointe pour la réorientation de produits emballés légers tels que biscuits, chocolats, bonbons, petites bouteilles et produits alimentaires.',
     'food:robot:irb-365:type': 'Delta',
-    'food:robot:irb-365:app1': 'Aliments et boissons',
+    'food:robot:irb-365:app1': 'Agroalimentaire',
     'food:robot:irb-365:app2': 'Emballage',
     'food:robot:irb-365:app3': 'Cueillette haute vitesse',
     'food:robot:irb-365:app4': 'Réorientation',

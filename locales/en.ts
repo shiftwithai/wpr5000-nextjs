@@ -568,6 +568,7 @@ export default {
     'rc:app:Item picking': 'Item picking',
     'rc:app:Cleaning': 'Cleaning',
     'rc:app:Spraying': 'Spraying',
+    'rc:up-to': 'up to',
     'rc:app:Arc welding': 'Arc welding',
     'rc:app:Die casting': 'Die casting',
     'rc:app:Injection moulding': 'Injection moulding',

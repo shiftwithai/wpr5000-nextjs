@@ -72,7 +72,7 @@ function CollaborativeRobotCatalog() {
                   </div>
                   <div className="grid-spec-item">
                     <span className="grid-spec-label">{t(robot.spec2.label)}</span>
-                    <span className="grid-spec-value">{robot.spec2.value}</span>
+                    <span className="grid-spec-value">{robot.spec2.value.replace(/^up to\b/i, t('rc:up-to'))}</span>
                   </div>
                 </div>
 
