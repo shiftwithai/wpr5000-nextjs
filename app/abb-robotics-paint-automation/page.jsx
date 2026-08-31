@@ -8,37 +8,44 @@ import { useLocale } from '../../components/LocaleContext'
 
 const paintRobotsData = [
   {
-    id: 'irb-5350',
-    name: 'IRB 5350',
-    type: 'Paint',
-    typeKey: 'catalog:type-paint',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%205350-1:16x9-L',
-    descKey: 'paint-robots:irb-5350:desc',
-    maxPayload: 7,
-    maxReach: 1.35,
-    appKeys: ['paint-robots:irb-5350:app1', 'paint-robots:irb-5350:app2', 'paint-robots:irb-5350:app3', 'paint-robots:irb-5350:app4'],
+    id: 'gofa-crb-15000',
+    name: 'GoFa CRB 15000',
+    type: 'Collaborative',
+    typeKey: 'catalog:type-collaborative',
+    image: 'https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:16x9-L',
+    descKey: 'paint:robot:gofa-crb-15000:desc',
+    variants: ['GoFa CRB 15000-5', 'GoFa CRB 15000-10', 'GoFa CRB 15000-12'],
+    maxPayload: 12,
+    maxReach: 0.95,
+    appKeys: ['paint:robot:gofa-crb-15000:app1', 'paint:robot:gofa-crb-15000:app2', 'paint:robot:gofa-crb-15000:app3', 'paint:robot:gofa-crb-15000:app4'],
+    specs: {
+      'Payload Options': '5 / 10 / 12 kg',
+      'Reach': '950 mm',
+      'Repeatability': '±0.05 mm',
+      'Controller': 'OmniCore',
+      'Safety': 'Collaborative - No fencing required',
+      'IP Rating': 'IP54',
+    },
   },
   {
-    id: 'irb-5500',
-    name: 'IRB 5500 FlexPainter',
-    type: 'Paint',
-    typeKey: 'catalog:type-paint',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%205500-22:16x9-L',
-    descKey: 'paint-robots:irb-5500-22:desc',
-    maxPayload: 13,
-    maxReach: 2.97,
-    appKeys: ['paint-robots:irb-5500-22:app1', 'paint-robots:irb-5500-22:app2', 'paint-robots:irb-5500-22:app3', 'paint-robots:irb-5500-22:app4'],
-  },
-  {
-    id: 'irb-5510',
-    name: 'IRB 5510 FlexPainter',
-    type: 'Paint',
-    typeKey: 'catalog:type-paint',
-    image: 'https://media-d.global.abb/is/image/abbc/IRB%205510-1:16x9-L',
-    descKey: 'paint-robots:irb-5510:desc',
-    maxPayload: 13,
-    maxReach: 2.56,
-    appKeys: ['paint-robots:irb-5510:app1', 'paint-robots:irb-5510:app2', 'paint-robots:irb-5510:app3', 'paint-robots:irb-5510:app4'],
+    id: 'irb-1300',
+    name: 'IRB 1300',
+    type: 'Articulated',
+    typeKey: 'catalog:type-articulated',
+    image: 'https://media-d.global.abb/is/image/abbc/IRB%201300-2:16x9-L',
+    descKey: 'paint:robot:irb-1300:desc',
+    variants: ['IRB 1300-11/0.9', 'IRB 1300-10/1.15', 'IRB 1300-7/1.4'],
+    maxPayload: 11,
+    maxReach: 1.4,
+    appKeys: ['paint:robot:irb-1300:app1', 'paint:robot:irb-1300:app2', 'paint:robot:irb-1300:app3', 'paint:robot:irb-1300:app4'],
+    specs: {
+      'Payload': '7 / 10 / 11 kg',
+      'Reach': '900 / 1150 / 1400 mm',
+      'Repeatability': '±0.02 mm',
+      'Controller': 'OmniCore',
+      'Cycle Time': 'Industry-leading speed',
+      'IP Rating': 'IP40',
+    },
   },
 ];
 
@@ -131,7 +138,7 @@ export default function Page() {
             <div className="hero-visual">
               <div className="product-video-wrapper">
                 <img 
-                  src="https://media-d.global.abb/is/image/abbc/IRB%205500-22:1x1-L"
+                  src="https://media-d.global.abb/is/image/abbc/CRB%2015000%20-%20GoFa-1:1x1-L"
                   style={{ borderRadius: '16px' }}
                   alt="ABB Paint Automation Robot"
                   width="600"
